@@ -113,7 +113,8 @@ def get_stack_overflow_info() -> Mapping[str, Optional[str]]:
         "stackoverflow": f"""\
 <p>
 <span class="latest">Reputation</span>
-{reputation} internet points (+{reputation_change_month} this month)
+{reputation} internet points<br />
++{reputation_change_month} this month
 <p>
 """
     }
