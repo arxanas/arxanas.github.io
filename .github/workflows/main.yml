@@ -5,9 +5,14 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: ["master"]
+  
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+  schedule:
+    # Run once a day (arbitrary time chosen).
+    - cron: "10 9 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -42,4 +47,4 @@ jobs:
         with:
           email: me@waleedkhan.name
           branch: gh-pages
-          cname: waleedkhan.name
+#           cname: waleedkhan.name
