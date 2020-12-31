@@ -75,6 +75,10 @@ a {
   width: 100%;
 }
 
+.link-info table a {
+  display: block;
+}
+
 .latest {
   color: gray;
   display: block;

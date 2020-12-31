@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import collections
-import time
 import os
+import shutil
+import time
 
 import bs4
 import feedparser
@@ -11,6 +12,7 @@ from typing import Mapping, Optional
 
 
 CITY = "Seattle"
+
 
 def get_blog_info() -> Mapping[str, Optional[str]]:
     feed = feedparser.parse("https://blog.waleedkhan.name/feed.xml")
@@ -41,7 +43,7 @@ def get_github_info() -> Mapping[str, Optional[str]]:
         event_time = time.strftime(
             "%b %d, %Y", time.strptime(event["created_at"].split("T")[0], "%Y-%m-%d")
         )
-        for commit in event["payload"]["commits"]:
+        for commit in event["payload"].get("commits", []):
             commit_url = (
                 f"""https://github.com/{repo["name"]}/commits/{commit["sha"]}"""
             )
@@ -65,7 +67,8 @@ def get_github_info() -> Mapping[str, Optional[str]]:
 
 
 def get_resume_info() -> Mapping[str, Optional[str]]:
-    return {"resume": f"""\
+    return {
+        "resume": f"""\
 <p>
 <span class="latest">Contact me at
   <a href="mailto:me@waleedkhan.name">me@waleedkhan.name</a>
@@ -74,7 +77,8 @@ I'm a software engineer who builds highly-scalable developer
 tooling.<br />
 I'm based in {CITY}.
 </p>
-"""}
+"""
+    }
 
 
 def get_linkedin_info() -> Mapping[str, Optional[str]]:
@@ -162,9 +166,13 @@ def get_restaurant_info() -> Mapping[str, Optional[str]]:
 
     table_rows_html = ""
     for (payee_name, payee_transactions) in top_payees:
-        payee_href = f"""http://google.com/maps/search/{CITY}+{payee_name.replace(" ", "+")}"""
+        payee_href = (
+            f"""http://google.com/maps/search/{CITY}+{payee_name.replace(" ", "+")}"""
+        )
         num_payee_transactions = len(payee_transactions)
-        total_spent_at_payee = -sum(transaction["amount"] for transaction in payee_transactions) / 1000
+        total_spent_at_payee = (
+            -sum(transaction["amount"] for transaction in payee_transactions) / 1000
+        )
         table_rows_html += f"""\
 <tr>
 <td><a href="{payee_href}">{payee_name}</a></td>
@@ -215,7 +223,10 @@ def main() -> None:
                 for line in template_html.splitlines(keepends=True)
                 if not k in line
             )
-    with open("index.html", "w") as f:
+
+    shutil.rmtree("_site", ignore_errors=True)
+    os.mkdir("_site")
+    with open("_site/index.html", "w") as f:
         f.write(template_html)
 
 
