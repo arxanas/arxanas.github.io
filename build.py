@@ -229,6 +229,9 @@ def main() -> None:
     with open("_site/index.html", "w") as f:
         f.write(template_html)
 
+    for static_file in os.listdir("_static"):
+        shutil.copy(src=os.path.join("_static", static_file), dst="_site")
+
 
 if __name__ == "__main__":
     main()
