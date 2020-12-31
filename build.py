@@ -191,8 +191,8 @@ def get_restaurant_info() -> Mapping[str, Optional[str]]:
 <table>
 <thead>
 <th>Name</th>
-<th>Visits (last year)</th>
-<th>Spend 😱 (last year)</th>
+<th>Visits (past year)</th>
+<th>Spend 😱 (past year)</th>
 </thead>
 <tbody>
 {table_rows_html}
