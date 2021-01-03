@@ -45,6 +45,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          email: me@waleedkhan.name
+          email: github.actions@waleedkhan.name
           branch: gh-pages
 #           cname: waleedkhan.name
