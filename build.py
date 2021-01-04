@@ -14,7 +14,7 @@ from typing import Mapping, Optional
 CITY = "Seattle"
 
 
-def get_blog_info() -> Mapping[str, Optional[str]]:
+def get_blog_info() -> Mapping[str, str]:
     feed = feedparser.parse("https://blog.waleedkhan.name/feed.xml")
     entry = feed.entries[0]
     title = entry.title
@@ -32,7 +32,7 @@ def get_blog_info() -> Mapping[str, Optional[str]]:
     }
 
 
-def get_github_info() -> Mapping[str, Optional[str]]:
+def get_github_info() -> Mapping[str, str]:
     result = requests.get(
         "https://api.github.com/users/arxanas/events/public",
         headers={"Accept": "application/vnd.github.v3+json"},
@@ -82,7 +82,7 @@ def get_github_info() -> Mapping[str, Optional[str]]:
     }
 
 
-def get_resume_info() -> Mapping[str, Optional[str]]:
+def get_resume_info() -> Mapping[str, str]:
     return {
         "resume": f"""\
 <p>
@@ -97,7 +97,7 @@ I'm based in {CITY}.
     }
 
 
-def get_linkedin_info() -> Mapping[str, Optional[str]]:
+def get_linkedin_info() -> Mapping[str, str]:
     # The LinkedIn API doesn't provide enough information unless you're
     # approved for their Partner Program. Just scrape my resume and pretend
     # it's from LinkedIn.
@@ -118,7 +118,7 @@ def get_linkedin_info() -> Mapping[str, Optional[str]]:
     }
 
 
-def get_stack_overflow_info() -> Mapping[str, Optional[str]]:
+def get_stack_overflow_info() -> Mapping[str, str]:
     result = requests.get(
         "https://api.stackexchange.com/2.2/users/344643?site=stackoverflow"
     )
@@ -136,7 +136,7 @@ def get_stack_overflow_info() -> Mapping[str, Optional[str]]:
     }
 
 
-def get_last_updated_info() -> Mapping[str, Optional[str]]:
+def get_last_updated_info() -> Mapping[str, str]:
     current_date = time.strftime("%Y-%m-%d")
     return {
         "last_updated": f"""\
@@ -148,7 +148,7 @@ This page is a live activity feed of my internet presence, updated once a day.
     }
 
 
-def get_restaurant_info() -> Mapping[str, Optional[str]]:
+def get_restaurant_info() -> Mapping[str, str]:
     budget_id = "last-used"
     category_name = "Eating Out"
     ynab_api_key = os.environ["YNAB_API_KEY"]
@@ -234,14 +234,7 @@ def main() -> None:
         template_html = f.read()
     for k, v in infos.items():
         k = "{" + k + "}"
-        if v is not None:
-            template_html = template_html.replace(k, v)
-        else:
-            template_html = "".join(
-                line
-                for line in template_html.splitlines(keepends=True)
-                if not k in line
-            )
+        template_html = template_html.replace(k, v)
 
     shutil.rmtree("_site", ignore_errors=True)
     os.mkdir("_site")
