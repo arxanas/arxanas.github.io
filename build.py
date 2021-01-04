@@ -49,18 +49,34 @@ def get_github_info() -> Mapping[str, Optional[str]]:
             )
             commits.append(
                 f"""\
-<a href="{commit_url}">{repo["name"]} @ {event_time} &mdash; {commit["message"]}</a>
+<tr>
+<td><a href="https://github.com/{repo["name"]}">{repo["name"]}</a></td>
+<td>{event_time}</td>
+<td><a href="{commit_url}">{commit["message"]}</a></td>
+</tr>
 """
             )
     latest_commits, earlier_commits = commits[:3], commits[3:]
+    tbody_html = "\n".join(latest_commits)
     num_earlier_commits = len(earlier_commits)
 
     return {
         "github": f"""\
 <p>
 <span class="latest">Recent commits</span>
-{"<br />".join(latest_commits)}<br />
-...and {num_earlier_commits} more recent commits.
+<div class="table-container">
+<table>
+<thead>
+<th>Repo</th>
+<th>Date</th>
+<th>Message</th>
+</thead>
+<tbody>
+{tbody_html}
+</tbody>
+</table>
+</div>
+<span class="latest">...and {num_earlier_commits} more recent commits.</span>
 </p>
 """
     }
@@ -188,6 +204,7 @@ def get_restaurant_info() -> Mapping[str, Optional[str]]:
 <span class="latest">Top {CITY} restaurants</span>
 <span class="latest">Automatically extracted from budgeting software. Don't judge.</span>
 </p>
+<div class="table-container">
 <table>
 <thead>
 <th>Name</th>
@@ -198,6 +215,7 @@ def get_restaurant_info() -> Mapping[str, Optional[str]]:
 {table_rows_html}
 </tbody>
 </table>
+</div>
 """
     }
 
