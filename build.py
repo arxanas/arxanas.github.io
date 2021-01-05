@@ -76,7 +76,7 @@ def get_github_info() -> Mapping[str, str]:
 </tbody>
 </table>
 </div>
-<span class="latest">...and {num_earlier_commits} more recent commits.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">{num_earlier_commits} more recent commits</a>.</span>
 </p>
 """
     }
