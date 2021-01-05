@@ -220,6 +220,71 @@ def get_restaurant_info() -> Mapping[str, str]:
     }
 
 
+def get_redirects() -> Mapping[str, str]:
+    blog_articles = [
+        "will-i-ever-use-this",
+        "steno-journal",
+        "steno-adventures-part-1",
+        "steno-adventures-part-2",
+        "dot-name-email-address",
+        "pyqt-designer",
+        "messenger-conversation-macros",
+        "parsing-contextual-keywords",
+        "union-vs-sum-types",
+        "data-comprehension-syntaxes",
+        "my-steno-system",
+        "getting-a-job-in-pl",
+        "ocaml-file-extensions",
+        "monotonicity",
+        "mail-server",
+        "lan-adapter",
+        "smash-bros-parabola-rule",
+        "smash-training-retrospective",
+        "rust-modules-for-python-users",
+    ]
+    blog_redirects = {
+        "blog": "https://blog.waleedkhan.name/",
+    }
+    for article in blog_articles:
+        blog_redirects[f"blog/{article}"] = f"https://blog.waleedkhan.name/{article}/"
+
+    eecs281_articles = [
+        "sublime-clang",
+        "from-eecs-183-and-280",
+        "painless-automated-testing",
+        "code-deduplication",
+        "terminal-tips-and-tricks",
+        "dealing-with-caen",
+    ]
+    eecs281_redirects = {
+        "281": "https://eecs281.waleedkhan.name/",
+    }
+    for article in eecs281_articles:
+        eecs281_redirects[
+            f"281/{article}"
+        ] = f"https://eecs281.waleedkhan.name/{article}/"
+
+    redirects = {
+        **blog_redirects,
+        **eecs281_redirects,
+        "resume": "https://resume.waleedkhan.name/",
+    }
+    return redirects
+
+
+def make_redirect_html(path: str, target_url: str) -> str:
+    return f"""\
+<!DOCTYPE html>
+<head>
+<meta http-equiv="refresh" content="0; url={target_url}">
+<link rel="canonical" href="{target_url}" />
+</head>
+<body>
+<p>This page has moved to <a href="{target_url}">{target_url}</a>.
+</body>
+"""
+
+
 def main() -> None:
     infos = {
         **get_blog_info(),
@@ -240,6 +305,11 @@ def main() -> None:
     os.mkdir("_site")
     with open("_site/index.html", "w") as f:
         f.write(template_html)
+
+    for path, target_url in get_redirects().items():
+        os.makedirs(f"_site/{path}", exist_ok=True)
+        with open(f"_site/{path}/index.html", "w") as f:
+            f.write(make_redirect_html(path, target_url))
 
     for static_file in os.listdir("_static"):
         shutil.copy(src=os.path.join("_static", static_file), dst="_site")
