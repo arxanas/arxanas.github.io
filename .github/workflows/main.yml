@@ -47,4 +47,4 @@ jobs:
         with:
           email: github.actions@waleedkhan.name
           branch: gh-pages
-#           cname: waleedkhan.name
+          cname: waleedkhan.name
