@@ -69,10 +69,16 @@ a {
   color: #1b3e5c;
 }
 
+.table-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
 .link-info table {
   color: gray;
   font-size: smaller;
-  width: 100%;
 }
 
 .link-info table a {
@@ -83,4 +89,12 @@ a {
   color: gray;
   display: block;
   font-size: smaller;
+}
+
+.link-info td, .link-info th {
+  padding: 0 1.5em;
+}
+
+.link-info td:first-child, .link-info td:last-child, .link-info th:first-child, .link-info th:last-child {
+  padding: 0;
 }
