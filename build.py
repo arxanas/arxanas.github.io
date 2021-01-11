@@ -142,7 +142,7 @@ def get_last_updated_info() -> Mapping[str, str]:
         "last_updated": f"""\
 <p>
 <span class="latest">Last updated: {current_date}</span>
-This page is a live activity feed of my internet presence, updated once a day.
+This page is an activity feed of my internet presence, updated once a day.
 </p>
 """
     }
