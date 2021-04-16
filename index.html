@@ -17,7 +17,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-04-15</span>
+<span class="latest">Last updated: 2021-04-16</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -41,47 +41,28 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 15, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/43c1f64df16b6c8f3a97e0e2cf7c24b42d768b38">build(macos): don't use `ssh` feature for `git2` dependency
-
-Using the `ssh` feature induces a dependency on `openssl`. On my Macbook, this produced the following linking error:
-
-```
-  = note: Undefined symbols for architecture x86_64:
-            "_OPENSSL_init_ssl", referenced from:
-                std::sync::once::Once::call_once::_$u7b$$u7b$closure$u7d$$u7d$::he73245cadb6fb5f7 (.llvm.1763620816825828942) in libopenssl_sys-e129a1c9f9682ba1.rlib(openssl_sys-e129a1c9f9682ba1.openssl_sys.dn7psuzk-cgu.6.rcgu.o)
-                core::ops::function::FnOnce::call_once$u7b$$u7b$vtable.shim$u7d$$u7d$::h2d3710fadd6753f9 (.llvm.1763620816825828942) in libopenssl_sys-e129a1c9f9682ba1.rlib(openssl_sys-e129a1c9f9682ba1.openssl_sys.dn7psuzk-cgu.6.rcgu.o)
-          ld: symbol(s) not found for architecture x86_64
-          clang: error: linker command failed with exit code 1 (use -v to see invocation)
-```
-
-I tried the following:
-
-* Running `brew install openssl@1.1` as per the instructions at https://docs.rs/openssl/0.10.33/openssl/
-* Setting the environment variables mentioned in `brew info openssl`
-* Setting `LIBGIT2_SYS_USE_PKG_CONFIG=1` as mentioned in https://github.com/rust-lang/git2-rs/issues/229
-
-None of these worked. So I'm disabling the `ssh` feature for now. If `git-branchless` needs the `ssh` feature in the future (for example, if we add a Github integration and want it to pull/push directly), then we'll have to resolve the issue properly.
-
-It's possible my particular issue is due to running Homebrew on a too-old version of macOS, and that it might be resolved by an OS upgrade and re-installing my Homebrew packages.</a></td>
+<td>Apr 16, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/252be503c86e37c517b9c0dfa22796343c8cc477">undo: fix historical commit visibility test broken for Git 2.24</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/blog">arxanas/blog</a></td>
-<td>Apr 13, 2021</td>
-<td><a href="https://github.com/arxanas/blog/commits/69cf48a1784a61ef238fa2723ef654cc62575308">Run `bundle update`</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Apr 16, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/52b87ef22f31ec2ebfa754c59e53c566e3db833f">docs: release version 0.3.1</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/plover_wpm_meter">arxanas/plover_wpm_meter</a></td>
-<td>Apr 13, 2021</td>
-<td><a href="https://github.com/arxanas/plover_wpm_meter/commits/bd887015bc674c0817aab5cf4d54e9bfed751908">Correct title of "strokes" meter in README</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Apr 16, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/2bf8aac5a1e8634247d579d64d11f4b397d3fa7b">graph: fix incorrect historical commit visibility
+
+This probably regressed in 07d892e5, but since it only affects node visibility and not the structure of the graph, none of the existing tests caught it.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">13 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">11 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
