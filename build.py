@@ -44,6 +44,8 @@ def get_github_info() -> Mapping[str, str]:
             "%b %d, %Y", time.strptime(event["created_at"].split("T")[0], "%Y-%m-%d")
         )
         for commit in event["payload"].get("commits", []):
+            if not commit.get("distinct", False):
+                continue
             commit_url = (
                 f"""https://github.com/{repo["name"]}/commits/{commit["sha"]}"""
             )
