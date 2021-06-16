@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-06-15</span>
+<span class="latest">Last updated: 2021-06-16</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,32 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jun 16, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/02fe6edcb1ea8c8ebccfdb6c6f40e2b5adf1170e">feat(move): add progress meter to in-memory rebase</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jun 16, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/ba6d3e1a28a2b48480e6e7cb94ed3bbd96fcc8b4">cleanup: remove most `&mut impl Write`s
+
+Most of these were in place to make testing easier, but in practice, we run integration tests and collect the stdout/stderr directly. These parameters just add bloat to the interfaces without adding value.
+
+Additionally, it becomes hard to work with the provided `Write` instances. We can't check to see if they're a TTY to decide whether or not to write colors, and the current implementation of `run_git` waits until all of the output has been provided and then returns it in a `String`, rather than stream it to the user.
+
+It would probably be best to make our own input/output type and wrap all IO using that, rather than use `Write` as a trait, which is insufficient for our needs.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Jun 15, 2021</td>
 <td><a href="https://github.com/arxanas/git-branchless/commits/7927bbdc56087ef1f38ff91d6f08900bc905f2db">feat(move): add progress meter to in-memory rebase</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 15, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/5dc5e4117c239a9ef25fcbca89a591ed303d881f">feat(move): handle merge conflicts</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 15, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/dcb2b7cc1f69c690d7d8ced9835096d391e9986a">cleanup: un-patch dependencies
-
-As of https://github.com/gyscos/cursive/pull/587, the upstream changes to `cursive` are available in a prerelease version. The commits were https://github.com/gyscos/cursive/commit/d64131ff6f7503188d926d2f85e6f2d11a64f1e2 and https://github.com/gyscos/cursive/commit/b88269e1fe0b0242a13f19df14643326827cb11e.
-
-For in-memory rebases, I encountered issues trying to use `apply_patch_to_tree` in `libgit2`, because it didn't seem to detect merge conflicts directly. But I was able to get `cherry_pick_commit` to work instead.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">34 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">35 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -125,8 +127,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
-<td>39</td>
-<td>$605.99</td>
+<td>40</td>
+<td>$622.32</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
@@ -140,8 +142,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
-<td>12</td>
-<td>$125.00</td>
+<td>13</td>
+<td>$135.00</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Bento+World">Bento World</a></td>
