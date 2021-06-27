@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-06-26</span>
+<span class="latest">Last updated: 2021-06-27</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,35 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 26, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/62a852729b489cafded2905194b460e0a89da8ae">docs(wrap): remove item about adding a feature to `git branchless wrap`
-
-Since `git branchless wrap` was released in v0.3.2, it doesn't make sense to also include items in the changelog about how the feature has changed.</a></td>
+<td>Jun 27, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/63bed69e3afcd3d0ae78b6df0f5e830e771750b5">refactor(util): rename `GitExecutable` to `GitRunInfo`</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 26, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/98299206e24e0b25ccab388f00368079f3ca72b3">refactor(wrap): move test cases out of source module</a></td>
+<td>Jun 27, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/a1ba5651a0b64cff533e38ab97924c8c534065c2">refactor(util): store more environment information in `GitRunInfo`
+
+This is to fix flaky tests, such as in #23. Normally, the environment information is process-specific, not thread-specific, so it's best to specify it explicitly and avoid race conditions.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 26, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/04013116334954e7ef7a82938db39ecf66aa36b4">fix(wrap): don't fail if no Git repository is available
+<td>Jun 27, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/6c9618f48f337903201bf995102f2e5d52be5eee">util: audit `Command::new` call-sites
 
-This can happen e.g. if you're running `git init` in a new directory.</a></td>
+The rules we need to follow when running subcommands are:
+
+* We should always set the `current_dir` to the appropriate directory.
+* We should always clear out the environment variables, and, if applicable, pass in the environment variables explicitly.
+
+This change updates the implementation of `run_hook`, since it wasn't previously running the hooks in the correct directory. (So far, it hasn't mattered for the `git-branchless` hooks, but it could matter if the user writes their own hook, which relies on this behavior.)</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">5 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">18 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -140,8 +145,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
-<td>14</td>
-<td>$145.00</td>
+<td>15</td>
+<td>$155.00</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Bento+World">Bento World</a></td>
