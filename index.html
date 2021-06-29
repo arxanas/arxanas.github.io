@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-06-28</span>
+<span class="latest">Last updated: 2021-06-29</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,26 +45,34 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 28, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/6500430266f7eeb5d1bebee86a46963759b27dad">docs(contributing): link to Github discussions</a></td>
+<td>Jun 29, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/5eb13894e7be2498b70fe440ad4ad99061fe02f3">feat(rewrite): don't query repository to generate label names
+
+As part of generating rebase plans, we generate temporary label names, which are used to refer to a commit which hasn't been made yet (and for which we therefore don't know the commit hash).
+
+This is the relevant part of `git-rebase(1)`:
+
+> The label command associates a label with the current HEAD when that command is executed. These labels are created as worktree-local refs (refs/rewritten/<label>) that will be deleted when the rebase finishes. That way, rebase operations in multiple worktrees linked to the same repository do not interfere with one another. If the label command fails, it is rescheduled immediately, with a helpful message how to proceed.
+
+Before this commit, we would preemptively check to make sure that there was no ref under `refs/rewritten` in the appropriate name. However, given the above, it seems that we can rely on Git to delete everything from `refs/rewritten`, and therefore start with an empty `refs/rewritten` directory when we start the rebase operation. Thus, we can avoid making several I/O queries to Git.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 28, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/4154e2120d9379462c1f079145fe11bf8ca63e0d">docs: release v0.3.3</a></td>
+<td>Jun 29, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/e7dbe3bd2063b002022394a495d2ba6ef2d2d285">refactor(rewrite): create `ExecuteRebasePlanOption` struct</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 28, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/e183deb48e80470f69e99f27c338b46dbfc40ff4">tests(move): add test for moving parent of `HEAD` onto self</a></td>
+<td>Jun 29, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b418004caca3ab3503c1f8067de71092f0114868">feat(move): add `--in-memory` flag</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">9 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">27 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -121,8 +129,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
-<td>44</td>
-<td>$656.41</td>
+<td>45</td>
+<td>$673.85</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
