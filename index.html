@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-07-03</span>
+<span class="latest">Last updated: 2021-07-04</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,34 +45,32 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 30, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/0f6a135e0ff776b0a13f7ef0609fabd795032605">docs: update crates.io badge</a></td>
+<td>Jul 04, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/e5e78645ad126f00448b83fb9e06777b3828247c">fix(rewrite): treat branch names more carefully
+
+The basic problem is that reference names provided by the user may not be unambiguous. The reference `abc` might refer to a reference under `refs/heads/` or `refs/remotes/` or at the top level of the `.git` directory (or even an object hash).
+
+The user provides a main branch name without the necessary prefix. We want to support both local and remote main branches, so we have to figure out which kind of branch it is. Due to sloppy handling of branch names, given the main branch name `master`, sometimes we accidentally created a top-level reference called `master`, instead of the appropriate branch `refs/heads/master`.
+
+This commit improves the discipline around branch name handling. The rule is: we should never use shorthand branch/reference names in the internal workings of the system; these should be generated at the time we wish to display the shorthand branch name to the user. Various parts of the code have been reworked to support this. It's worth noting that reference names are always `OsString`s, while names which are to be displayed are `String`s, so hopefully the type system will help us avoid mixing these up.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 29, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/5eb13894e7be2498b70fe440ad4ad99061fe02f3">feat(rewrite): don't query repository to generate label names
-
-As part of generating rebase plans, we generate temporary label names, which are used to refer to a commit which hasn't been made yet (and for which we therefore don't know the commit hash).
-
-This is the relevant part of `git-rebase(1)`:
-
-> The label command associates a label with the current HEAD when that command is executed. These labels are created as worktree-local refs (refs/rewritten/<label>) that will be deleted when the rebase finishes. That way, rebase operations in multiple worktrees linked to the same repository do not interfere with one another. If the label command fails, it is rescheduled immediately, with a helpful message how to proceed.
-
-Before this commit, we would preemptively check to make sure that there was no ref under `refs/rewritten` in the appropriate name. However, given the above, it seems that we can rely on Git to delete everything from `refs/rewritten`, and therefore start with an empty `refs/rewritten` directory when we start the rebase operation. Thus, we can avoid making several I/O queries to Git.</a></td>
+<td>Jul 04, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/af7abafa6907cdab2b4f41d36f9c27c80fa427ac">refactor(rewrite): split `RebaseCommand::Reset` into two varieties</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 29, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/e7dbe3bd2063b002022394a495d2ba6ef2d2d285">refactor(rewrite): create `ExecuteRebasePlanOption` struct</a></td>
+<td>Jul 03, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/1d054fb4453348a30272585847e5777fbacb033c">style: create .editorconfig</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">28 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">65 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -144,8 +142,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
-<td>16</td>
-<td>$165.00</td>
+<td>17</td>
+<td>$175.00</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Bento+World">Bento World</a></td>
