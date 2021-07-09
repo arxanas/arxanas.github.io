@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-07-08</span>
+<span class="latest">Last updated: 2021-07-09</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,32 +45,26 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jul 09, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/8131b3855f08b647e2c8ffb74ec276a4db8fea36">refactor(repo): add helper functions to friendly describe commits</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jul 09, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/dda5a3e7a6c1568ddabdcaf6e57801868d693430">feat(rewrite): use constraint-solving approach to build rebase plans</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Jul 06, 2021</td>
 <td><a href="https://github.com/arxanas/git-branchless/commits/84c970fdb43efc8eba424918d97ca40fbe2bfe4f">docs: add `git-ps` mention to README</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 04, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/e5e78645ad126f00448b83fb9e06777b3828247c">fix(rewrite): treat branch names more carefully
-
-The basic problem is that reference names provided by the user may not be unambiguous. The reference `abc` might refer to a reference under `refs/heads/` or `refs/remotes/` or at the top level of the `.git` directory (or even an object hash).
-
-The user provides a main branch name without the necessary prefix. We want to support both local and remote main branches, so we have to figure out which kind of branch it is. Due to sloppy handling of branch names, given the main branch name `master`, sometimes we accidentally created a top-level reference called `master`, instead of the appropriate branch `refs/heads/master`.
-
-This commit improves the discipline around branch name handling. The rule is: we should never use shorthand branch/reference names in the internal workings of the system; these should be generated at the time we wish to display the shorthand branch name to the user. Various parts of the code have been reworked to support this. It's worth noting that reference names are always `OsString`s, while names which are to be displayed are `String`s, so hopefully the type system will help us avoid mixing these up.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 04, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/af7abafa6907cdab2b4f41d36f9c27c80fa427ac">refactor(rewrite): split `RebaseCommand::Reset` into two varieties</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">65 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">63 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -161,14 +155,14 @@ Oct 2020 – Present
 <td>$126.37</td>
 </tr>
 <tr>
+<td><a href="http://google.com/maps/search/Seattle+Windy+City+Pie">Windy City Pie</a></td>
+<td>9</td>
+<td>$177.86</td>
+</tr>
+<tr>
 <td><a href="http://google.com/maps/search/Seattle+Chipotle">Chipotle</a></td>
 <td>8</td>
 <td>$74.14</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+Ezell's">Ezell's</a></td>
-<td>8</td>
-<td>$94.78</td>
 </tr>
 
 </tbody>
