@@ -21,15 +21,15 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-07-23</span>
+<span class="latest">Last updated: 2021-10-20</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
         <li class="link"><a href="https://blog.waleedkhan.name">Blog</a></li>
         <li class="link-info"><p>
 <span class="latest">Latest post</span>
-<span class="latest">Jun 20, 2021 &bull; software-engineering</span>
-<a href="https://blog.waleedkhan.name/automating-terminal-demos/">Automating terminal demos</a><br />
+<span class="latest">Oct 12, 2021 &bull; git &bull; rust &bull; software-engineering</span>
+<a href="https://blog.waleedkhan.name/in-memory-rebases/">Lightning-fast rebases with git-move</a><br />
 </p>
 </li>
         <li class="link"><a href="https://github.com/arxanas">GitHub</a></li>
@@ -45,28 +45,32 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 20, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/63a7defce4f3af27ddeb86b9ad3830c709efe123">refactor(repo): create separate `NonZeroOid` and `MaybeZeroOid` types
+<td>Oct 20, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/7481a25b6adcce5c4a034995906ab1d1deb76af6">fix(dag): sync DAG during `resolve_commits`
 
-There's some confusion in the codebase about where an OID can be zero (represent a non-existent/detailed object). Using stronger types in these cases helps to disambiguate.</a></td>
+Closes #129.
+
+When cloning from a different repository, it's possible that either the `--source` or `--dest` refers to a commit which has not been observed by the DAG. The fix is to sync the DAG using the provided commit as a part of resolving the commit.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 20, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/4db04ef8224b318002e870f246bfbb8df3e4233f">feat(rewrite): don't reapply upstream commits for in-memory rebases</a></td>
+<td>Oct 20, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b5852461cdfc3c4a784d17ab0d72a93dd4a9317a">refactor(testing): create `make_git_with_remote_repo`
+
+This helper function helps us test cases where the repository has been cloned, and thus not every commit has been observed by `git-branchless`.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 20, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/66047cf172ee98a0a80548292d18e942b36c16b2">feat(rewrite): don't rebase upstream commits for on-disk rebases</a></td>
+<td>Oct 20, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/98e8684321fe28388cd8870ecb4fe39942d894c9">fix(testing): create Windows-friendly `Git::clone_repo_into` function</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">30 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">4 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -76,8 +80,8 @@ There's some confusion in the codebase about where an OID can be zero (represent
         </li>
         <li class="link-info"><p>
 <span class="latest">Reputation</span>
-10857 internet points<br />
-+1 this month
+10917 internet points<br />
++20 this month
 <p>
 </li>
         <li class="link">
@@ -118,53 +122,53 @@ Oct 2020 – Present
 <tbody>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Shake+Shack">Shake Shack</a></td>
-<td>59</td>
-<td>$673.60</td>
+<td>61</td>
+<td>$727.01</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
-<td>47</td>
-<td>$708.73</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
-<td>28</td>
-<td>$436.98</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
-<td>20</td>
-<td>$397.50</td>
+<td>55</td>
+<td>$870.50</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
-<td>18</td>
-<td>$185.00</td>
+<td>31</td>
+<td>$313.21</td>
 </tr>
 <tr>
-<td><a href="http://google.com/maps/search/Seattle+Subway">Subway</a></td>
-<td>12</td>
-<td>$130.19</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+Bento+World">Bento World</a></td>
-<td>11</td>
-<td>$144.47</td>
+<td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
+<td>17</td>
+<td>$264.94</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Chipotle">Chipotle</a></td>
-<td>10</td>
-<td>$104.62</td>
+<td>15</td>
+<td>$166.97</td>
 </tr>
 <tr>
-<td><a href="http://google.com/maps/search/Seattle+Midori+Teriyaki">Midori Teriyaki</a></td>
-<td>10</td>
-<td>$126.37</td>
+<td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
+<td>14</td>
+<td>$232.47</td>
+</tr>
+<tr>
+<td><a href="http://google.com/maps/search/Seattle+The+Berliner+Doner+Kebab">The Berliner Doner Kebab</a></td>
+<td>12</td>
+<td>$188.50</td>
+</tr>
+<tr>
+<td><a href="http://google.com/maps/search/Seattle+Subway">Subway</a></td>
+<td>11</td>
+<td>$124.57</td>
+</tr>
+<tr>
+<td><a href="http://google.com/maps/search/Seattle+Bento+World">Bento World</a></td>
+<td>9</td>
+<td>$127.71</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Windy+City+Pie">Windy City Pie</a></td>
-<td>9</td>
-<td>$177.86</td>
+<td>8</td>
+<td>$95.89</td>
 </tr>
 
 </tbody>
