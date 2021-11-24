@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2021-11-23</span>
+<span class="latest">Last updated: 2021-11-24</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,31 +44,33 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/wezterm">arxanas/wezterm</a></td>
-<td>Nov 22, 2021</td>
-<td><a href="https://github.com/arxanas/wezterm/commits/baf18c31a8e802686adf7fedae771ff0b520c15c">pty: add `CommandBuilder::env_clear`, `CommandBuilder::env_remove` functions</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Nov 24, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b372076bfd384000bd5edc28593290e4404fdfa9">refactor(testing): allow capturing stderr via `Effects` for testing</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/wezterm">arxanas/wezterm</a></td>
-<td>Nov 22, 2021</td>
-<td><a href="https://github.com/arxanas/wezterm/commits/539d72a97fda4f33c655ed039af5a7093142a7e9">tmux-cc: fix suspicious-looking decimal literals
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Nov 24, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/4522fcf1039f6c116d1bd2d1f99bc4dc9ec4454f">refactor(git): allow passing additional arguments to `check_out_commit`
 
-Clippy complained that these were decimal literals, not octal literals. Add the `0o` prefix to make them such.</a></td>
+This is so that we can run `git checkout --detach` for `git undo`.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/wezterm">arxanas/wezterm</a></td>
-<td>Nov 22, 2021</td>
-<td><a href="https://github.com/arxanas/wezterm/commits/e736d02d9ee4f57057d6bdb840eb14d37e801367">remove patched openssl-sys crate
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Nov 24, 2021</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/d231e270af2d641ed628ce91bb2c688982aa8b1f">refactor(smartlog): use working directory for `GitRunInfo`
 
-The appropriate openssl-src is now used upstream</a></td>
+This is primarily for testing `git undo`, since it calls into undo code directly, without spawning a subprocess.
+
+It's a little bit strange that we're using a struct called `GitRunInfo` just for the working directory. Maybe in the future we should move this information to `Effects` instead?</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">21 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">33 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
