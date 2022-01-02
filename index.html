@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-01-01</span>
+<span class="latest">Last updated: 2022-01-02</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,22 +45,41 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Dec 31, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/db3d69cbafadf7d8cb338e6567cb82958866c7c6">build: remove build script
+<td>Jan 02, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/02bc9b5e1bb756cf6ab0a4fd81653d6146fd9540">fix: override Git's branch moving behavior for on-disk rebases
 
-Man-page generation is not used currently, so remove the build script to make builds computationally easier.</a></td>
+There are two bugs fixed by this commit:
+
+* When carrying out an on-disk rebase, we always forget the currently checked-out branch and detach `HEAD`.
+* When carrying out an on-disk rebase, it's possible to move the currently checked-out branch to point to one of the rebased commits, even if it shouldn't.
+
+This commit makes sure that we save both the old head name and OID as part of initializing the rebase, and uses them afterwards to adjust the state HEAD appropriately.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Dec 31, 2021</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/4995f5960509284926b734e6f229df4d8317d0dc">build: update `clap` to first stable release 3.0.0</a></td>
+<td>Jan 02, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/23a3c14fd51dd4f68a05fdd074559b85c1d82de8">fix: override Git's branch moving behavior for on-disk rebases
+
+There are two bugs fixed by this commit:
+
+* When carrying out an on-disk rebase, we always forget the currently checked-out branch and detach `HEAD`.
+* When carrying out an on-disk rebase, it's possible to move the currently checked-out branch to point to one of the rebased commits, even if it shouldn't.
+
+This commit makes sure that we save both the old head name and OID as part of initializing the rebase, and uses them afterwards to adjust the state HEAD appropriately.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/adventofcode2021">arxanas/adventofcode2021</a></td>
-<td>Dec 25, 2021</td>
-<td><a href="https://github.com/arxanas/adventofcode2021/commits/995747dbbf428954be6092943432aa373bfbc99d">Solve day25</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jan 02, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b5eb4d0bbd59408aa79ec4ad0101d64d3fbaaa19">fix: override Git's branch moving behavior for on-disk rebases
+
+There are two bugs fixed by this commit:
+
+* When carrying out an on-disk rebase, we always forget the currently checked-out branch and detach `HEAD`.
+* When carrying out an on-disk rebase, it's possible to move the currently checked-out branch to point to one of the rebased commits, even if it shouldn't.
+
+This commit makes sure that we save both the old head name and OID as part of initializing the rebase, and uses them afterwards to adjust the state HEAD appropriately.</a></td>
 </tr>
 
 </tbody>
@@ -128,8 +147,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
-<td>32</td>
-<td>$323.21</td>
+<td>34</td>
+<td>$343.21</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Chipotle">Chipotle</a></td>
