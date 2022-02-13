@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-02-12</span>
+<span class="latest">Last updated: 2022-02-13</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,32 +45,36 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Feb 13, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/98817ecbe9931187cfa09bfccc2a501e1fcd73e8">tests: rename environment variables to the form `TEST_*`
+
+It was pretty magical behavior that we forwarded the `GIT_EXEC_PATH` environment variable, but no others. This should make it clear which environment variables are used for testing purposes.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/smashtraining">arxanas/smashtraining</a></td>
+<td>Feb 12, 2022</td>
+<td><a href="https://github.com/arxanas/smashtraining/commits/e2415fda1d851de685062f3b3f858f40c7e45ff3">build(deps): bump follow-redirects from 1.14.6 to 1.14.8
+
+Bumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.14.6 to 1.14.8.
+- [Release notes](https://github.com/follow-redirects/follow-redirects/releases)
+- [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.14.6...v1.14.8)
+
+---
+updated-dependencies:
+- dependency-name: follow-redirects
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Feb 09, 2022</td>
 <td><a href="https://github.com/arxanas/git-branchless/commits/7c8e26fa1a0ee646549ca4078248473e464c8c74">fix(tests): don't render virtual PTY using char byte indexes
 
 We actually don't want the char byte indexes here; we want to pretend that each cell in the row takes up exactly one unit of space. Apparently, this was causing rendering issues in the tests.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 09, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/49d384d958e4299ff6809be24ef7a4b346e441b1">build: run `cargo update`
-
-I had to manually downgrade the version of `indicatif`:
-
-```
-cargo update -p indicatif --precise '0.17.0-beta.1'
-```
-
-Due to this bug: https://github.com/console-rs/indicatif/issues/358
-
-The fix is in https://github.com/console-rs/indicatif/pull/364, which has not yet been released.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 09, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/47be3b1b6d8ac6bb9dc291baffe07259eb5da38b">cleanup(tests): replace `&vec![` with `&[`</a></td>
 </tr>
 
 </tbody>
