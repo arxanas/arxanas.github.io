@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-02-23</span>
+<span class="latest">Last updated: 2022-02-24</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,32 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
+<td>Feb 24, 2022</td>
+<td><a href="https://github.com/arxanas/jj/commits/09e45cfa6048de9cca23599678a60fded0ba1477">ci: add Clippy stable check
+
+Currently, `main` has Clippy lint warnings on stable, but not on nightly.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
+<td>Feb 24, 2022</td>
+<td><a href="https://github.com/arxanas/jj/commits/c2474c316d307ba8163fdd379a7d8a9841b354b4">build: suppress `unstable_name_collisions` warnings on stable
+
+Originally, I had thought that these warnings would only potentially show up in nightly because there was a feature which exposed these functions, and we would be able to enable that feature and conditionally not define the conflicting methods. But it looks like these warnings also show up in stable. I've just suppressed each of them individually. Other options would be to rename them and just make them wrapper methods, or to disable `unstable_name_collisions` warnings at a higher scope (possibly including at the crate level).</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
 <td>Feb 21, 2022</td>
 <td><a href="https://github.com/arxanas/jj/commits/75480c2bdc827ffb89e6f65e6cf5623fe8610066">build: migrate `diff_bench` to `criterion`
 
 Benchmarking is currently nightly-only, so to get `jujutsu` to build on stable, we need to use a stable benchmarking library.</a></td>
 </tr>
 
-<tr>
-<td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
-<td>Feb 21, 2022</td>
-<td><a href="https://github.com/arxanas/jj/commits/dd3272fe909a19969fcd666fd639abd4a3a90e22">build: use `assert_matches` crate
-
-The `assert_matches` feature is nightly-only, so use this crate as a shim.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
-<td>Feb 21, 2022</td>
-<td><a href="https://github.com/arxanas/jj/commits/9202aae8b1d3f8f10840064731605b39a6ce9d09">build: conditionally use `map_first_last` feature if available</a></td>
-</tr>
-
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">4 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -120,8 +122,8 @@ Oct 2020 – Present
 <tbody>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Shake+Shack">Shake Shack</a></td>
-<td>67</td>
-<td>$818.39</td>
+<td>69</td>
+<td>$842.24</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
@@ -140,8 +142,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
-<td>15</td>
-<td>$273.35</td>
+<td>16</td>
+<td>$292.08</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+The+Berliner+Doner+Kebab">The Berliner Doner Kebab</a></td>
