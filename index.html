@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-03-16</span>
+<span class="latest">Last updated: 2022-03-17</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,44 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Mar 15, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/068f8e1305ee00414900d25ff1586706f3b1b4cb">cleanup(bug_report): add a comment about explicit listing of fields</a></td>
+<td>Mar 17, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/4458efebb42cfde68863e0b59b617b6b99e61fd4">build: bump actions/checkout from 2 to 3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2...v3)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Mar 15, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/516d27020022a0cc0e85c7c99cdf5220af6359e9">tests: ignore system config in tests
+<td>Mar 17, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/aaa23f090fe8e433df8e37d79eeda25a53db1e27">fix(effects): fix for often-updated nested operations
 
-My system has a hook installed (for checking for accidentally
-committed secrets), which interfered with tests. Let' set
-`GIT_CONFIG_NOSYSTEM` to fix that.</a></td>
+It seems that nested operations which were updated frequently weren't updated correctly. The order in which we called functions like `set_message` and `set_prefix` was wrong, and the state of the progress bars would get reset, so that they appeared only as blank indicators. I think it used to appear to work before when these operations got a chance to render again without resetting the previous state, but when operations are refreshed frequently, they may not get this chance.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Mar 15, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/a24abe19b522d0664e101b59cd24f668d88854fc">docs: update bug_report.yml</a></td>
+<td>Mar 17, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/687e6f670e764ebae1a13ca344fbe43f56096ffe">fix(rewrite): use existing progress reporting
+
+Spawning new `ProgressBar`s was causing issues with the rendering, as sometimes the progress bars managed by `Effects` and the custom `ProgressBar`s conflicted. This resulted in certain progress meter lines being left in the output when they should have been cleared. This commit switches in-memory commit application to use `Effects`-based progress reporting.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">7 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">9 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -120,8 +134,8 @@ Oct 2020 – Present
 <tbody>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Shake+Shack">Shake Shack</a></td>
-<td>66</td>
-<td>$806.28</td>
+<td>67</td>
+<td>$818.27</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
