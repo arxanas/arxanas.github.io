@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-04-30</span>
+<span class="latest">Last updated: 2022-05-01</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,6 +44,18 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
+<td>Apr 30, 2022</td>
+<td><a href="https://github.com/arxanas/jj/commits/ba2fd3592720c511946789d8cc1c3d24b3198565">diff_edit: add hint when using default editor</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
+<td>Apr 30, 2022</td>
+<td><a href="https://github.com/arxanas/jj/commits/3d77501a723929a7e0faf66298480cf78e28f9ba">cli: don't show `bench`/`debug` subcommands by default</a></td>
+</tr>
+
+<tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Apr 30, 2022</td>
 <td><a href="https://github.com/arxanas/git-branchless/commits/217b2024563578ccafc82882d1b72da008e44e86">cleanup(cli): hide `hook-*` subcommands from `help` output
@@ -51,34 +63,10 @@ This page is an activity feed of my internet presence, updated once a day.
 These commands are used internally for on-disk rebases, but users shouldn't invoke them directly. To make the `help` output more useful, hide these subcommands.</a></td>
 </tr>
 
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 30, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/361c1f1ef138dd5a305fd502b4fc27f37f8ba3ce">refactor(core): return `ExitCode`
-
-Usually, we return `Result<isize>`. Since `Result` is marked as `#[must_use]`, you can't ignore the return value without producing a warning.
-
-However, it doesn't stop situations like this:
-
-```rust
-something_which_returns_exit_code()?;
-```
-
-because the `?` operator consumes the `Result` and leaves an `isize` unconsumed. This means that we might not propagate the exit code in all cases.
-
-To deal with this, this commit creates an `ExitCode` wrapper type which is also marked with `#[must_use]`, to ensure that the inner `Result` value is also consumed.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 30, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/5469cdc11cc2be8a46b42afaf0353ef6ef08569e">feat(snapshot): embed head commit in snapshot</a></td>
-</tr>
-
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">13 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">12 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -89,7 +77,7 @@ To deal with this, this commit creates an `ExitCode` wrapper type which is also 
         <li class="link-info"><p>
 <span class="latest">Reputation</span>
 11017 internet points<br />
-+30 this month
++0 this month
 <p>
 </li>
         <li class="link">
@@ -130,48 +118,48 @@ Oct 2020 – Present
 <tbody>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Shake+Shack">Shake Shack</a></td>
-<td>68</td>
-<td>$847.97</td>
+<td>60</td>
+<td>$775.87</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
-<td>60</td>
-<td>$957.35</td>
+<td>57</td>
+<td>$912.38</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
-<td>35</td>
-<td>$345.64</td>
+<td>33</td>
+<td>$325.64</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Chipotle">Chipotle</a></td>
-<td>21</td>
-<td>$237.96</td>
+<td>20</td>
+<td>$227.98</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
-<td>17</td>
-<td>$304.45</td>
+<td>16</td>
+<td>$287.85</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
-<td>15</td>
-<td>$291.57</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+The+Berliner+Doner+Kebab">The Berliner Doner Kebab</a></td>
 <td>14</td>
-<td>$189.73</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+Ma'ono+Fried+Chicken">Ma'ono Fried Chicken</a></td>
-<td>12</td>
-<td>$140.01</td>
+<td>$277.05</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Subway">Subway</a></td>
 <td>12</td>
 <td>$153.58</td>
+</tr>
+<tr>
+<td><a href="http://google.com/maps/search/Seattle+The+Berliner+Doner+Kebab">The Berliner Doner Kebab</a></td>
+<td>12</td>
+<td>$179.16</td>
+</tr>
+<tr>
+<td><a href="http://google.com/maps/search/Seattle+Ma'ono+Fried+Chicken">Ma'ono Fried Chicken</a></td>
+<td>11</td>
+<td>$130.39</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Dunkin'+Donuts">Dunkin' Donuts</a></td>
