@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-06-26</span>
+<span class="latest">Last updated: 2022-06-27</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,58 +45,30 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 23, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/59fddd474728dbdda97dd05c9d36e2690e87839e">fix(sync): explicitly close stdin for child processes
-
-In some circumstances, `git fetch` will hang because it's waiting on credentials, but this isn't surfaced to the user. To prevent that from happening, close the child process's stdin unless we have something to write to it.
-
-Actually, upon testing this commit, it doesn't seem to work, but it also probably doesn't hurt to check in. We would want to suppress the "askpass" mechanism somehow (see the `GIT_ASKPASS` environment variable).</a></td>
+<td>Jun 27, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/0aa04b18f9e37b03b34d5fbdfdf7a6852fc75e92">docs: update `CHANGELOG.md`</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 21, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/ea94c052d0b1f1ab1def6fd6d9a802fcbb42434c">build: bump clap from 3.2.1 to 3.2.5
+<td>Jun 27, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/6c8b1229eb87686cebbf4a751008c75811859e94">cleanup(smartlog): remove unused parameters
 
-Bumps [clap](https://github.com/clap-rs/clap) from 3.2.1 to 3.2.5.
-- [Release notes](https://github.com/clap-rs/clap/releases)
-- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v3.2.1...v3.2.5)
-
----
-updated-dependencies:
-- dependency-name: clap
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+Detected by IntelliJ but not by `cargo clippy`.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 21, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/e56473bf58c8178371a4201b8bd7d7d25164b89c">build: bump clap from 3.2.1 to 3.2.5
+<td>Jun 27, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/d8311e87a7a5a12a2c3186736e28ca8e2414f3aa">refactor(dag): `commit_set_to_vec` -> `commit_set_to_vec_unsorted`
 
-Bumps [clap](https://github.com/clap-rs/clap) from 3.2.1 to 3.2.5.
-- [Release notes](https://github.com/clap-rs/clap/releases)
-- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v3.2.1...v3.2.5)
-
----
-updated-dependencies:
-- dependency-name: clap
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+The fact that this function returns an unsorted `Vec` is relevant to call out, since in many cases, we will want to sort the `Vec` for determinism (e.g. before outputting elements of the `Vec` in a test).</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">21 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">33 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
