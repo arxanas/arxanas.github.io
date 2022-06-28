@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-06-27</span>
+<span class="latest">Last updated: 2022-06-28</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,30 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 27, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/0aa04b18f9e37b03b34d5fbdfdf7a6852fc75e92">docs: update `CHANGELOG.md`</a></td>
+<td>Jun 28, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/87887d38b0bd95182e22dd3c8046103f87a69be7">fix(sync): fix performance regression from #418
+
+Unfortunately, adding garbage collection references for every invisible head is a significant performant regression. To fix this, we instead only mark commits as reachable if they're *active* (would appear in the smartlog). This does mean that commits which were available in the DAG but not used by the smartlog might get garbage collected, but it seems like an acceptable trade-off.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 27, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/6c8b1229eb87686cebbf4a751008c75811859e94">cleanup(smartlog): remove unused parameters
+<td>Jun 28, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/e746c6bdf5f11ce9c17afd776d454460c6f62356">fix(sync): fix performance regression from #418
 
-Detected by IntelliJ but not by `cargo clippy`.</a></td>
+Unfortunately, adding garbage collection references for every invisible head is a significant performant regression. To fix this, we instead only mark commits as reachable if they're *active* (would appear in the smartlog). This does mean that commits which were available in the DAG but not used by the smartlog might get garbage collected, but it seems like an acceptable trade-off.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 27, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/d8311e87a7a5a12a2c3186736e28ca8e2414f3aa">refactor(dag): `commit_set_to_vec` -> `commit_set_to_vec_unsorted`
-
-The fact that this function returns an unsorted `Vec` is relevant to call out, since in many cases, we will want to sort the `Vec` for determinism (e.g. before outputting elements of the `Vec` in a test).</a></td>
+<td>Jun 28, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/d77b44d37bef79781871aed80cc5cdfa878dd780">fix(revset): don't return hidden commits in `git branchless query`</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">33 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">17 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -135,8 +135,8 @@ Oct 2020 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
-<td>21</td>
-<td>$393.25</td>
+<td>22</td>
+<td>$413.75</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Chipotle">Chipotle</a></td>
