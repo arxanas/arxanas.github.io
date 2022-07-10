@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-07-09</span>
+<span class="latest">Last updated: 2022-07-10</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,32 +45,32 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 08, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/653f0b9b62594f0432fb7e99db1fc10d03a44553">docs: add links to blogpost in `README.md`</a></td>
+<td>Jul 10, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/9c463f28c25c2366f24db3afbc0c4a735423f6a0">docs(record): include `unimplemented!` reason
+
+The specific panic reason is dropped as part of the panic handler for `cursive` apps, so include a helpful description in the panic string.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 08, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/3703478456356065128a9ccb81c4ea5c5c090f63">docs: add installation link add top of `README.md`</a></td>
+<td>Jul 10, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/8955bbfcbdaa851a8f7ffe1eeb96798df79cd7fa">refactor(record): export `testing` from `git-record`
+
+This isn't the best place to put this module, but I want to make changes to the testing definitions, so I'd rather not update it in two places. It might be best to create a `git-branchless-tui` crate which includes all of the TUI and testing utilities.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 07, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/31cb36d2b1ba352e97c8f197d6b4a5b9961acea3">bench(record): add benchmark for `git-record`
+<td>Jul 10, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/c9393b2d10d9e7570d2668c62ae48280d52ecbf7">test(record): include leading whitespace in TUI tests
 
-With 2000 lines of changes, it takes >700ms to toggle a single line, which is pretty bad:
-
-```
-toogle line             time:   [717.96 ms 725.16 ms 733.79 ms]
-```</a></td>
+I think we used to trim whitespace because `insta` didn't work well with it, but it's gotten better now, so we can add the leading whitespace. Trailing whitespace gets stripped by my editor and is difficult to verify using only one's eyes since it's invisible, so we continue trimming that.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">18 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">17 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
