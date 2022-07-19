@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-07-18</span>
+<span class="latest">Last updated: 2022-07-19</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,27 +44,33 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/resume">arxanas/resume</a></td>
-<td>Jul 17, 2022</td>
-<td><a href="https://github.com/arxanas/resume/commits/64eb88fa0d69f9661c23df327d1c382c020d4dda">Add `.prettierrc`</a></td>
-</tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jul 19, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/f520c17fd81f121cdbe06d87dce908299bfce77c">docs(record): include `unimplemented!` reason
 
-<tr>
-<td><a href="https://github.com/arxanas/resume">arxanas/resume</a></td>
-<td>Jul 17, 2022</td>
-<td><a href="https://github.com/arxanas/resume/commits/0c82325f7d6ccce22c46698ddc2c4be429f9c960">Update</a></td>
+The specific panic reason is dropped as part of the panic handler for `cursive` apps, so include a helpful description in the panic string.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 16, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/3b03ec1f8528e7b3a76d64b6f2e2b748d130450e">smartlog: show hint to run `git restack` when there are abandoned commits</a></td>
+<td>Jul 19, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/c058c342cfe5f3a31c4015a4a24b556b99bfbb0b">refactor(record): export `testing` from `git-record`
+
+This isn't the best place to put this module, but I want to make changes to the testing definitions, so I'd rather not update it in two places. It might be best to create a `git-branchless-tui` crate which includes all of the TUI and testing utilities.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jul 19, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/a9b8c6ff41c97a3b07be32021411a13cde1838d0">test(record): include leading whitespace in TUI tests
+
+I think we used to trim whitespace because `insta` didn't work well with it, but it's gotten better now, so we can add the leading whitespace. Trailing whitespace gets stripped by my editor and is difficult to verify using only one's eyes since it's invisible, so we continue trimming that.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">13 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">35 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
