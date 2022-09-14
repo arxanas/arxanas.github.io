@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-09-13</span>
+<span class="latest">Last updated: 2022-09-14</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,30 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Sep 13, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/4540d1765294530641a8651c138ad5151d39e576">temp: git submit</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Sep 13, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/83006277548e52f1b8b16a92e173f1db9e667f42">feat(rewrite): support `RebasePlanBuilder::move_subtree` with multiple destination commits
+<td>Sep 14, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/e8040d938db18380e06e9dc34c234aa3d31c7710">feat(rewrite): support `RebasePlanBuilder::move_subtree` with multiple destination commits
 
 We can already plan to rebase merge commits, so this isn't hard to implement: we just allow passing multiple parent commits. Actually executing the merge is where complications might arise (handled in the next commit to support rewording merge commits).</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Sep 13, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/a6d1342557bc9192962afa1b2c11ffd9ddb9d605">feat(reword): support rewording merge commits
+<td>Sep 14, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/3423bbe09a8b4296978369bd2b67e6c120e6a209">feat(reword): support rewording merge commits
 
 We don't support rebasing merge commits in-memory at present because we don't have a method for resolving conflicts that might arise as part of the attempt to create a new merge commit. Consequently, `git reword` also doesn't work on merge commits, since it uses the rebase machinery. Since `git reword` is guaranteed not to change the contents (or topology) of any of the reworded commits, we can make an exception for this case, and permit rebasing merge commits in memory when a replacement commit is specified, because that guarantees that we won't have to resolve merge conflicts.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Sep 14, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/72e79f6ee1985ea149c8d0a36064930fe3665250">temp: git submit</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">12 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">13 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
