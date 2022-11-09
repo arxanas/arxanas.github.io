@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-11-08</span>
+<span class="latest">Last updated: 2022-11-09</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,57 +45,44 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 07, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/fbe7766aa0c93db854322556607aaa886e1b88ed">feat(switch): change `--branch` to `--create`
+<td>Nov 09, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/1656501cdadb8f0c191da7a78d6e5c87a3262503">refactor(smartlog): Make [revset] an Option<Revset>
 
-`git branch` uses `--branch` to create a new branch, but `git switch`
-uses `--create`.</a></td>
+This doesn't do much for us now, but will soon be used to help us determine
+what type of smartlog we should be rendering.
+
+Unfortunately, this prevents clap from rendering the default revset in
+the help message, but I believe this is the only way (via the derive API)
+to detect if the user has or has not not supplied an arg for a particular
+value.
+
+See https://github.com/clap-rs/clap/issues/3846 fmi on getting the
+value_source of an arg via the derive API.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 07, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/9d3b613c480784717652db72ceb8c36826bc05e7">build: bump clap from 4.0.19 to 4.0.22
+<td>Nov 09, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b02f2ca80381aae606b233993cfaae0448e67880">feat(smartlog): Support for rendering a sparse smartlog
 
-Bumps [clap](https://github.com/clap-rs/clap) from 4.0.19 to 4.0.22.
-- [Release notes](https://github.com/clap-rs/clap/releases)
-- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/clap-rs/clap/compare/v4.0.19...v4.0.22)
+This should only happen when the user has requested to render a specific
+revset, as opposed to calling `smartlog` without any arguments, or when
+any of the other commands trigger a call to `smartlog`.
 
----
-updated-dependencies:
-- dependency-name: clap
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+Note that HEAD and the head of the main branch are always displayed,
+regardless of the revset provided by the user.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 07, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/c6c57b8de6b37a09fa0674a71e9fbdce39f25683">build: bump Swatinem/rust-cache from 2.0.1 to 2.1.0
-
-Bumps [Swatinem/rust-cache](https://github.com/Swatinem/rust-cache) from 2.0.1 to 2.1.0.
-- [Release notes](https://github.com/Swatinem/rust-cache/releases)
-- [Changelog](https://github.com/Swatinem/rust-cache/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/Swatinem/rust-cache/compare/22c9328bcba27aa81a32b1bef27c7e3c78052531...b894d59a8d236e2979b247b80dac8d053ab340dd)
-
----
-updated-dependencies:
-- dependency-name: Swatinem/rust-cache
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+<td>Nov 09, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/3ab9b9e4d5def994755f2868ee586116beee5095">refactor(smartlog): Improvements for sparse smartlog</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">2 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">7 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
