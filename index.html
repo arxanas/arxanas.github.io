@@ -21,15 +21,15 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-11-09</span>
+<span class="latest">Last updated: 2022-11-10</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
         <li class="link"><a href="https://blog.waleedkhan.name">Blog</a></li>
         <li class="link-info"><p>
 <span class="latest">Latest post</span>
-<span class="latest">Nov 04, 2022 &bull; gaming</span>
-<a href="https://blog.waleedkhan.name/playing-elden-ring-in-the-cloud/">Playing Elden Ring in the cloud</a><br />
+<span class="latest">Nov 09, 2022 &bull; career &bull; machine-learning &bull; python</span>
+<a href="https://blog.waleedkhan.name/detect-recruiter-spam-update-1/">Update #1: Automatically detecting and replying to recruiter spam</a><br />
 </p>
 </li>
         <li class="link"><a href="https://github.com/arxanas">GitHub</a></li>
@@ -45,44 +45,28 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 09, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/1656501cdadb8f0c191da7a78d6e5c87a3262503">refactor(smartlog): Make [revset] an Option<Revset>
-
-This doesn't do much for us now, but will soon be used to help us determine
-what type of smartlog we should be rendering.
-
-Unfortunately, this prevents clap from rendering the default revset in
-the help message, but I believe this is the only way (via the derive API)
-to detect if the user has or has not not supplied an arg for a particular
-value.
-
-See https://github.com/clap-rs/clap/issues/3846 fmi on getting the
-value_source of an arg via the derive API.</a></td>
+<td>Nov 10, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/99ecaf0da046bf79caa551a9402a72334446660d">fix(dag): clear `obsolete_commits` when `--hidden` is passed</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 09, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/b02f2ca80381aae606b233993cfaae0448e67880">feat(smartlog): Support for rendering a sparse smartlog
+<td>Nov 10, 2022</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/a9c78e8d4575660be5d9d3e00f8e4946d0045244">cleanup(dag): don't set `show_hidden_commits` in `eval::Context`
 
-This should only happen when the user has requested to render a specific
-revset, as opposed to calling `smartlog` without any arguments, or when
-any of the other commands trigger a call to `smartlog`.
-
-Note that HEAD and the head of the main branch are always displayed,
-regardless of the revset provided by the user.</a></td>
+The idea is to centralize commit visibility in `Dag` itself, rather than the evaluation context. (Maybe in the future we'll find this to be the wrong decision?)</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td><a href="https://github.com/arxanas/blog">arxanas/blog</a></td>
 <td>Nov 09, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/3ab9b9e4d5def994755f2868ee586116beee5095">refactor(smartlog): Improvements for sparse smartlog</a></td>
+<td><a href="https://github.com/arxanas/blog/commits/4f0fcd919808ce6bda6bd1caa2c0bebd4ae00f0b">publish: `detect-recruiter-spam-update-1`</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">7 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">10 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
