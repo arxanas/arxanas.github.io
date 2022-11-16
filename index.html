@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-11-15</span>
+<span class="latest">Last updated: 2022-11-16</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,29 +44,66 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 15, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/48a412393113e82522669bd121b0fc877048e72a">cleanup(opts): alphabetize `TestSubcommand`</a></td>
+<td><a href="https://github.com/arxanas/sapling">arxanas/sapling</a></td>
+<td>Nov 16, 2022</td>
+<td><a href="https://github.com/arxanas/sapling/commits/27696c95a335c7bdb8206b703838218d1c401ad1">remove the default implementation of getLocalBlobMetadata
+
+Summary:
+Default implementations are convenient in the short term but
+getLocalBlobMetadata is core part of the BackingStore API. Therefore,
+whether a BackingStore implements it should be an explicit decision.
+
+Reviewed By: kmancini
+
+Differential Revision: D40456066
+
+fbshipit-source-id: 1da1ec706fe78693968d46ff672b9c9bd8ea5e8b</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 15, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/f7534aedd32a785bbad248ceb86242a2519777cd">cleanup(repo): fix typo</a></td>
+<td><a href="https://github.com/arxanas/sapling">arxanas/sapling</a></td>
+<td>Nov 16, 2022</td>
+<td><a href="https://github.com/arxanas/sapling/commits/e309ec53aad89f5abfc03e4c0cc891580e7337b8">refactor ImportPriority
+
+Summary:
+This diff improves ImportPriority in a variety of ways.
+
+It was originally intended that ImportPriority fit in a single 64-bit
+integer. Replace the bitfield with a single uint64_t and manual
+shifts. Also, add a static_assert to enforce the intent.
+
+Use semantic constants to make it clear the relative import priorities
+across EdenFS.
+
+Add some unit tests.
+
+Reviewed By: genevievehelsel
+
+Differential Revision: D40602313
+
+fbshipit-source-id: 3c99249ef2863396235ff1159b10b54d7478671d</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Nov 15, 2022</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/75468abb61de8eeeda012a5340d93a91388555d6">fix(test): restart tests which did not complete rather than fail
+<td><a href="https://github.com/arxanas/sapling">arxanas/sapling</a></td>
+<td>Nov 16, 2022</td>
+<td><a href="https://github.com/arxanas/sapling/commits/0861c0c7330d474c758cc2945cbd10f704e2f94d">default experimental:use-edenapi on
 
-If you interrupt test-running, the next call to `git test run` will fail for that commit because it fails to read the old contents of the results file. The code which checked for the file being empty was refactored away because I thought it wouldn't be necessary anymore, but I was mistaken, and it's still necessary.</a></td>
+Summary:
+We've had EdenAPI enabled by default for a while. Default it on in
+code too.
+
+Reviewed By: genevievehelsel
+
+Differential Revision: D40901719
+
+fbshipit-source-id: e1c4e31b7bb22dcb69da95abe6075395c8c97ede</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">16 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">27 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
