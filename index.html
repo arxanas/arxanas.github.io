@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-12-17</span>
+<span class="latest">Last updated: 2022-12-18</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,26 +45,32 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/advent-of-code">arxanas/advent-of-code</a></td>
-<td>Dec 15, 2022</td>
-<td><a href="https://github.com/arxanas/advent-of-code/commits/873835acb4e0f3341a459d667ab2a0e5572be0c7">Solve year 2022 day 14</a></td>
+<td>Dec 18, 2022</td>
+<td><a href="https://github.com/arxanas/advent-of-code/commits/4e02b4efe2d550085b970afccc65f963bef47d21">Solve year 2022 day 18</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/advent-of-code">arxanas/advent-of-code</a></td>
-<td>Dec 15, 2022</td>
-<td><a href="https://github.com/arxanas/advent-of-code/commits/be237771a282b19d6c764d1b773dd71250bcbc95">Update utils for year 2022 day 14</a></td>
+<td>Dec 18, 2022</td>
+<td><a href="https://github.com/arxanas/advent-of-code/commits/2164d8430e1fc52eeb047a854635c5a78f056257">Solve year 2022 day 18</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/advent-of-code">arxanas/advent-of-code</a></td>
-<td>Dec 15, 2022</td>
-<td><a href="https://github.com/arxanas/advent-of-code/commits/e5ec6bd2fd6a16922c1fea19f7660e43c8125000">Solve year 2022 day 15</a></td>
+<td>Dec 18, 2022</td>
+<td><a href="https://github.com/arxanas/advent-of-code/commits/b52de72e3da3fef97c1ed928616daf4550e73af7">Solve year 2022 day 16
+
+Part 2 took a while because it turns out my implementation of the Floyd-Warshall algorithm was wrong. I didn't realize the ordering of the loops was significant (and also, I didn't understand how the algorithm worked in light of ordering requirements -- now I do!). But the algorithm was correct enough to pass part 1 and the test case for part 2.
+
+I only figured it out by trying a different permutation of the input file (sorting it ascending), which resulted in different solution for part 2, which should clearly be impossible. I combed through my code looking for something non-deterministic, but I eventually found that the distance matrixes as produced by `floyd_warshall` were different.
+
+The type-hints in this solution use the typing imports (e.g. `List`) instead of the types (e.g. `list`) directly, because I was using some version of Pypy, which didn't support indexing the types directly.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">8 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">10 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
