@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2022-12-30</span>
+<span class="latest">Last updated: 2022-12-31</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,50 +45,30 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Dec 29, 2022</td>
-<td><a href="https://github.com/martinvonz/jj/commits/5f73713bf2bb8d8dca150783ad7899b421885632">git: propagate various errors from `GitBackend`
-
-An error message I'm seeing used to say this:
-
-```
-Error: Unexpected error from store: Object not found
-```
-
-But now says this:
-
-```
-Error: Unexpected error from backend: Object of type commit with hash 8f59646bc9bb6bb44b5624f1248f4a708f37003c not found: object not found - no match for id (8f59646bc9bb6bb44b5624f1248f4a708f37003c); class=Odb (9); code=NotFound (-3)
-```</a></td>
+<td>Dec 31, 2022</td>
+<td><a href="https://github.com/martinvonz/jj/commits/cf8c2b07179bdfe80799ede35586c4d810d7abcd">cli_util: fix typo</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Dec 29, 2022</td>
-<td><a href="https://github.com/martinvonz/jj/commits/54e0f5341b2f88e5aed5e2dc61bac1114687a63d">backend: create `BackendError::InvalidHashLength`</a></td>
+<td>Dec 31, 2022</td>
+<td><a href="https://github.com/martinvonz/jj/commits/9b7483b414056d6932bef00f67e8ddcfd9d73bee">backend: create `ObjectId` trait
+
+This lets us operate over various kinds of objects polymorphically (e.g. call `.hex()` on any kind of object hash).</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Dec 29, 2022</td>
-<td><a href="https://github.com/martinvonz/jj/commits/ec604f573afd5b6c8dcdd97398ca7b6521cf68c6">git: propagate various errors from `GitBackend`
+<td>Dec 31, 2022</td>
+<td><a href="https://github.com/martinvonz/jj/commits/89675c4c61c9b3582d7284af7464c52f37f969c8">backend: create `BackendError::InvalidHashLength`
 
-An error message I'm seeing used to say this:
-
-```
-Error: Unexpected error from store: Object not found
-```
-
-But now says this:
-
-```
-Error: Unexpected error from backend: Object of type commit with hash 8f59646bc9bb6bb44b5624f1248f4a708f37003c not found: object not found - no match for id (8f59646bc9bb6bb44b5624f1248f4a708f37003c); class=Odb (9); code=NotFound (-3)
-```</a></td>
+Strictly speaking, we could rely on e.g. `git2::Oid::from_str` to produce an error, but I figure that having an explicit error for a mismatching hash length might demystify some error condition in the future, since commit IDs and change IDs and potentially other backends' IDs may have different lengths, so this could flag a mismatch earlier/more obviously.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">13 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">12 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
