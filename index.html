@@ -21,15 +21,15 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-01-02</span>
+<span class="latest">Last updated: 2023-01-04</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
         <li class="link"><a href="https://blog.waleedkhan.name">Blog</a></li>
         <li class="link-info"><p>
 <span class="latest">Latest post</span>
-<span class="latest">Jan 01, 2023 &bull; gaming</span>
-<a href="https://blog.waleedkhan.name/playing-elden-ring-in-the-cloud-update-1/">Update #1: Playing Elden Ring in the cloud</a><br />
+<span class="latest">Jan 02, 2023 &bull; rant &bull; writing</span>
+<a href="https://blog.waleedkhan.name/on-bullet-points/">On bullet points</a><br />
 </p>
 </li>
         <li class="link"><a href="https://github.com/arxanas">GitHub</a></li>
@@ -45,32 +45,42 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jan 02, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/026289afa327f2411f25d7c45227408efea98309">fix(init): warn when using dynamically-calculated hooks path
+<td>Jan 03, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/26a6197d765a530c1a707c6ec3daaeca1944a2fb">fix(init): warn when using dynamically-calculated hooks path
 
 It seems like libgit2 doesn't properly handle `includeIf "hasconfig:remote.*.url:*`, so we can get a potentially-incorrect hooks dir. In that case, the hooks will be installed to the wrong location without warning, but Git itself will invoke hooks at the correct location, so none of our hooks will be called. This commit fixes it to install the hooks to the correct hooks directory and warn the user that it did so.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td><a href="https://github.com/arxanas/blog">arxanas/blog</a></td>
 <td>Jan 02, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/85fb3a62ec479e6639a782e0388b088703d7318b">backend: create `ObjectId` trait
-
-This lets us operate over various kinds of objects polymorphically (e.g. call `.hex()` on any kind of object hash).</a></td>
+<td><a href="https://github.com/arxanas/blog/commits/a0f37f1d3f5481a2d0a96e22830c993895cfd061">Add inline paragraph commenting (via GitHub issues)</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Jan 02, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/f09aa1b6ea6156338c8c25488538ab79cbbb02bf">backend: create `BackendError::InvalidHashLength`
+<td><a href="https://github.com/arxanas/git-branchless/commits/b34c1d2c993ffce0853b09fc685ab6a9b5441c2f">build: bump console from 0.15.2 to 0.15.3
 
-Strictly speaking, we could rely on e.g. `git2::Oid::from_str` to produce an error, but I figure that having an explicit error for a mismatching hash length might demystify some error condition in the future, since commit IDs and change IDs and potentially other backends' IDs may have different lengths, so this could flag a mismatch earlier/more obviously.</a></td>
+Bumps [console](https://github.com/console-rs/console) from 0.15.2 to 0.15.3.
+- [Release notes](https://github.com/console-rs/console/releases)
+- [Changelog](https://github.com/console-rs/console/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/console-rs/console/compare/0.15.2...0.15.3)
+
+---
+updated-dependencies:
+- dependency-name: console
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">29 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">1 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
