@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-01-04</span>
+<span class="latest">Last updated: 2023-01-05</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,36 +45,28 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jan 03, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/26a6197d765a530c1a707c6ec3daaeca1944a2fb">fix(init): warn when using dynamically-calculated hooks path
+<td>Jan 05, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/82ef8e2c09ada57e7756c98bb79603cb0576a7ca">feat: change several default revsets to `stack() | @`
 
-It seems like libgit2 doesn't properly handle `includeIf "hasconfig:remote.*.url:*`, so we can get a potentially-incorrect hooks dir. In that case, the hooks will be installed to the wrong location without warning, but Git itself will invoke hooks at the correct location, so none of our hooks will be called. This commit fixes it to install the hooks to the correct hooks directory and warn the user that it did so.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/blog">arxanas/blog</a></td>
-<td>Jan 02, 2023</td>
-<td><a href="https://github.com/arxanas/blog/commits/a0f37f1d3f5481a2d0a96e22830c993895cfd061">Add inline paragraph commenting (via GitHub issues)</a></td>
+These make sense to run on the current commit even if it's not a draft commit. Exceptions: `git hide`, since we don't have any logic to automatically move the user to the latest non-hidden commit, it would be a little unusual to hide the current commit by default; `git submit`, since we don't want to accidentally force-push the main branch if we happen to have it checked out.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jan 02, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/b34c1d2c993ffce0853b09fc685ab6a9b5441c2f">build: bump console from 0.15.2 to 0.15.3
+<td>Jan 05, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/0e8a6e317e20f2261f2a10c524365e383541f23c">feat(reword): change reword default revset to `stack() | @`
 
-Bumps [console](https://github.com/console-rs/console) from 0.15.2 to 0.15.3.
-- [Release notes](https://github.com/console-rs/console/releases)
-- [Changelog](https://github.com/console-rs/console/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/console-rs/console/compare/0.15.2...0.15.3)
+My justification from Discord https://discord.com/channels/915309546984050709/915309546984050712/1058219879850848276:
 
----
-updated-dependencies:
-- dependency-name: console
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
+> For me, it's usually not a problem to see multiple commit messages; the default being stack() means that I have access to more functionality by default; it would be a good way to introduce the user to that functionality; it matches git submit's default revset, and I usually git reword beforehand</a></td>
+</tr>
 
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jan 03, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/26a6197d765a530c1a707c6ec3daaeca1944a2fb">fix(init): warn when using dynamically-calculated hooks path
+
+It seems like libgit2 doesn't properly handle `includeIf "hasconfig:remote.*.url:*`, so we can get a potentially-incorrect hooks dir. In that case, the hooks will be installed to the wrong location without warning, but Git itself will invoke hooks at the correct location, so none of our hooks will be called. This commit fixes it to install the hooks to the correct hooks directory and warn the user that it did so.</a></td>
 </tr>
 
 </tbody>
