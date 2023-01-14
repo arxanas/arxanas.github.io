@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-01-13</span>
+<span class="latest">Last updated: 2023-01-14</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,6 +44,20 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jan 13, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/0d764f70f482eba2cac08e82ae3bdd9aead025ec">cleanup(rewrite): remove unused parameter to `find_abandoned_children`</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jan 13, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/c6292d28cbca375785720e46c86270fbbbccf7ff">fix(rewrite): delete branch configuration along with branches
+
+Branches can have additional configuration, such as the associated remote or upstream branch, which are stored via `git-config` in a configuration file. Previously, we only deleted the reference for the branch, without touching this configuration (if it existed). This means that if you create a new branch with the same name, it will accidentally inherit any previous configuration. It also means that your config file can grow unbounded in size if you create many branches with different names.</a></td>
+</tr>
+
+<tr>
 <td><a href="https://github.com/john-h-k/git-branchless">john-h-k/git-branchless</a></td>
 <td>Jan 13, 2023</td>
 <td><a href="https://github.com/john-h-k/git-branchless/commits/c889b7aa9d274a9b2d062eb156cc09ff40f44c99">fix(reword): support invoking editors with spaces in name
@@ -51,25 +65,10 @@ This page is an activity feed of my internet presence, updated once a day.
 This is particularly likely to happen on Windows, where the editor path may include the `C:\Program Files` directory.</a></td>
 </tr>
 
-<tr>
-<td><a href="https://github.com/john-h-k/git-branchless">john-h-k/git-branchless</a></td>
-<td>Jan 13, 2023</td>
-<td><a href="https://github.com/john-h-k/git-branchless/commits/0c4ae541d13bccbf753b3a49bfdffb26418aa7db">fix(init): expand tilde from core.hooksPath
-
-Using "--type path" will automatically take care of tilde and %(prefix)
-expansion.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/john-h-k/git-branchless">john-h-k/git-branchless</a></td>
-<td>Jan 13, 2023</td>
-<td><a href="https://github.com/john-h-k/git-branchless/commits/03d77e9fd80207957c46d8195703384c9862d8ae">Add obsolete revset</a></td>
-</tr>
-
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">12 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
