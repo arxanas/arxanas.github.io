@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-01-16</span>
+<span class="latest">Last updated: 2023-01-17</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,22 +45,30 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jan 13, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/0d764f70f482eba2cac08e82ae3bdd9aead025ec">cleanup(rewrite): remove unused parameter to `find_abandoned_children`</a></td>
+<td>Jan 16, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/1bdcced7dae2f4e85c8fa2c8870047c1787be872">refactor(rewrite): have `RebasePlanPermissions` consume `BuildRebasePlanOptions`
+
+I was having some lifetime issues because I was trying to return a `BuildRebasePlanOptions` alongside a `RebasePlanPermissions` that had a reference to it. But part of the point of the permissions is that it shouldn't be possible to later use a `BuildRebasePlanOptions` not corresponding to the permissions, and indeed, we only ever access the build options via the permissions, so the permissions effectively consumed the build options anyways.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jan 13, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/c6292d28cbca375785720e46c86270fbbbccf7ff">fix(rewrite): delete branch configuration along with branches
+<td>Jan 16, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/c4cc445f8f86fc55ac17bc9811e0e0e257429104">build: add missing members from cargo workspace
 
-Branches can have additional configuration, such as the associated remote or upstream branch, which are stored via `git-config` in a configuration file. Previously, we only deleted the reference for the branch, without touching this configuration (if it existed). This means that if you create a new branch with the same name, it will accidentally inherit any previous configuration. It also means that your config file can grow unbounded in size if you create many branches with different names.</a></td>
+It doesn't seem like this was causing any misbehavior, but I went ahead and added them anyways.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jan 16, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/39b4eb5bb6790aec007e59e0d7b868da18385cef">refactor(invoke): create `git-branchless-invoke`</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">0 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">18 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
