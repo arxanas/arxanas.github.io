@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-03-24</span>
+<span class="latest">Last updated: 2023-03-25</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,26 +45,32 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Mar 24, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/8796c2b1386b4d6466be0a5b5172eb984b8012c5">temp: some `GithubForge` implementation</a></td>
+<td>Mar 25, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/00a18460325b84bc86906810a6dfa078570c9fe3">temp: some `GithubForge` implementation</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Mar 24, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/95e7179395e8d9498ec9856769022ea6863f1c0f">refactor(util): create `EyreExitOr`</a></td>
+<td>Mar 25, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b6fe1fcbd6d9ef7f413933f708d6d8712302e122">refactor(util): create `EyreExitOr`</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Mar 24, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/89b5366afe8af164c184d4c9070ed6715016c2d0">refactor(util): create `EyreExitOr`</a></td>
+<td>Mar 25, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/3389aa2fbee8bef8ccdff53b32bbd03f5dc732ad">fix(hooks): establish deterministic topological order of commits via `post-commit` hook
+
+If two commits aren't topologically related and then we simultaneously ask the `Dag` to process them, then it's not guaranteed which order they'll be visited. Then, later in testing, when we try to topologically sort a set of commits, the order of these two commits is non-deterministic.
+
+In `hide.rs`, we get around this by using the `sorted_commit_set` function. However, this function isn't actually a sound sorting function (see comments internal to the function). In a future commit, we changed it to use `Dag::sort` instead, but this exposed the non-determinism above.
+
+To fix this, we process the commit during the `post-commit` hook, to ensure that the commits are deterministically ordered (assuming that the commits were originally made in a deterministic order).</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">8 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">22 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
