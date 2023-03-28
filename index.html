@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-03-27</span>
+<span class="latest">Last updated: 2023-03-28</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,23 +44,36 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/blog">arxanas/blog</a></td>
-<td>Mar 26, 2023</td>
-<td><a href="https://github.com/arxanas/blog/commits/ef3b7110bb901ee4e5201fcda8021c2eb2ae63db">update: `pl/rust-przyrostowe-czasy-testowania`
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Mar 28, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/7b91d06573f344045f50882fc6d14adcc1362bad">build: bump serde_json from 1.0.94 to 1.0.95
 
-Closes #24.</a></td>
-</tr>
+Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.94 to 1.0.95.
+- [Release notes](https://github.com/serde-rs/json/releases)
+- [Commits](https://github.com/serde-rs/json/compare/v1.0.94...v1.0.95)
 
-<tr>
-<td><a href="https://github.com/arxanas/blog">arxanas/blog</a></td>
-<td>Mar 26, 2023</td>
-<td><a href="https://github.com/arxanas/blog/commits/9cdf9aa4e9e7f3d815687852ab64db844ba1232b">update: `pl/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`</a></td>
+---
+updated-dependencies:
+- dependency-name: serde_json
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Mar 25, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/14a318d2b0e6778aa484c06aad22f0afef67d7fe">refactor(util): create `EyreExitOr`</a></td>
+<td>Mar 28, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/3ea80ceb12c56232397707421fd7bfd1c61fe8e2">fix(amend): after amend, move detached branches pointing to current commit</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Mar 28, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/ad31abbc15549900dac70775bd3e9298f6ef2d13">fix(amend): use exactly one of `reset` or `checkout` in `check_out_commit`
+
+After `git reset`ing to a target, `git checkout`ing to the same target is a no-op, and just wastes time.</a></td>
 </tr>
 
 </tbody>
