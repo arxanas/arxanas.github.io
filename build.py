@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 import collections
+import json
+import logging
 import os
 import shutil
 import time
 
+from dataclasses import dataclass
+from typing import Mapping, cast
+
 import bs4
-import feedparser
+import feedparser  # type: ignore[import]
 import requests
 
-from typing import Mapping, Optional
 
+logger = logging.getLogger(__name__)
 
 CITY = "Seattle"
 
@@ -184,7 +191,7 @@ def get_restaurant_info() -> Mapping[str, str]:
     top_payees = sorted(payees.items(), key=lambda kv: len(kv[1]), reverse=True)[:10]
 
     table_rows_html = ""
-    for (payee_name, payee_transactions) in top_payees:
+    for payee_name, payee_transactions in top_payees:
         payee_href = (
             f"""http://google.com/maps/search/{CITY}+{payee_name.replace(" ", "+")}"""
         )
@@ -287,7 +294,64 @@ def make_redirect_html(path: str, target_url: str) -> str:
 """
 
 
+def get_budget_info() -> str:
+    budget_id = "last-used"
+    ynab_api_key = os.environ["YNAB_API_KEY"]
+    headers = {"Authorization": f"Bearer {ynab_api_key}"}
+    logging.info("Fetching budget info from YNAB")
+    transactions = requests.get(
+        f"https://api.youneedabudget.com/v1/budgets/{budget_id}/transactions",
+        headers=headers,
+    ).json()["data"]["transactions"]
+    parsed_budget_info = parse_budget_info(transactions)
+    result = [
+        (key.category_name, key.year, key.month, amount)
+        for key, amount in parsed_budget_info.items()
+    ]
+    return json.dumps(result)
+
+
+@dataclass(eq=True, frozen=True)
+class BudgetKey:
+    category_name: str
+    year: int
+    month: int
+
+
+def parse_budget_info(transactions: list[dict[str, object]]) -> dict[BudgetKey, float]:
+    result: dict[BudgetKey, float] = collections.defaultdict(float)
+    for tx in transactions:
+        category_name = cast(str, tx["category_name"])
+        date = cast(str, tx["date"])
+        (yyyy, mm, _dd) = date.split("-")
+        year = int(yyyy)
+        month = int(mm)
+        key = BudgetKey(category_name=category_name, year=year, month=month)
+        amount = cast(float, tx["amount"])
+        result[key] += amount
+    return result
+
+
+def test_parse_budget_info() -> None:
+    txs = json.loads(
+        """
+[{"id":"312a883c-0beb-add6-9378-cb8cc02e0a4f","date":"2016-10-31","amount":-5000,"memo":"DigitalOcean","cleared":"reconciled","approved":true,"flag_color":null,"account_id":"91686979-1e98-8aa9-0b80-cb8cc02bf67d","account_name":"Chase Checking","payee_id":"2766379f-f9b5-fc8a-ea0f-cb8cc02c0d8c","payee_name":"DigitalOcean","category_id":"cd0408d5-aa60-caf9-6a00-cb8cc02a904e","category_name":"Online Subscriptions","transfer_account_id":null,"transfer_transaction_id":null,"matched_transaction_id":null,"import_id":null,"import_payee_name":null,"import_payee_name_original":null,"debt_transaction_type":null,"deleted":false,"subtransactions":[]},{"id":"802e3ddd-08bb-457c-81c0-4ea0cfd54043","date":"2016-10-31","amount":0,"memo":null,"cleared":"cleared","approved":true,"flag_color":null,"account_id":"c448ab40-f260-4d54-85a4-6f8677c221b4","account_name":"Fidelity 401(k)","payee_id":"36de9a0f-6bea-0171-947d-cb8cc02ce207","payee_name":"Starting Balance","category_id":null,"category_name":"Uncategorized","transfer_account_id":null,"transfer_transaction_id":null,"matched_transaction_id":null,"import_id":null,"import_payee_name":null,"import_payee_name_original":null,"debt_transaction_type":null,"deleted":false,"subtransactions":[]},{"id":"48ad5404-e255-4c50-8dcf-1b538bbf64e1","date":"2016-10-31","amount":0,"memo":null,"cleared":"cleared","approved":true,"flag_color":null,"account_id":"3bd26791-652f-4957-8eee-6b47aeea7011","account_name":"Payroll Deductions","payee_id":"36de9a0f-6bea-0171-947d-cb8cc02ce207","payee_name":"Starting Balance","category_id":"908b86be-7277-55cd-9dc7-cb8cc02769f6","category_name":"Inflow: Ready to Assign","transfer_account_id":null,"transfer_transaction_id":null,"matched_transaction_id":null,"import_id":null,"import_payee_name":null,"import_payee_name_original":null,"debt_transaction_type":null,"deleted":false,"subtransactions":[]}]
+"""
+    )
+    assert parse_budget_info(txs) == {
+        BudgetKey(category_name="Online Subscriptions", year=2016, month=10): -5000,
+        BudgetKey(category_name="Uncategorized", year=2016, month=10): 0,
+        BudgetKey(category_name="Inflow: Ready to Assign", year=2016, month=10): 0,
+    }
+
+
 def main() -> None:
+    logging.basicConfig(level=logging.INFO)
+
+    datas = {
+        "budget.json": get_budget_info(),
+    }
+
     infos = {
         **get_blog_info(),
         **get_github_info(),
@@ -307,6 +371,11 @@ def main() -> None:
     os.mkdir("_site")
     with open("_site/index.html", "w") as f:
         f.write(template_html)
+
+    os.mkdir("_site/data")
+    for path, data in datas.items():
+        with open(f"_site/{path}", "w") as f:
+            f.write(data)
 
     for path, target_url in get_redirects().items():
         os.makedirs(f"_site/{path}", exist_ok=True)
