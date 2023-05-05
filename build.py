@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import collections
+import csv
+import io
 import json
 import logging
 import os
@@ -294,21 +296,31 @@ def make_redirect_html(path: str, target_url: str) -> str:
 """
 
 
-def get_budget_info() -> str:
-    budget_id = "last-used"
-    ynab_api_key = os.environ["YNAB_API_KEY"]
-    headers = {"Authorization": f"Bearer {ynab_api_key}"}
-    logging.info("Fetching budget info from YNAB")
-    transactions = requests.get(
-        f"https://api.youneedabudget.com/v1/budgets/{budget_id}/transactions",
-        headers=headers,
-    ).json()["data"]["transactions"]
-    parsed_budget_info = parse_budget_info(transactions)
-    result = [
-        (key.category_name, key.year, key.month, amount)
-        for key, amount in parsed_budget_info.items()
-    ]
-    return json.dumps(result)
+def get_budget_info() -> Mapping[str, str]:
+    tx_file_path = os.environ.get("YNAB_TRANSACTIONS_FILE")
+    if tx_file_path is None:
+        logging.info("Fetching budget info from YNAB")
+        budget_id = "last-used"
+        ynab_api_key = os.environ["YNAB_API_KEY"]
+        headers = {"Authorization": f"Bearer {ynab_api_key}"}
+        transactions = requests.get(
+            f"https://api.youneedabudget.com/v1/budgets/{budget_id}/transactions",
+            headers=headers,
+        ).json()["data"]["transactions"]
+        parsed_budget_info = parse_budget_info(transactions)
+    else:
+        logging.info(f"Reading budget info from file: {tx_file_path}")
+        with open(tx_file_path) as f:
+            transactions = json.load(f)["data"]["transactions"]
+            parsed_budget_info = parse_budget_info(transactions)
+
+    temp = io.StringIO()
+    writer = csv.writer(temp)
+    for key, amount in parsed_budget_info.items():
+        writer.writerow([key.category_name, key.year, key.month, amount])
+    return {
+        "budget.csv": temp.getvalue(),
+    }
 
 
 @dataclass(eq=True, frozen=True)
@@ -349,7 +361,7 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO)
 
     datas = {
-        "budget.json": get_budget_info(),
+        **get_budget_info(),
     }
 
     infos = {
@@ -374,7 +386,7 @@ def main() -> None:
 
     os.mkdir("_site/data")
     for path, data in datas.items():
-        with open(f"_site/{path}", "w") as f:
+        with open(f"_site/data/{path}", "w") as f:
             f.write(data)
 
     for path, target_url in get_redirects().items():
