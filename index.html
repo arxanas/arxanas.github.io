@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-05-06</span>
+<span class="latest">Last updated: 2023-05-07</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,43 +44,35 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/arxanas.github.io">arxanas/arxanas.github.io</a></td>
-<td>May 05, 2023</td>
-<td><a href="https://github.com/arxanas/arxanas.github.io/commits/774ddee8ea5da0edf629e251c7b075c8cc745966">Write budget data to CSV file
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>May 06, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/5716f9810d1caaabad1b7a1b36ec0692a75dcd39">feat(record): sticky file header
 
-It turns out Google Sheets has a function to import CSV (also XML), but none for JSON.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/arxanas.github.io">arxanas/arxanas.github.io</a></td>
-<td>May 05, 2023</td>
-<td><a href="https://github.com/arxanas/arxanas.github.io/commits/7bdea91f25ba9ed0019dbe757a9f55002c3884dd">Publish budget info as JSON</a></td>
+One of the common problems I have when using `hg crecord` is that I forget what file I'm on. "Sticky" headers are headers that stay at the top of the screen, even when the header element itself has scrolled out of view.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>May 03, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/3a4c16be75788b927548c4d512efd0d0147aa5ce">build: bump lalrpop from 0.19.9 to 0.19.12
+<td>May 06, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/74a272c08aa2ebca15de0774e4418485ea836591">fix(record): don't force selection into viewport upon click
 
-Bumps [lalrpop](https://github.com/lalrpop/lalrpop) from 0.19.9 to 0.19.12.
-- [Release notes](https://github.com/lalrpop/lalrpop/releases)
-- [Changelog](https://github.com/lalrpop/lalrpop/blob/master/RELEASES.md)
-- [Commits](https://github.com/lalrpop/lalrpop/compare/0.19.9...0.19.12)
+Currently, we do something semi-intelligent where, when navigating elements by keyboard, we try to scroll an additional amount that will cause more of the element's contents to appear in the viewport. This works to some degree with the keyboard, but is jarring when using the mouse: generally speaking, when clicking something, we expect it to remain where it is. (When using the mouse, we'll scroll to manually -- and precisely -- control the viewport.) This also inhibits the workflow of selecting a header and then clicking the minimize button, since the button might have moved since the last click.
 
----
-updated-dependencies:
-- dependency-name: lalrpop
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
+This commit simply suppresses the auto-scroll behavior when using the mouse rather than the keyboard. (It might be worth revising the feature in general for keyboard navigation anyways.)</a></td>
+</tr>
 
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>May 06, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/547e928f095e5cdef800d0d62fdb8ec599012d25">cleanup(record): add `File::toggle_all`
+
+We use this functionality often, so lift it to `types`.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">9 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">23 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
