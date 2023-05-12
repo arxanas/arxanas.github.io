@@ -1302,12 +1302,15 @@ Car,2023,4,-68000.0
 Charitable,2023,4,-50000.0
 Housing,2023,4,-1850000.0
 Internet,2023,4,-34880.0
-Uncategorized,2023,5,0.0
+Uncategorized,2023,5,-7500.0
 Dates,2023,5,-47310.0
-Eating Out,2023,5,-71210.0
-Medical,2023,5,-355900.0
+Eating Out,2023,5,-83460.0
+Medical,2023,5,-730990.0
 Online Subscriptions,2023,5,-6620.0
-Inflow: Ready to Assign,2023,5,36070.0
+Inflow: Ready to Assign,2023,5,11414100.0
 Wedding,2023,5,-488000.0
+Reimbursements,2023,5,-45630.0
 Leisure,2023,5,-11990.0
+Household Goods,2023,5,-15880.0
+Electricity,2023,5,-19570.0
 Productivity,2023,5,-60000.0
