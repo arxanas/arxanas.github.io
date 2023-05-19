@@ -1150,11 +1150,11 @@ Vacation,2022,9,-562700.0
 Housing,2022,9,-293000.0
 Gifts,2022,9,-401680.0
 Electricity,2022,9,-18550.0
-Transportation,2022,9,100480.0
+Transportation,2022,9,-88480.0
 Dates,2022,9,-123230.0
 All savings,2022,9,-11340970.0
-Reimbursements,2022,9,-1495870.0
 Car,2022,9,-52200.0
+Reimbursements,2022,9,-1306910.0
 Household Goods,2022,9,-116690.0
 Cosmetics,2022,9,-10630.0
 Split,2022,9,-123000.0
@@ -1253,8 +1253,8 @@ Dates,2023,2,-184080.0
 Car,2023,2,-1253330.0
 Medical,2023,2,-2210.0
 Electricity,2023,2,-18640.0
-Transportation,2023,2,-11990.0
-Reimbursements,2023,2,-398870.0
+Transportation,2023,2,-107750.0
+Reimbursements,2023,2,-303110.0
 Fitness,2023,2,-14310.0
 All savings,2023,2,-32500000.0
 Clothes & Grooming ,2023,2,-210000.0
@@ -1272,8 +1272,9 @@ Clothes & Grooming ,2023,3,-148830.0
 Dates,2023,3,-288300.0
 Car,2023,3,-63700.0
 Cosmetics,2023,3,-525000.0
-Reimbursements,2023,3,-1661230.0
+Transportation,2023,3,-14710.0
 Groceries,2023,3,-225640.0
+Reimbursements,2023,3,-1646520.0
 Medical,2023,3,-39530.0
 Electricity,2023,3,-19400.0
 All savings,2023,3,-11012740.0
@@ -1304,15 +1305,14 @@ Housing,2023,4,-1850000.0
 Internet,2023,4,-34880.0
 Uncategorized,2023,5,2268490.0
 Dates,2023,5,-115500.0
-Eating Out,2023,5,-134160.0
+Eating Out,2023,5,-189190.0
 Medical,2023,5,-730990.0
 Online Subscriptions,2023,5,-6620.0
 Inflow: Ready to Assign,2023,5,11418740.0
 Wedding,2023,5,-976000.0
 Investment,2023,5,-2740.0
-Reimbursements,2023,5,-45630.0
+Transportation,2023,5,-135340.0
 Leisure,2023,5,-11990.0
-Transportation,2023,5,-65500.0
 Household Goods,2023,5,-15880.0
 Electricity,2023,5,-19570.0
 Productivity,2023,5,-60000.0
