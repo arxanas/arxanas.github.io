@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-06-03</span>
+<span class="latest">Last updated: 2023-06-04</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,24 +44,30 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/blog">arxanas/blog</a></td>
-<td>May 31, 2023</td>
-<td><a href="https://github.com/arxanas/blog/commits/9faa05882e0b37cf96be758fbfcf69008532f940">update: `about`</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jun 04, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/5d1a896de98ff7608294bc89db67b120d0255124">feat(record): add menu bar
+
+There are two main concepts added to the viewport code:
+
+- A **mask** is a subarea of the canvas which subsequent calls will implicitly not render outside of. This lets us overlay one component on top of another in a fixed area. We use this to allocate the top line of the screen to the menu bar and the rest of the screen to the files. We could also use this in the future for e.g. rendering files side-by-side.
+- A **timestamp** is a monotonically-increasing integer assigned to each component as it's drawn. Previously, we tried to figure out which component was being clicked by finding all components which drew to a certain point on the screen and selecting the smallest one. In some cases, this wasn't sufficient. For example, the sticky file header may be larger than a changed line drawn behind it, but we still want to select the sticky file header in this case. Now, we use the timestamp value to infer which of two components is drawn on top (with the later-drawn component being on top).
+
+The menu bar is a fairly straightforward state machine. There may come to be issues with managing interactions between components. For example, we now have an event to unfocus the menu bar, which means that we need to be aware of the menu bar when clicking on any other component on the screen. This sort of behavior will eventually lead to O(n^2) state transitions. The proper fix would probably be some kind of event system in combination with a focus system.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>May 30, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/0e50c76e7d21b2bf17c95ae8fc98a0237235f6e9">build: bump proptest from 1.1.0 to 1.2.0
+<td>Jun 03, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/48c56dbdf6c61b3220fd1c851c125453f2d3a85d">build: bump criterion from 0.4.0 to 0.5.1
 
-Bumps [proptest](https://github.com/proptest-rs/proptest) from 1.1.0 to 1.2.0.
-- [Release notes](https://github.com/proptest-rs/proptest/releases)
-- [Changelog](https://github.com/proptest-rs/proptest/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/proptest-rs/proptest/compare/v1.1.0...v1.2.0)
+Bumps [criterion](https://github.com/bheisler/criterion.rs) from 0.4.0 to 0.5.1.
+- [Changelog](https://github.com/bheisler/criterion.rs/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/bheisler/criterion.rs/compare/0.4.0...0.5.1)
 
 ---
 updated-dependencies:
-- dependency-name: proptest
+- dependency-name: criterion
   dependency-type: direct:production
   update-type: version-update:semver-minor
 ...
@@ -71,17 +77,16 @@ Signed-off-by: dependabot[bot] <support@github.com></a></td>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>May 30, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/b42e8170a6ea8889f71c06ff5d9af5f60853e839">build: bump chrono from 0.4.24 to 0.4.25
+<td>Jun 03, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/c9e0dfeff7532e1834a98224856ea387af6b4c6c">build: bump indicatif from 0.17.3 to 0.17.4
 
-Bumps [chrono](https://github.com/chronotope/chrono) from 0.4.24 to 0.4.25.
-- [Release notes](https://github.com/chronotope/chrono/releases)
-- [Changelog](https://github.com/chronotope/chrono/blob/main/CHANGELOG.md)
-- [Commits](https://github.com/chronotope/chrono/compare/v0.4.24...v0.4.25)
+Bumps [indicatif](https://github.com/console-rs/indicatif) from 0.17.3 to 0.17.4.
+- [Release notes](https://github.com/console-rs/indicatif/releases)
+- [Commits](https://github.com/console-rs/indicatif/compare/0.17.3...0.17.4)
 
 ---
 updated-dependencies:
-- dependency-name: chrono
+- dependency-name: indicatif
   dependency-type: direct:production
   update-type: version-update:semver-patch
 ...
@@ -92,7 +97,7 @@ Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">8 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">5 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -161,8 +166,8 @@ Feb 2023 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Subway">Subway</a></td>
-<td>13</td>
-<td>$268.87</td>
+<td>14</td>
+<td>$290.70</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Costco">Costco</a></td>
