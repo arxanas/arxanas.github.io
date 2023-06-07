@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-06-06</span>
+<span class="latest">Last updated: 2023-06-07</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,26 +45,33 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Jun 05, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/0fff404fb20adfcda5b940701f604a662f57a21f">cleanup: fix clippy issues</a></td>
+<td>Jun 07, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/74b846870c20aa85980f48bcac2093626bfd3c5d">feat(diff): add `ui.diff-instructions` option to suppress `JJ-INSTRUCTIONS` file</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Jun 05, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/f61cbae02234cedbc0b809f733200d934de3014a">refactor(revset): move `collect_similar` from `cli_util` to `revset`</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jun 07, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/6bf8aeb2fa3ccb5f95e8baf8b1b00e4f645aef0f">refactor(record): rename `App` -> `AppView`</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Jun 05, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/23a4124d20cdf00b00edb8ba8d203ec48971d7b3">feat(revset): suggest similar branch names</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jun 07, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/a7e69879dcd2ccea54239d52a493b71426aff629">feat(record): add menu bar
+
+There are two main concepts added to the viewport code:
+
+- A **mask** is a subarea of the canvas which subsequent calls will implicitly not render outside of. This lets us overlay one component on top of another in a fixed area. We use this to allocate the top line of the screen to the menu bar and the rest of the screen to the files. We could also use this in the future for e.g. rendering files side-by-side.
+- A **timestamp** is a monotonically-increasing integer assigned to each component as it's drawn. Previously, we tried to figure out which component was being clicked by finding all components which drew to a certain point on the screen and selecting the smallest one. In some cases, this wasn't sufficient. For example, the sticky file header may be larger than a changed line drawn behind it, but we still want to select the sticky file header in this case. Now, we use the timestamp value to infer which of two components is drawn on top (with the later-drawn component being on top).
+
+The menu bar is a fairly straightforward state machine. There may come to be issues with managing interactions between components. For example, we now have an event to unfocus the menu bar, which means that we need to be aware of the menu bar when clicking on any other component on the screen. This sort of behavior will eventually lead to O(n^2) state transitions. The proper fix would probably be some kind of event system in combination with a focus system.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">13 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">9 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -108,8 +115,8 @@ Feb 2023 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Fulcrum+Cafe">Fulcrum Cafe</a></td>
-<td>25</td>
-<td>$329.54</td>
+<td>26</td>
+<td>$337.54</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+The+Missing+Piece">The Missing Piece</a></td>
