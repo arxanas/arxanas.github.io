@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-06-11</span>
+<span class="latest">Last updated: 2023-06-13</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,34 +44,68 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Jun 07, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/74b846870c20aa85980f48bcac2093626bfd3c5d">feat(diff): add `ui.diff-instructions` option to suppress `JJ-INSTRUCTIONS` file</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jun 13, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/367205d6259d8e26ec1d8f20e821357ba824fe91">build: bump chrono from 0.4.25 to 0.4.26
+
+Bumps [chrono](https://github.com/chronotope/chrono) from 0.4.25 to 0.4.26.
+- [Release notes](https://github.com/chronotope/chrono/releases)
+- [Changelog](https://github.com/chronotope/chrono/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/chronotope/chrono/compare/v0.4.25...v0.4.26)
+
+---
+updated-dependencies:
+- dependency-name: chrono
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 07, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/6bf8aeb2fa3ccb5f95e8baf8b1b00e4f645aef0f">refactor(record): rename `App` -> `AppView`</a></td>
+<td>Jun 13, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/e2a8735c0ec726c769043e42162a8aa94aa38a28">build: bump tempfile from 3.5.0 to 3.6.0
+
+Bumps [tempfile](https://github.com/Stebalien/tempfile) from 3.5.0 to 3.6.0.
+- [Changelog](https://github.com/Stebalien/tempfile/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/Stebalien/tempfile/compare/v3.5.0...v3.6.0)
+
+---
+updated-dependencies:
+- dependency-name: tempfile
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 07, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/a7e69879dcd2ccea54239d52a493b71426aff629">feat(record): add menu bar
+<td>Jun 13, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/51bb2502277c413baa28107afdeaf49ba04322a1">build: bump clap from 4.3.2 to 4.3.3
 
-There are two main concepts added to the viewport code:
+Bumps [clap](https://github.com/clap-rs/clap) from 4.3.2 to 4.3.3.
+- [Release notes](https://github.com/clap-rs/clap/releases)
+- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/clap-rs/clap/compare/v4.3.2...v4.3.3)
 
-- A **mask** is a subarea of the canvas which subsequent calls will implicitly not render outside of. This lets us overlay one component on top of another in a fixed area. We use this to allocate the top line of the screen to the menu bar and the rest of the screen to the files. We could also use this in the future for e.g. rendering files side-by-side.
-- A **timestamp** is a monotonically-increasing integer assigned to each component as it's drawn. Previously, we tried to figure out which component was being clicked by finding all components which drew to a certain point on the screen and selecting the smallest one. In some cases, this wasn't sufficient. For example, the sticky file header may be larger than a changed line drawn behind it, but we still want to select the sticky file header in this case. Now, we use the timestamp value to infer which of two components is drawn on top (with the later-drawn component being on top).
+---
+updated-dependencies:
+- dependency-name: clap
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
 
-The menu bar is a fairly straightforward state machine. There may come to be issues with managing interactions between components. For example, we now have an event to unfocus the menu bar, which means that we need to be aware of the menu bar when clicking on any other component on the screen. This sort of behavior will eventually lead to O(n^2) state transitions. The proper fix would probably be some kind of event system in combination with a focus system.</a></td>
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">8 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">6 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
