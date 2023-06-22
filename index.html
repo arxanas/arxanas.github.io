@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-06-21</span>
+<span class="latest">Last updated: 2023-06-22</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -43,6 +43,23 @@ This page is an activity feed of my internet presence, updated once a day.
 <th>Message</th>
 </thead>
 <tbody>
+<tr>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Jun 21, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/11aac59c54bcf1cadf2ee27284f8f52ce2b941c3">feat(config): add `jj config get` for scripting
+
+The motivating use-case was this `jj signoff` script: https://gist.github.com/thoughtpolice/8f2fd36ae17cd11b8e7bd93a70e31ad6
+
+Which includes lines like this:
+
+```sh
+NAME=$(jj config list user.name | awk '{split($0, a, "="); print a[2];}' | tr -d '"')
+MAIL=$(jj config list user.email | awk '{split($0, a, "="); print a[2];}' | tr -d '"')
+```
+
+There is no reason that we should have to clumsily parse out the config values. This `jj config get` command supports scripting use-cases like this.</a></td>
+</tr>
+
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Jun 19, 2023</td>
@@ -82,29 +99,10 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 19, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/64750b1a71b1e78c8c0c076354359fd266c314fb">build: bump serde_json from 1.0.96 to 1.0.97
-
-Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.96 to 1.0.97.
-- [Release notes](https://github.com/serde-rs/json/releases)
-- [Commits](https://github.com/serde-rs/json/compare/v1.0.96...v1.0.97)
-
----
-updated-dependencies:
-- dependency-name: serde_json
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
-</tr>
-
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">4 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">2 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -142,14 +140,14 @@ Feb 2023 – Present
 <td>$397.09</td>
 </tr>
 <tr>
+<td><a href="http://google.com/maps/search/Seattle+Fulcrum+Cafe">Fulcrum Cafe</a></td>
+<td>28</td>
+<td>$365.79</td>
+</tr>
+<tr>
 <td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
 <td>27</td>
 <td>$551.98</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+Fulcrum+Cafe">Fulcrum Cafe</a></td>
-<td>26</td>
-<td>$337.54</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+The+Missing+Piece">The Missing Piece</a></td>
@@ -168,8 +166,8 @@ Feb 2023 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Subway">Subway</a></td>
-<td>15</td>
-<td>$314.18</td>
+<td>16</td>
+<td>$327.55</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
