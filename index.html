@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-06-22</span>
+<span class="latest">Last updated: 2023-06-23</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,64 +45,30 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Jun 21, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/11aac59c54bcf1cadf2ee27284f8f52ce2b941c3">feat(config): add `jj config get` for scripting
-
-The motivating use-case was this `jj signoff` script: https://gist.github.com/thoughtpolice/8f2fd36ae17cd11b8e7bd93a70e31ad6
-
-Which includes lines like this:
-
-```sh
-NAME=$(jj config list user.name | awk '{split($0, a, "="); print a[2];}' | tr -d '"')
-MAIL=$(jj config list user.email | awk '{split($0, a, "="); print a[2];}' | tr -d '"')
-```
-
-There is no reason that we should have to clumsily parse out the config values. This `jj config get` command supports scripting use-cases like this.</a></td>
+<td>Jun 23, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/c1fa1836263e547913e47fb3b7f183ec33c1d636">feat(fsmonitor): Watchman filesystem monitor implementation</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 19, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/88d9be97535cb4534ccd7f5ff5436618611e1076">build: bump serde from 1.0.163 to 1.0.164
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Jun 23, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/f963bd4a9b8b0e366eda0a85eb01919212a96a12">feat(fsmonitor): add `.watchmanconfig` to repo
 
-Bumps [serde](https://github.com/serde-rs/serde) from 1.0.163 to 1.0.164.
-- [Release notes](https://github.com/serde-rs/serde/releases)
-- [Commits](https://github.com/serde-rs/serde/compare/v1.0.163...v1.0.164)
-
----
-updated-dependencies:
-- dependency-name: serde
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+This identifies the directory as Watchman-enabled. Additional config settings can go in this file.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jun 19, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/abaea7f2166c28972bd3a3b00852e93b423a1c04">build: bump clap from 4.3.3 to 4.3.4
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Jun 22, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/0e212f46d5d2091ca9eae3f99498ee9744ce3df9">refactor(working_copy): create `SnapshotOptions`, `Snapshot` structs
 
-Bumps [clap](https://github.com/clap-rs/clap) from 4.3.3 to 4.3.4.
-- [Release notes](https://github.com/clap-rs/clap/releases)
-- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/clap-rs/clap/compare/v4.3.3...v4.3.4)
-
----
-updated-dependencies:
-- dependency-name: clap
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+Required in a later commit.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">2 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">5 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
