@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-07-09</span>
+<span class="latest">Last updated: 2023-07-10</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,34 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Jul 09, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/48c6c00985a0829981fdf4370503ecfde673d4fd">docs: deny missing docs for `jj-lib` crate</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Jul 09, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/896ac57acc45de7410b786b84ed3903bc5dda4c5">protobuf: add `--experimental_allow_proto3_optional`
+
+We need this flag to use `optional` fields as described in https://protobuf.dev/programming-guides/proto3/#field-labels.
+
+Note that in protobuf3, all fields are optional. If a field is not present, its default value is used: https://protobuf.dev/programming-guides/proto3/#default. Adding the `optional` descriptor merely lets us query for whether the field is absent and process it ourselves. In `prost`, this also means that the field type becomes `Option<T>` instead of plain `T`.
+
+There are several additional complications for `optional` fields that make it worth examining the documentation carefully (such as "For message fields, the field is not set. Its exact value is language-dependent." and "Also note that if a scalar message field is set to its default, the value will not be serialized on the wire.").</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
 <td>Jul 08, 2023</td>
 <td><a href="https://github.com/martinvonz/jj/commits/092dce0625bef9d7ca18e6183aaf909e31234e0e">refactor(working_copy): create `SnapshotOptions` struct
 
 Required in a later commit.</a></td>
 </tr>
 
-<tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Jul 08, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/de9cbace22f8cdcd7d5711568b608364aee2706e">refactor(working_copy): create WorkItem struct</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Jul 08, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/d8705644b5b7fae9e2245139409b33685e9e1237">refactor(repo_path): accept `AsRef<Path>` in `RepoPath::parse_fs_path`
-
-Used in later commit.</a></td>
-</tr>
-
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">44 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">22 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
