@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-07-28</span>
+<span class="latest">Last updated: 2023-07-29</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,26 +45,28 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 25, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/8ce75e7bbf00ed9e44bf7890ac44ba1ca292063d">feat(difftool): add `difftool` subcommand</a></td>
+<td>Jul 29, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/01d5ea6233c37818873998e05035e0a6a7984284">refactor(testing): extract `remove_nondeterministic_lines` to `git-branchless-testing`</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 25, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/006fc5995fcaa7190ef52e80a709de68a81f4d9c">fix(record): fix crash when toggling unchanged line</a></td>
+<td>Jul 29, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/9a6b09afbd513d6f8c77099f6777444841482768">fix(submit): fix test failing on Git `master` branch</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 25, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/0f383533737273572a9922f9c725142d6722f6cf">fix(record): respect read-only flag for more toggle commands</a></td>
+<td>Jul 29, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/afb56bd536f801aa31bfcb468a5734f6c7004c3b">fix(submit:phabricator): don't update diffs with `--verbatim`
+
+The `--verbatim` flag updates the phab's "reviewers" field, among others. If Herald added reviewers, or if somebody not in your reviewers list accepted the diff, then running `git submit` would revert the "reviewers" field and you would lose your accepts, which is a bad experience. There is a successful workflow where you run `arc amend` before ever running `arc diff` to update the diff, but it's probably better to do the least surprising thing, which is to preserve the state on Phabricator (since mutating it may have side effects, unlike the local commit message).</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">21 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">15 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
