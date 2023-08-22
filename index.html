@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-08-21</span>
+<span class="latest">Last updated: 2023-08-22</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,23 +44,39 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Aug 21, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/4052722a070cbf4359f87b6e3f0ff7cf7460c37f">merge_tools: enable `:builtin` as default diff/merge editor</a></td>
-</tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Aug 22, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/315501c4d73f260ef9a6a42cb5e73a06fc4a00b7">build: use workspace dependencies
 
-<tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Aug 21, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/44713b4c72bc176a11d5a6bd54a262438c0505d8">merge_tools: enable `:builtin` as default diff/merge editor</a></td>
+We generally want to be using the same dependencies across our crates (and we rely on `Cargo.lock` to resolve them for the whole workspace), so this commit just takes the extra step and extracts common dependencies to "workspace dependencies". Note that the `scm-bisect` and `scm-record` crates keep their own individual dependencies since they're intended to be used as standalone libraries.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Aug 20, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/c5202e011020100be0af9826e386f30a2a54a0a6">docs: Add `move --fixup` to CHANGELOG.md
+<td>Aug 22, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/11f23bedd28eb642b2ad7b7d2de876759188a2b3">build(record): relax some dependencies
 
-Co-authored-by: Waleed Khan <me@waleedkhan.name></a></td>
+Since `scm-record` is intended to be used as a library, relax some of the dependency versions.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Aug 22, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/d898f86a38ddaeeff8c4434b18fa29adb1cac8a8">build: bump Swatinem/rust-cache from 2.6.0 to 2.6.2
+
+Bumps [Swatinem/rust-cache](https://github.com/swatinem/rust-cache) from 2.6.0 to 2.6.2.
+- [Release notes](https://github.com/swatinem/rust-cache/releases)
+- [Changelog](https://github.com/Swatinem/rust-cache/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/swatinem/rust-cache/compare/b8a6852b4f997182bdea832df3f9e153038b5191...e207df5d269b42b69c8bc5101da26f7d31feddb4)
+
+---
+updated-dependencies:
+- dependency-name: Swatinem/rust-cache
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 </tbody>
