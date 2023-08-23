@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-08-22</span>
+<span class="latest">Last updated: 2023-08-23</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,39 +44,31 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Aug 23, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/1633eccdca6c3ad82bf67072a79eaad51080a45c">Use `{ workspace = true }` to appease VS Code's `Cargo.toml` parser
+
+The VS Code "Better TOML" plugin (which I think most of our VS Code developers use?) doesn't support the `x.y = z` syntax at the top level, even though it's valid TOML. 
+
+This is also useful if we ever want to add additional properties in different sub-crates (although unlikely for the near future).</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Aug 23, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/d5b7aeb86b29f6a0c7b54a4d0ef9b43411f3643e">Use `{ workspace = true }` to appease VS Code's `Cargo.toml` parser
+
+The VS Code "Better TOML" plugin (which I think most of our VS Code developers use?) doesn't support the `x.y = z` syntax at the top level, even though it's valid TOML. 
+
+This is also useful if we ever want to add additional properties in different sub-crates (although unlikely for the near future).</a></td>
+</tr>
+
+<tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Aug 22, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/315501c4d73f260ef9a6a42cb5e73a06fc4a00b7">build: use workspace dependencies
+<td>Aug 23, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/5743dfee8a898a15bdb7629053d1ea77e24735c0">build: use workspace dependencies
 
 We generally want to be using the same dependencies across our crates (and we rely on `Cargo.lock` to resolve them for the whole workspace), so this commit just takes the extra step and extracts common dependencies to "workspace dependencies". Note that the `scm-bisect` and `scm-record` crates keep their own individual dependencies since they're intended to be used as standalone libraries.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Aug 22, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/11f23bedd28eb642b2ad7b7d2de876759188a2b3">build(record): relax some dependencies
-
-Since `scm-record` is intended to be used as a library, relax some of the dependency versions.</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Aug 22, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/d898f86a38ddaeeff8c4434b18fa29adb1cac8a8">build: bump Swatinem/rust-cache from 2.6.0 to 2.6.2
-
-Bumps [Swatinem/rust-cache](https://github.com/swatinem/rust-cache) from 2.6.0 to 2.6.2.
-- [Release notes](https://github.com/swatinem/rust-cache/releases)
-- [Changelog](https://github.com/Swatinem/rust-cache/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/swatinem/rust-cache/compare/b8a6852b4f997182bdea832df3f9e153038b5191...e207df5d269b42b69c8bc5101da26f7d31feddb4)
-
----
-updated-dependencies:
-- dependency-name: Swatinem/rust-cache
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 </tbody>
@@ -111,8 +103,8 @@ Feb 2023 – Present
 <tbody>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Fulcrum+Cafe">Fulcrum Cafe</a></td>
-<td>32</td>
-<td>$419.07</td>
+<td>33</td>
+<td>$426.13</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Metropolitan+Cafe+and+Deli">Metropolitan Cafe and Deli</a></td>
@@ -145,14 +137,14 @@ Feb 2023 – Present
 <td>$274.47</td>
 </tr>
 <tr>
+<td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
+<td>13</td>
+<td>$253.26</td>
+</tr>
+<tr>
 <td><a href="http://google.com/maps/search/Seattle+The+Missing+Piece">The Missing Piece</a></td>
 <td>12</td>
 <td>$114.10</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
-<td>11</td>
-<td>$213.80</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
