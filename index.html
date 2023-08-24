@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-08-23</span>
+<span class="latest">Last updated: 2023-08-24</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,6 +45,14 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
+<td>Aug 24, 2023</td>
+<td><a href="https://github.com/martinvonz/jj/commits/134d85e635dc783b206d036cabb078ec0a75b9c8">backend: reduce `BackendError` size somewhat
+
+One of the error types that I later created embedded `BackendError`, but `clippy` complained that the size of the type was too large. This helps address that.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
 <td>Aug 23, 2023</td>
 <td><a href="https://github.com/martinvonz/jj/commits/1633eccdca6c3ad82bf67072a79eaad51080a45c">Use `{ workspace = true }` to appease VS Code's `Cargo.toml` parser
 
@@ -63,18 +71,10 @@ The VS Code "Better TOML" plugin (which I think most of our VS Code developers u
 This is also useful if we ever want to add additional properties in different sub-crates (although unlikely for the near future).</a></td>
 </tr>
 
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Aug 23, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/5743dfee8a898a15bdb7629053d1ea77e24735c0">build: use workspace dependencies
-
-We generally want to be using the same dependencies across our crates (and we rely on `Cargo.lock` to resolve them for the whole workspace), so this commit just takes the extra step and extracts common dependencies to "workspace dependencies". Note that the `scm-bisect` and `scm-record` crates keep their own individual dependencies since they're intended to be used as standalone libraries.</a></td>
-</tr>
-
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">2 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -103,8 +103,8 @@ Feb 2023 – Present
 <tbody>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Fulcrum+Cafe">Fulcrum Cafe</a></td>
-<td>33</td>
-<td>$426.13</td>
+<td>35</td>
+<td>$445.57</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Metropolitan+Cafe+and+Deli">Metropolitan Cafe and Deli</a></td>
