@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-08-26</span>
+<span class="latest">Last updated: 2023-08-27</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,45 +45,30 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Aug 26, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/84f7aad358997dfed955ad1fb8982b31e2f42a01">build: bump serde_json from 1.0.104 to 1.0.105
-
-Bumps [serde_json](https://github.com/serde-rs/json) from 1.0.104 to 1.0.105.
-- [Release notes](https://github.com/serde-rs/json/releases)
-- [Commits](https://github.com/serde-rs/json/compare/v1.0.104...v1.0.105)
-
----
-updated-dependencies:
-- dependency-name: serde_json
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+<td>Aug 27, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/50d3b418aa809b7299c42fe4177d4ac6e6106c81">cleanup: fix latest nightly lints</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Aug 24, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/134d85e635dc783b206d036cabb078ec0a75b9c8">backend: reduce `BackendError` size somewhat
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Aug 27, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/6e911beabd3951866cc9cedfc9952246f78eed1b">build: use workspace dependencies
 
-One of the error types that I later created embedded `BackendError`, but `clippy` complained that the size of the type was too large. This helps address that.</a></td>
+We generally want to be using the same dependencies across our crates (and we rely on `Cargo.lock` to resolve them for the whole workspace), so this commit just takes the extra step and extracts common dependencies to "workspace dependencies". Note that the `scm-bisect` and `scm-record` crates keep their own individual dependencies since they're intended to be used as standalone libraries.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Aug 23, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/1633eccdca6c3ad82bf67072a79eaad51080a45c">Use `{ workspace = true }` to appease VS Code's `Cargo.toml` parser
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Aug 27, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/d910b2abddee9028b2bbf9555d12db6e6ce9f5b3">build(record): relax some dependencies
 
-The VS Code "Better TOML" plugin (which I think most of our VS Code developers use?) doesn't support the `x.y = z` syntax at the top level, even though it's valid TOML. 
-
-This is also useful if we ever want to add additional properties in different sub-crates (although unlikely for the near future).</a></td>
+Since `scm-record` is intended to be used as a library, relax some of the dependency versions.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">4 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">14 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
