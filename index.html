@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-08-27</span>
+<span class="latest">Last updated: 2023-08-28</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -46,29 +46,27 @@ This page is an activity feed of my internet presence, updated once a day.
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Aug 27, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/50d3b418aa809b7299c42fe4177d4ac6e6106c81">cleanup: fix latest nightly lints</a></td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/9ebe9187aacd300e27cfe79ed70b462e4eda7747">docs: release v0.8.0</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Aug 27, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/6e911beabd3951866cc9cedfc9952246f78eed1b">build: use workspace dependencies
+<td><a href="https://github.com/arxanas/git-branchless/commits/ee2a7dfb20d6be0f6b5112fe1afef7f9fde538b0">build: delete `git-branchless-testing` crate
 
-We generally want to be using the same dependencies across our crates (and we rely on `Cargo.lock` to resolve them for the whole workspace), so this commit just takes the extra step and extracts common dependencies to "workspace dependencies". Note that the `scm-bisect` and `scm-record` crates keep their own individual dependencies since they're intended to be used as standalone libraries.</a></td>
+The `git-branchless-lib` crate has a dev-dependency on `git-branchless-testing`, and `git-branchless-testing` has a dependency on `git-branchless-lib`, inducing a circular dependency that means they can't be published to crates.io. This commit collapses them into the same crate again to resolve this circular dependency.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
 <td>Aug 27, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/d910b2abddee9028b2bbf9555d12db6e6ce9f5b3">build(record): relax some dependencies
-
-Since `scm-record` is intended to be used as a library, relax some of the dependency versions.</a></td>
+<td><a href="https://github.com/martinvonz/jj/commits/ddf1a501b974084e36018dab984bc52abbd4b4a1">merge_tools: reorder `editor_args_from_settings`</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">14 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">6 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
