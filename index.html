@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-09-25</span>
+<span class="latest">Last updated: 2023-09-26</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,35 +44,64 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Sep 25, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/642ac8c799b2de9ee78446c35eada92884458f75">merge_tools: pass `Matcher` in for interactive use
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Sep 26, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/8520d4e1b00055e8f927129e2a4cafda35aedf32">build: bump insta from 1.31.0 to 1.32.0
 
-For `jj split --interactive`, the user will want to select changes from a subset of files. This means that we need to pass the `Matcher` object when materializing the list of changed files. I also updated the parameter lists so that the matcher always immediately follows the tree objects.</a></td>
-</tr>
+Bumps [insta](https://github.com/mitsuhiko/insta) from 1.31.0 to 1.32.0.
+- [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/mitsuhiko/insta/compare/1.31.0...1.32.0)
 
-<tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Sep 25, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/37ef0ca9deebf5f097be60baff5c0f47a3f3a50d">command: add `--interactive` flag to `jj commit`</a></td>
+---
+updated-dependencies:
+- dependency-name: insta
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Sep 25, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/4a964fcbe18b202cbcb73ab102d8c9095cd4dafa">fix(amend): support amending merge commits
+<td>Sep 26, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/43f2db8cf4a787a6e4f5b1682c39e159088e6abb">build: bump sha1 from 0.10.5 to 0.10.6
 
-Previously, `Repo::get_paths_touched_by_commit` returned `None` if the commit was a merge commit, the idea being that a merge commit doesn't have a single correct "patch". However, no call-site cared about this interpretation, and all call-sites worked just as well or better with the new interpretation, where we return the union of all changed paths with respect to all parents. Usually, the impact is that the dehydrated commit is a slightly larger commit than normal.
+Bumps [sha1](https://github.com/RustCrypto/hashes) from 0.10.5 to 0.10.6.
+- [Commits](https://github.com/RustCrypto/hashes/compare/sha1-v0.10.5...sha1-v0.10.6)
 
-`git amend` was failing when `HEAD` was a merge commit for this reason, since the "fast amend" path first dehydrated the current commit. Before this commit, git-branchless would panic; after this commit, it successfully amends the merge commit.
+---
+updated-dependencies:
+- dependency-name: sha1
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
 
-Note that the `--merge` option to `git amend` is unrelated: it deals with restacking and merging descendant commits after the amend has been carried out.</a></td>
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Sep 26, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b263f9a5e8514594b334ba35ac8cd16f856bc2d4">build: bump unicode-width from 0.1.10 to 0.1.11
+
+Bumps [unicode-width](https://github.com/unicode-rs/unicode-width) from 0.1.10 to 0.1.11.
+- [Commits](https://github.com/unicode-rs/unicode-width/compare/v0.1.10...v0.1.11)
+
+---
+updated-dependencies:
+- dependency-name: unicode-width
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">6 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
