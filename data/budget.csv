@@ -1390,7 +1390,7 @@ Transportation,2023,8,-13990.0
 Clothes & Grooming ,2023,8,-119170.0
 Housing,2023,8,-1850000.0
 Internet,2023,8,-34880.0
-Uncategorized,2023,9,10790.0
+Uncategorized,2023,9,-607410.0
 Vacation,2023,9,-3162220.0
 Inflow: Ready to Assign,2023,9,9748250.0
 Online Subscriptions,2023,9,-6620.0
@@ -1411,8 +1411,10 @@ Phone,2023,9,-25330.0
 Medical,2023,9,-229610.0
 Internet,2023,9,-36490.0
 Uncategorized,2023,10,0.0
-Leisure,2023,10,-130000.0
+Leisure,2023,10,-141990.0
 Groceries,2023,10,-155320.0
 Household Goods,2023,10,-24570.0
 Online Subscriptions,2023,10,-6620.0
 Medical,2023,10,-430000.0
+Eating Out,2023,10,-780.0
+Inflow: Ready to Assign,2023,10,8500.0
