@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-10-09</span>
+<span class="latest">Last updated: 2023-10-10</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,31 +44,35 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Oct 03, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/efebc34ea86e8fce394034c89631cbb960324ffa">docs: rename `FAQ.md` to `faq.md`
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Oct 10, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/fcc78686b440b33b589c2a733bf7bfceb5c35354">build: delete `git-record` crate
 
-All of the other documentation items are lowercase, and I couldn't find this document because I was looking in the `f` section instead of the `F` section. (Hopefully this commit doesn't hassle macOS/case-insensitive-filesystem users too much.)</a></td>
+Superseded by `scm-record`.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Oct 03, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/8801459087ecf195408a194eba61450a23beacdd">docs: discuss `jj commit -i` in `faq.md`</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Oct 10, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/b9ebdf0696c5396dd158ff1846bd30bc35444b4f">refactor(record): explicitly use the mask for viewport-wide drawing
+
+In a future commit, we'll change most of these components to have a fixed width instead of spanning the entire viewport, since we'll want to put some of them side-by-side. To start with, make it explicit where we're relying on the viewport dimensions for rendering.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Oct 03, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/a32a0c5014b99f7fe3d91377237b3c4408d87235">docs: rename `FAQ.md` to `faq.md`
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Oct 10, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/82a28ce4e437af1b8bb9194581d77f34c5696b59">feat(record): change masks to be half-open
 
-All of the other documentation items are lowercase, and I couldn't find this document because I was looking in the `f` section instead of the `F` section. (Hopefully this commit doesn't hassle macOS/case-insensitive-filesystem users too much.)</a></td>
+In a future where we render two `FileView`s side-by-side, we'll want to mask the `FileView`s in the `x`-dimension but not the `y`-dimension. Currently, we achieve this by calculating the expected height of the `FileView` and using that for the mask height, but the calculation is easy to mess up and hard to fix. Thus, we change masks to express the concept we want directly, and allow it to be unbounded in one direction.
+
+The design could probably be improved. For example, we may not want all of `Viewport::rect`, `Viewport::mask`, and `Viewport::mask_rect` to exist, as I can imagine that having this many variants of a similar concept would be confusing to readers.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">8 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">23 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
