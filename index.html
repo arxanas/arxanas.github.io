@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-10-14</span>
+<span class="latest">Last updated: 2023-10-15</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,34 +45,28 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Oct 10, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/fcc78686b440b33b589c2a733bf7bfceb5c35354">build: delete `git-record` crate
-
-Superseded by `scm-record`.</a></td>
+<td>Oct 14, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/1ea9fbb88861e776f6156986195e15f767ec6b4c">refactor(repo): create `Repo::get_branchless_dir`</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Oct 10, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/b9ebdf0696c5396dd158ff1846bd30bc35444b4f">refactor(record): explicitly use the mask for viewport-wide drawing
+<td>Oct 14, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/62abbe4cb04cf82e27b363d3df4ab0ddd3ff39a5">fix(hooks): use same `branchless` dir for all worktrees
 
-In a future commit, we'll change most of these components to have a fixed width instead of spanning the entire viewport, since we'll want to put some of them side-by-side. To start with, make it explicit where we're relying on the viewport dimensions for rendering.</a></td>
+Previously, all worktrees would have their own event log, which means that they wouldn't agree on the set of visible commits. They would also have to recalculate the same DAG, etc. After this commit, they all share the same event log, etc.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Oct 10, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/82a28ce4e437af1b8bb9194581d77f34c5696b59">feat(record): change masks to be half-open
-
-In a future where we render two `FileView`s side-by-side, we'll want to mask the `FileView`s in the `x`-dimension but not the `y`-dimension. Currently, we achieve this by calculating the expected height of the `FileView` and using that for the mask height, but the calculation is easy to mess up and hard to fix. Thus, we change masks to express the concept we want directly, and allow it to be unbounded in one direction.
-
-The design could probably be improved. For example, we may not want all of `Viewport::rect`, `Viewport::mask`, and `Viewport::mask_rect` to exist, as I can imagine that having this many variants of a similar concept would be confusing to readers.</a></td>
+<td>Oct 14, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/3381acc2ab53ff923173a7d88bf875d29fc5a82f">temp: fix phabricator submit test</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">23 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">27 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -126,8 +120,8 @@ Feb 2023 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
-<td>12</td>
-<td>$235.73</td>
+<td>13</td>
+<td>$256.33</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Subway">Subway</a></td>
