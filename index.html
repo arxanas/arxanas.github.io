@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-10-22</span>
+<span class="latest">Last updated: 2023-10-23</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,33 +44,31 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
 <td>Oct 22, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/69ca7bfb529162e870d9eef309c48d5b1de04927">fix(submit:phabricator): do not let events escape `git test` worktrees
-
-`arc diff` will amend the current commit as part of the submit process (primarily to create the change ID/embed the review URL in the commit message), but we don't want those changes to be available in the regular event log. My solution is to create a special event transaction ID that indicates that events should not be added to the event log.
-
-Another solution could be to allow events to created in a transaction, and then roll back the transaction rather than commit it. (Currently, "transactions" only refer to groups of events, and are always committed.) Normally, SQLite (which we use for the event log) would expose this kind of transactional functionality, but we can't use database-level transactions because the events span multiple process calls (such as Git hooks that are invoked as child processes), so we can't use the normal database mechanisms for this. It would be a lot of work to implement our own transaction system, so it just seems simpler to suppress all events immediately.
-
-One consequence is that users who create or rewrite commits inside `git test` calls will not have the events be preserved, which hopefully does not happen often in practice. Note that `git test fix` would still look at the resulting commits and apply the tree-level fixes, even though the original rewrite events in the worktrees wouldn't be preserved.</a></td>
+<td><a href="https://github.com/martinvonz/jj/commits/aacad9dc8ccf2e5d8ef226ecbfbe203e0ad224e8">docs: discuss `jj commit -i` in `FAQ.md`</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Oct 22, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/12ad204540021c4d289812a2c098b31d7b336bc7">fix(submit): run in correct repo working copy directory when in a worktree</a></td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/4535c637449a6e90f69c68a3a056873893df9dc3">cleanup(build): set `resolver = "2"` in workspace
+
+To silence the warnings about using resolver v1 by default.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Oct 22, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/40cdcab15d3824c65f863aded4d4002134ad8899">fix(hooks): invoke Git hooks in worktrees</a></td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/8ce597892402a1f0677fa14a3926a03db3372ac6">fix(effects): prevent deadlock in flushing stderr
+
+If tracing is installed, the `warn!` call will attempt to write to `ErrorStream`, which seems to cause a deadlock when we are destroying the `ErrorStream`.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">21 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">27 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
