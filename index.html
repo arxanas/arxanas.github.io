@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-11-05</span>
+<span class="latest">Last updated: 2023-11-06</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,25 +44,35 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Nov 02, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/0a81f54f0903d3f91f502841d89fa9a5f2bca8b0">wip: switch to `ignore` crate for gitignore handling
+<td><a href="https://github.com/arxanas/OpenSteamController">arxanas/OpenSteamController</a></td>
+<td>Nov 06, 2023</td>
+<td><a href="https://github.com/arxanas/OpenSteamController/commits/171cded5b5df2e060354826e3aa8713889c9712e">Add neutral trackpad haptic feedback
 
-I added the test `test_gitignore_negative_parent_directory` which fails in our gitignore implementation but passes with the `ignore` implementation.</a></td>
+Using only touch, it's hard to tell if one's finger is roughly in the center/neutral position on the trackpad. This commit adds haptic feedback that triggers when moving the logical trackpad in or out of a center ring, intended to correspond to moving a physical joystick from neutral.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Nov 02, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/6632d9f4442a3a64d98c152200d5e157cbd6d7f6">wip: switch to `ignore` crate for gitignore handling
+<td><a href="https://github.com/arxanas/OpenSteamController">arxanas/OpenSteamController</a></td>
+<td>Nov 06, 2023</td>
+<td><a href="https://github.com/arxanas/OpenSteamController/commits/92bf1547420e02e79926c9cf2026efa81271d135">Add virtual notches for trackpads (via haptic feedback)
 
-I added the test `test_gitignore_negative_parent_directory` which fails in our gitignore implementation but passes with the `ignore` implementation.</a></td>
+For Smash Bros., it's fairly important to know exactly what angle the joystick is pointing. On physical devices, one can use notches (such as the GameCube controller) to determine the angle of the joystick. This commit adds "virtual notches" by triggering haptic feedback when the joystick rotates by a certain amount. (Unlike physical notches, the virtual notches trigger even when the joystick is not pressed to the maximum amount, against the joystick shell.)
+
+Note that the Steam Controller hardware has the trackpad sensors offset by about 15 degrees. This commit doesn't address that, so the notches will appear to be 15 degrees off.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/OpenSteamController">arxanas/OpenSteamController</a></td>
+<td>Nov 06, 2023</td>
+<td><a href="https://github.com/arxanas/OpenSteamController/commits/32f8776c9017d1a6d1ce5a3c12099b04cdd8ad1e">Always register trackpad position if clicked
+
+I have had situations where I've clicked the trackpad, but the trackpad position hasn't been calculated correctly and has defaulted to the neutral position. This could be because of sloppy software (since we don't properly handle the curvature of the trackpad) or degraded hardware or both. If the trackpad is being clicked, though, that certainly indicates that we should at least try to read the trackpad position, rather than bailing early due to probably-faulty sensitivity calculations.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">0 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
