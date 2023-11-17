@@ -1136,10 +1136,11 @@ Groceries,2022,8,-533460.0
 Medical,2022,8,-2059000.0
 Eating Out,2022,8,-407930.0
 Investment,2022,8,-8220.0
-Car,2022,8,-22575310.0
+Car,2022,8,-22466780.0
 All savings,2022,8,-12463580.0
 Transportation,2022,8,-97220.0
 Gifts,2022,8,-60380.0
+Insurance,2022,8,-108530.0
 Productivity,2022,8,-281170.0
 Leisure,2022,8,-145710.0
 Electricity,2022,8,-20090.0
@@ -1163,10 +1164,12 @@ Electricity,2022,9,-18550.0
 Transportation,2022,9,-88480.0
 Dates,2022,9,-123230.0
 All savings,2022,9,-11340970.0
-Car,2022,9,-52200.0
+Insurance,2022,9,-27520.0
 Reimbursements,2022,9,-1306910.0
 Household Goods,2022,9,-116690.0
+Gas,2022,9,-23230.0
 Cosmetics,2022,9,-10630.0
+Tolls,2022,9,-1450.0
 Split,2022,9,-123000.0
 Investment,2022,9,-16090.0
 Uncategorized,2022,10,-62340920.0
@@ -1182,15 +1185,18 @@ Housing,2022,10,-1850000.0
 Productivity,2022,10,-115660.0
 Medical,2022,10,-7644240.0
 Investment,2022,10,-16020.0
-Car,2022,10,-118100.0
+Car,2022,10,-15000.0
+Tolls,2022,10,-4150.0
 Electricity,2022,10,-15360.0
 Reimbursements,2022,10,949820.0
 Transportation,2022,10,-61990.0
+Insurance,2022,10,-40050.0
 Vacation,2022,10,-880080.0
 Leisure,2022,10,-67710.0
 Wedding,2022,10,-514070.0
 Clothes & Grooming ,2022,10,-87900.0
 Fitness,2022,10,-37020.0
+Gas,2022,10,-58900.0
 Uncategorized,2022,11,29004460.0
 Housing,2022,11,-3903110.0
 Inflow: Ready to Assign,2022,11,-623460.0
@@ -1198,15 +1204,17 @@ Transportation,2022,11,-148100.0
 Online Subscriptions,2022,11,-6620.0
 Eating Out,2022,11,-430720.0
 Vacation,2022,11,-575110.0
-Car,2022,11,-126600.0
+Parking,2022,11,-76790.0
 Investment,2022,11,-21720.0
 Household Goods,2022,11,-109380.0
 Dates,2022,11,-115800.0
 Productivity,2022,11,-109000.0
 Electricity,2022,11,-17320.0
+Tolls,2022,11,-9850.0
 Leisure,2022,11,-889610.0
 Groceries,2022,11,-292410.0
 Medical,2022,11,-1100.0
+Insurance,2022,11,-39960.0
 Fitness,2022,11,-37020.0
 Wedding,2022,11,-18580.0
 Inflow: Ready to Assign,2022,12,986820.0
@@ -1219,15 +1227,18 @@ Investment,2022,12,-120220.0
 Groceries,2022,12,-246090.0
 Household Goods,2022,12,-83190.0
 Dates,2022,12,-92050.0
-Car,2022,12,-100090.0
+Tolls,2022,12,-13500.0
 All savings,2022,12,0.0
 Medical,2022,12,-15340.0
 Wedding,2022,12,-3535940.0
 Split,2022,12,-203000.0
+Gas,2022,12,-41160.0
 Electricity,2022,12,-21020.0
 Productivity,2022,12,-49000.0
 Gifts,2022,12,-497770.0
 Vacation,2022,12,-2506310.0
+Insurance,2022,12,-45030.0
+Car,2022,12,-400.0
 Housing,2022,12,-1850000.0
 Inflow: Ready to Assign,2023,1,-355020.0
 Uncategorized,2023,1,1530.0
@@ -1244,7 +1255,8 @@ Eating Out,2023,1,-185220.0
 Household Goods,2023,1,-62000.0
 Medical,2023,1,-2210.0
 Electricity,2023,1,-16620.0
-Car,2023,1,-64090.0
+Gas,2023,1,-35700.0
+Insurance,2023,1,-28390.0
 Leisure,2023,1,-24530.0
 Housing,2023,1,-1850000.0
 Internet,2023,1,-34880.0
@@ -1260,13 +1272,16 @@ Investment,2023,2,-148050.0
 Gifts,2023,2,-139340.0
 Wedding,2023,2,-154500.0
 Dates,2023,2,-184080.0
-Car,2023,2,-1253330.0
+Tolls,2023,2,-16800.0
 Coffee,2023,2,-11030.0
+Car,2023,2,-1114390.0
 Medical,2023,2,-2210.0
 Electricity,2023,2,-18640.0
 Transportation,2023,2,-107750.0
 Reimbursements,2023,2,-303110.0
+Insurance,2023,2,-62640.0
 Fitness,2023,2,-14310.0
+Gas,2023,2,-59500.0
 All savings,2023,2,-32500000.0
 Clothes & Grooming ,2023,2,-210000.0
 Housing,2023,3,-3700000.0
@@ -1281,12 +1296,13 @@ Household Goods,2023,3,-231120.0
 Leisure,2023,3,-81120.0
 Clothes & Grooming ,2023,3,-148830.0
 Dates,2023,3,-288300.0
-Car,2023,3,-63700.0
+Tolls,2023,3,-8400.0
 Cosmetics,2023,3,-525000.0
 Transportation,2023,3,-14710.0
 All savings,2023,3,-14665930.0
 Groceries,2023,3,-225640.0
 Reimbursements,2023,3,-1646520.0
+Insurance,2023,3,-55300.0
 Medical,2023,3,-39530.0
 Electricity,2023,3,-19400.0
 Fitness,2023,3,-35170.0
@@ -1310,7 +1326,10 @@ Medical,2023,4,-284520.0
 Electricity,2023,4,-19890.0
 Reimbursements,2023,4,-237030.0
 Productivity,2023,4,-116000.0
-Car,2023,4,-121750.0
+Insurance,2023,4,-49150.0
+Gas,2023,4,-53750.0
+Parking,2023,4,-15000.0
+Tolls,2023,4,-3850.0
 Charitable,2023,4,-50000.0
 Housing,2023,4,-1850000.0
 Internet,2023,4,-34880.0
@@ -1325,14 +1344,16 @@ Wedding,2023,5,-14540870.0
 Investment,2023,5,-19040.0
 Transportation,2023,5,-135340.0
 Leisure,2023,5,-21520.0
-Car,2023,5,-120310.0
+Gas,2023,5,-58790.0
 Groceries,2023,5,-328860.0
 Household Goods,2023,5,-65790.0
 Electricity,2023,5,-19570.0
 Productivity,2023,5,-116000.0
 All savings,2023,5,-2341150.0
+Insurance,2023,5,-50410.0
 Gifts,2023,5,-50000.0
 Clothes & Grooming ,2023,5,-1059020.0
+Parking,2023,5,-11110.0
 Charitable,2023,5,-105200.0
 Vacation,2023,5,-40200.0
 Cosmetics,2023,5,-380000.0
@@ -1349,13 +1370,15 @@ Fitness,2023,6,-70340.0
 Dates,2023,6,-327740.0
 Leisure,2023,6,-56210.0
 Reimbursements,2023,6,-228780.0
-Car,2023,6,-133300.0
+Tolls,2023,6,-10450.0
 Investment,2023,6,-29450.0
+Parking,2023,6,-92730.0
 Productivity,2023,6,-116000.0
 Gifts,2023,6,-346340.0
 Medical,2023,6,-179150.0
 Groceries,2023,6,-287330.0
 Electricity,2023,6,-17660.0
+Insurance,2023,6,-30120.0
 All savings,2023,6,-11913950.0
 Clothes & Grooming ,2023,6,-273060.0
 Housing,2023,6,-1850000.0
@@ -1368,8 +1391,9 @@ Eating Out,2023,7,-148110.0
 Leisure,2023,7,-64340.0
 Productivity,2023,7,-123000.0
 Investment,2023,7,-8460.0
-Car,2023,7,-49800.0
+Tolls,2023,7,-1500.0
 Wedding,2023,7,-17159340.0
+Insurance,2023,7,-48300.0
 Electricity,2023,7,-20410.0
 Fitness,2023,7,-70770.0
 All savings,2023,7,-22500000.0
@@ -1393,14 +1417,17 @@ Reimbursements,2023,8,-2684630.0
 Medical,2023,8,-90070.0
 Electricity,2023,8,-14550.0
 Household Goods,2023,8,-49370.0
-Car,2023,8,-107080.0
+Insurance,2023,8,-69310.0
 Groceries,2023,8,-245860.0
 Gifts,2023,8,-1268000.0
 Cosmetics,2023,8,-400000.0
 Phone,2023,8,-33050.0
+Gas,2023,8,-33580.0
 Transportation,2023,8,-13990.0
+Tolls,2023,8,-1200.0
 Coffee,2023,8,-14120.0
 Clothes & Grooming ,2023,8,-119170.0
+Parking,2023,8,-2990.0
 Housing,2023,8,-1850000.0
 Internet,2023,8,-34880.0
 Uncategorized,2023,9,10551500.0
@@ -1408,7 +1435,8 @@ Vacation,2023,9,-3184460.0
 Inflow: Ready to Assign,2023,9,20288960.0
 Online Subscriptions,2023,9,-6620.0
 Leisure,2023,9,-33820.0
-Car,2023,9,-470120.0
+Insurance,2023,9,-214940.0
+Tolls,2023,9,-1200.0
 Investment,2023,9,-1293780.0
 Reimbursements,2023,9,-2650.0
 Gifts,2023,9,869500.0
@@ -1423,12 +1451,14 @@ Medical,2023,9,-273160.0
 Housing,2023,9,-2165780.0
 Dates,2023,9,-352560.0
 Coffee,2023,9,-50220.0
+Parking,2023,9,-18730.0
 Phone,2023,9,-25330.0
+Car,2023,9,-235250.0
 All savings,2023,9,-10540710.0
 Internet,2023,9,-36490.0
 Uncategorized,2023,10,-29756720.0
 Leisure,2023,10,-3447710.0
-Groceries,2023,10,-297550.0
+Groceries,2023,10,-389650.0
 Household Goods,2023,10,-104380.0
 Online Subscriptions,2023,10,-6620.0
 All savings,2023,10,-35119400.0
@@ -1439,32 +1469,38 @@ Vacation,2023,10,-1717350.0
 Inflow: Ready to Assign,2023,10,96786600.0
 Coffee,2023,10,-154610.0
 Investment,2023,10,-122580.0
-Car,2023,10,-75750.0
+Tolls,2023,10,-12900.0
 Electricity,2023,10,-17140.0
 Dates,2023,10,-33000.0
 Productivity,2023,10,-170000.0
+Insurance,2023,10,-59860.0
 Transportation,2023,10,-16610.0
 Meal reimbursements,2023,10,-305400.0
+Gas,2023,10,-25070.0
 Phone,2023,10,-25330.0
+Parking,2023,10,-2990.0
 Gifts,2023,10,-588220.0
 Clothes & Grooming ,2023,10,-544010.0
 Housing,2023,10,-2000000.0
 Internet,2023,10,-36490.0
-Uncategorized,2023,11,-25220.0
-Meal reimbursements,2023,11,-254380.0
+Uncategorized,2023,11,-16480.0
+Meal reimbursements,2023,11,-282840.0
 Online Subscriptions,2023,11,-6620.0
-Groceries,2023,11,-76950.0
+Groceries,2023,11,-244850.0
 Reimbursements,2023,11,-15990.0
-Coffee,2023,11,-73520.0
+Coffee,2023,11,-88480.0
 Inflow: Ready to Assign,2023,11,-2501780.0
-Eating Out,2023,11,-113700.0
+Eating Out,2023,11,-160220.0
 Investment,2023,11,-23500.0
 Wedding,2023,11,-56220.0
 Leisure,2023,11,-13990.0
 Household Goods,2023,11,-23370.0
-Car,2023,11,-63660.0
+Tolls,2023,11,-7000.0
 Vacation,2023,11,-865000.0
-Dates,2023,11,-99200.0
+Dates,2023,11,-106080.0
 Electricity,2023,11,-19250.0
 Productivity,2023,11,-75000.0
 Medical,2023,11,-295000.0
+Gas,2023,11,-16840.0
+Insurance,2023,11,-56660.0
+Parking,2023,11,-500.0
