@@ -15,8 +15,8 @@ Eating Out,2016,11,-54360.0
 Internet,2016,11,-60000.0
 Uncategorized,2016,11,0.0
 Charitable,2016,11,-500000.0
-Reimbursements,2016,12,-56650.0
 Housing,2016,12,-1348750.0
+Reimbursements,2016,12,-56650.0
 Online Subscriptions,2016,12,-5000.0
 Inflow: Ready to Assign,2016,12,12104740.0
 Uncategorized,2016,12,30969770.0
@@ -946,8 +946,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Inflow: Ready to Assign,2021,10,13219440.0
 Coffee,2021,10,-50000.0
+Inflow: Ready to Assign,2021,10,13219440.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -1487,7 +1487,7 @@ Uncategorized,2023,11,2610.0
 Meal reimbursements,2023,11,-370810.0
 Online Subscriptions,2023,11,-6620.0
 Groceries,2023,11,-338640.0
-Reimbursements,2023,11,-15990.0
+Reimbursements,2023,11,-151270.0
 Coffee,2023,11,-181720.0
 Inflow: Ready to Assign,2023,11,-2501780.0
 Eating Out,2023,11,-339190.0
@@ -1508,3 +1508,4 @@ Cosmetics,2023,11,-400000.0
 Phone,2023,11,-25330.0
 Clothes & Grooming ,2023,11,-110000.0
 Housing,2023,11,-2000000.0
+Internet,2023,11,-36490.0
