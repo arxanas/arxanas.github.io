@@ -1,0 +1,29 @@
+[project]
+name = "arxanas.github.io"
+version = "0.1"
+description = ""
+authors = [
+    {name = "Waleed Khan", email = "me@waleedkhan.name"},
+]
+dependencies = [
+    "beautifulsoup4>=4.9.3",
+    "feedparser>=6.0.2",
+    "requests>=2.25.1",
+]
+requires-python = ">=3.8"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.11.0",
+    "mypy>=1.7.1",
+    "pytest>=7.4.3",
+    "types-beautifulsoup4>=4.12.0.7",
+    "types-requests>=2.31.0.10",
+    "ruff>=0.1.7",
+]
+
+[tool.pdm.scripts]
+build = {call = "build:main"}
+
+[tool.pytest.ini_options]
+python_files = "*.py"
