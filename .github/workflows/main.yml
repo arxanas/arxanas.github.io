@@ -6,6 +6,8 @@ on:
   push:
     branches: ["master"]
 
+  pull_request:
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -32,6 +34,18 @@ jobs:
 
       - name: Install dependencies
         run: pdm install
+
+      - name: Run tests
+        run: pdm run pytest
+
+      - name: Check types
+        run: pdm run mypy .
+
+      - name: Run linter
+        run: pdm run ruff check .
+
+      - name: Check formatting
+        run: pdm run ruff format --check .
 
       - name: Build website
         env:
