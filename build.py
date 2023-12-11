@@ -4,6 +4,7 @@ from __future__ import annotations
 import collections
 import csv
 import io
+import itertools
 import json
 import logging
 import os
@@ -161,7 +162,6 @@ This page is an activity feed of my internet presence, updated once a day.
 
 def get_restaurant_info() -> Mapping[str, str]:
     budget_id = "last-used"
-    category_name = "Eating Out"
     ynab_api_key = os.environ["YNAB_API_KEY"]
     headers = {"Authorization": f"Bearer {ynab_api_key}"}
     category_groups = requests.get(
@@ -169,23 +169,29 @@ def get_restaurant_info() -> Mapping[str, str]:
         headers=headers,
     ).json()["data"]["category_groups"]
 
-    category_id = None
-    for category_group in category_groups:
-        for category in category_group["categories"]:
-            if category["name"] == category_name:
-                category_id = category["id"]
-    assert category_id is not None, f"Could not find YNAB category: {category_name}"
+    def get_category_id(category_name: str) -> str:
+        for category_group in category_groups:
+            for category in category_group["categories"]:
+                if category["name"] == category_name:
+                    return category["id"]
+        raise ValueError(f"Could not find YNAB category: {category_name}")
+
+    category_names = ["Eating Out", "Coffee"]
+    category_ids = [get_category_id(category_name) for category_name in category_names]
 
     year = int(time.strftime("%Y")) - 1
     month = time.strftime("%m")
     since_date = f"{year}-{month}-01"
-    transactions = requests.get(
-        f"https://api.youneedabudget.com/v1/budgets/{budget_id}/categories/{category_id}/transactions",
-        headers=headers,
-        params={
-            "since_date": since_date,
-        },
-    ).json()["data"]["transactions"]
+    transactions = itertools.chain.from_iterable(
+        requests.get(
+            f"https://api.youneedabudget.com/v1/budgets/{budget_id}/categories/{category_id}/transactions",
+            headers=headers,
+            params={
+                "since_date": since_date,
+            },
+        ).json()["data"]["transactions"]
+        for category_id in category_ids
+    )
 
     payees = collections.defaultdict(list)
     for transaction in transactions:
