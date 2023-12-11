@@ -1,11 +1,10 @@
 name: Publish site
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: ["master"]
-  
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,19 +25,19 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - uses: pdm-project/setup-pdm@v3
         with:
-          python-version: "3.11.0"
+          python-version: 3.12
+          cache: true
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pdm install
 
       - name: Build website
         env:
           YNAB_API_KEY: ${{ secrets.YNAB_API_KEY }}
-        run: python build.py
-    
+        run: pdm run build
+
       # Push to the gh-pages branch
       - name: Deploy website
         uses: Cecilapp/GitHub-Pages-deploy@3.1.0
