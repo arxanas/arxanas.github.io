@@ -15,8 +15,8 @@ Eating Out,2016,11,-54360.0
 Internet,2016,11,-60000.0
 Uncategorized,2016,11,0.0
 Charitable,2016,11,-500000.0
-Housing,2016,12,-1348750.0
 Reimbursements,2016,12,-56650.0
+Housing,2016,12,-1348750.0
 Online Subscriptions,2016,12,-5000.0
 Inflow: Ready to Assign,2016,12,12104740.0
 Uncategorized,2016,12,30969770.0
@@ -1510,16 +1510,16 @@ Phone,2023,11,-25330.0
 Clothes & Grooming ,2023,11,-110000.0
 Housing,2023,11,-2000000.0
 Internet,2023,11,-46480.0
-Uncategorized,2023,12,-458500.0
-Reimbursements,2023,12,-392940.0
-Coffee,2023,12,-48600.0
-Eating Out,2023,12,-151800.0
+Uncategorized,2023,12,2380.0
+Reimbursements,2023,12,-640150.0
+Coffee,2023,12,-62720.0
+Eating Out,2023,12,-206360.0
 Inflow: Ready to Assign,2023,12,11963120.0
-Leisure,2023,12,-24440.0
+Leisure,2023,12,-38210.0
 Investment,2023,12,-22990.0
 Productivity,2023,12,-334000.0
-Vacation,2023,12,-1272960.0
-Household Goods,2023,12,-147490.0
+Vacation,2023,12,-1425010.0
+Household Goods,2023,12,-162360.0
 Electricity,2023,12,-19820.0
 Insurance,2023,12,-51380.0
 Medical,2023,12,-111770.0
@@ -1528,4 +1528,4 @@ Groceries,2023,12,-52190.0
 Phone,2023,12,-25330.0
 Tolls,2023,12,-3050.0
 Clothes & Grooming ,2023,12,-59260.0
-Gifts,2023,12,-14070.0
+Gifts,2023,12,-214070.0
