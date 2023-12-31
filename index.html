@@ -21,15 +21,15 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-12-30</span>
+<span class="latest">Last updated: 2023-12-31</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
         <li class="link"><a href="https://blog.waleedkhan.name">Blog</a></li>
         <li class="link-info"><p>
 <span class="latest">Latest post</span>
-<span class="latest">Sep 01, 2023 &bull; software-engineering</span>
-<a href="https://blog.waleedkhan.name/on-trivial-changes/">On trivial changes</a><br />
+<span class="latest">Dec 30, 2023 &bull; software-engineering &bull; software-verification &bull; reprint</span>
+<a href="https://blog.waleedkhan.name/testing-tui-apps/">Testing terminal user interface apps</a><br />
 </p>
 </li>
         <li class="link"><a href="https://github.com/arxanas">GitHub</a></li>
@@ -44,33 +44,33 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Dec 27, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/88cc4daad3c419803ae1c70a533123be343c62f6">merge_tools: upgrade to `scm-record` v0.2.0
-
-To get the fix at https://github.com/arxanas/git-branchless/pull/1013 "fix(record): don't add new files with no selected contents".</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
-<td>Dec 25, 2023</td>
-<td><a href="https://github.com/martinvonz/jj/commits/9be0bf7ddd2714d18e98f30a667d8f1ceefb8efc">merge_tools: upgrade to `scm-record` v0.2.0
-
-To get the fix at https://github.com/arxanas/git-branchless/pull/1013 "fix(record): don't add new files with no selected contents".</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Dec 31, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/20f18c752eac92daacf8b5fb92c1b71c664e9637">docs(bisect): update some comments on bounds</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Dec 25, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/6171452b87fbe7cb9bb2b765e6fac82653951104">build: delete `scm-record` crate
+<td>Dec 31, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/34d2695b5422ce65ad7098a3c52d6159bad00388">feat(bisect): lift the binary search's speculation to `Search`
 
-This crate has been extracted to https://github.com/arxanas/scm-record now that jj also depends on it, so that it can have its own release cadence, issue tracker, etc.</a></td>
+Previously, `midpoint` returned an iterator of next nodes to search, which is meant to support speculative searching. This was implemented only for the basic binary search. It could be tedious and error-prone to implement speculation by one's self, so it would be preferable if the library could do it instead. This commit lifts the speculation out of the binary search and into `Search`.
+
+Now, `midpoint` returns a single next node to search, which is substantially easier for implementors (for example, the implementation of binary search is now simply picking and returning the midpoint node).
+
+This commit fixes an arguable bug in the binary search implementation, where it didn't *quite* go in breadth-first order, and also incidentally implements breadth-first ordering for the linear search (assuming that the input nodes are originally given in topological order).</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Dec 31, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/9482abf2e90d519aff24d0f57cc0b18c6d4616cb">refactor(bisect): move basic strategies into `basic` module</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">4 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">8 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
