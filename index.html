@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2023-12-31</span>
+<span class="latest">Last updated: 2024-01-01</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -46,13 +46,7 @@ This page is an activity feed of my internet presence, updated once a day.
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Dec 31, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/20f18c752eac92daacf8b5fb92c1b71c664e9637">docs(bisect): update some comments on bounds</a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Dec 31, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/34d2695b5422ce65ad7098a3c52d6159bad00388">feat(bisect): lift the binary search's speculation to `Search`
+<td><a href="https://github.com/arxanas/git-branchless/commits/50c158fce5d9dff9a890e16c58c248011c9038cb">feat(bisect): lift the binary search's speculation to `Search`
 
 Previously, `midpoint` returned an iterator of next nodes to search, which is meant to support speculative searching. This was implemented only for the basic binary search. It could be tedious and error-prone to implement speculation by one's self, so it would be preferable if the library could do it instead. This commit lifts the speculation out of the binary search and into `Search`.
 
@@ -64,13 +58,25 @@ This commit fixes an arguable bug in the binary search implementation, where it 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>Dec 31, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/9482abf2e90d519aff24d0f57cc0b18c6d4616cb">refactor(bisect): move basic strategies into `basic` module</a></td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/5bdd466c81c8dedec29abdce3f302aa36cb61b95">feat(bisect): lift the binary search's speculation to `Search`
+
+Previously, `midpoint` returned an iterator of next nodes to search, which is meant to support speculative searching. This was implemented only for the basic binary search. It could be tedious and error-prone to implement speculation by one's self, so it would be preferable if the library could do it instead. This commit lifts the speculation out of the binary search and into `Search`.
+
+Now, `midpoint` returns a single next node to search, which is substantially easier for implementors (for example, the implementation of binary search is now simply picking and returning the midpoint node).
+
+This commit fixes an arguable bug in the binary search implementation, where it didn't *quite* go in breadth-first order, and also incidentally implements breadth-first ordering for the linear search (assuming that the input nodes are originally given in topological order).</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Dec 31, 2023</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/5c9150cffdf471a1e68a970026966403dd92aa94">refactor(bisect): move basic strategies into `basic` module</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">8 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">12 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -103,24 +109,14 @@ Feb 2023 – Present
 <td>$605.45</td>
 </tr>
 <tr>
-<td><a href="http://google.com/maps/search/Seattle+Shake+Shack">Shake Shack</a></td>
-<td>23</td>
-<td>$272.32</td>
-</tr>
-<tr>
 <td><a href="http://google.com/maps/search/Seattle+Metropolitan+Cafe+and+Deli">Metropolitan Cafe and Deli</a></td>
-<td>23</td>
-<td>$161.48</td>
+<td>22</td>
+<td>$151.00</td>
 </tr>
 <tr>
-<td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
+<td><a href="http://google.com/maps/search/Seattle+Shake+Shack">Shake Shack</a></td>
 <td>20</td>
-<td>$417.76</td>
-</tr>
-<tr>
-<td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
-<td>19</td>
-<td>$249.18</td>
+<td>$222.95</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Monorail+Espresso">Monorail Espresso</a></td>
@@ -128,9 +124,19 @@ Feb 2023 – Present
 <td>$120.73</td>
 </tr>
 <tr>
+<td><a href="http://google.com/maps/search/Seattle+GH+Pasta">GH Pasta</a></td>
+<td>18</td>
+<td>$375.26</td>
+</tr>
+<tr>
+<td><a href="http://google.com/maps/search/Seattle+Starbucks">Starbucks</a></td>
+<td>18</td>
+<td>$245.93</td>
+</tr>
+<tr>
 <td><a href="http://google.com/maps/search/Seattle+FOB+Poke+Bar">FOB Poke Bar</a></td>
-<td>15</td>
-<td>$297.88</td>
+<td>14</td>
+<td>$280.25</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Subway">Subway</a></td>
@@ -139,13 +145,13 @@ Feb 2023 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+The+Missing+Piece">The Missing Piece</a></td>
-<td>9</td>
-<td>$99.88</td>
+<td>8</td>
+<td>$84.05</td>
 </tr>
 <tr>
-<td><a href="http://google.com/maps/search/Seattle+Ma'ono+Fried+Chicken">Ma'ono Fried Chicken</a></td>
+<td><a href="http://google.com/maps/search/Seattle+Himalayan+Java+Coffee+Seattle+Wa">Himalayan Java Coffee Seattle Wa</a></td>
 <td>8</td>
-<td>$102.30</td>
+<td>$64.59</td>
 </tr>
 
 </tbody>
