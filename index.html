@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-01-01</span>
+<span class="latest">Last updated: 2024-01-02</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,38 +45,64 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Dec 31, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/50c158fce5d9dff9a890e16c58c248011c9038cb">feat(bisect): lift the binary search's speculation to `Search`
+<td>Jan 02, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/dbc58fba5af3a67a81407bad122589c227292063">build: bump anyhow from 1.0.76 to 1.0.78
 
-Previously, `midpoint` returned an iterator of next nodes to search, which is meant to support speculative searching. This was implemented only for the basic binary search. It could be tedious and error-prone to implement speculation by one's self, so it would be preferable if the library could do it instead. This commit lifts the speculation out of the binary search and into `Search`.
+Bumps [anyhow](https://github.com/dtolnay/anyhow) from 1.0.76 to 1.0.78.
+- [Release notes](https://github.com/dtolnay/anyhow/releases)
+- [Commits](https://github.com/dtolnay/anyhow/compare/1.0.76...1.0.78)
 
-Now, `midpoint` returns a single next node to search, which is substantially easier for implementors (for example, the implementation of binary search is now simply picking and returning the midpoint node).
+---
+updated-dependencies:
+- dependency-name: anyhow
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
 
-This commit fixes an arguable bug in the binary search implementation, where it didn't *quite* go in breadth-first order, and also incidentally implements breadth-first ordering for the linear search (assuming that the input nodes are originally given in topological order).</a></td>
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Dec 31, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/5bdd466c81c8dedec29abdce3f302aa36cb61b95">feat(bisect): lift the binary search's speculation to `Search`
+<td>Jan 02, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/eb6777bf106fc212b78e71b1374ff3ba04ed5919">build: bump bstr from 1.8.0 to 1.9.0
 
-Previously, `midpoint` returned an iterator of next nodes to search, which is meant to support speculative searching. This was implemented only for the basic binary search. It could be tedious and error-prone to implement speculation by one's self, so it would be preferable if the library could do it instead. This commit lifts the speculation out of the binary search and into `Search`.
+Bumps [bstr](https://github.com/BurntSushi/bstr) from 1.8.0 to 1.9.0.
+- [Commits](https://github.com/BurntSushi/bstr/compare/1.8.0...1.9.0)
 
-Now, `midpoint` returns a single next node to search, which is substantially easier for implementors (for example, the implementation of binary search is now simply picking and returning the midpoint node).
+---
+updated-dependencies:
+- dependency-name: bstr
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
 
-This commit fixes an arguable bug in the binary search implementation, where it didn't *quite* go in breadth-first order, and also incidentally implements breadth-first ordering for the linear search (assuming that the input nodes are originally given in topological order).</a></td>
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Dec 31, 2023</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/5c9150cffdf471a1e68a970026966403dd92aa94">refactor(bisect): move basic strategies into `basic` module</a></td>
+<td>Jan 02, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/5f7dbd928911805959f97d9640e85f6356d958e7">build: bump async-trait from 0.1.75 to 0.1.76
+
+Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.75 to 0.1.76.
+- [Release notes](https://github.com/dtolnay/async-trait/releases)
+- [Commits](https://github.com/dtolnay/async-trait/compare/0.1.75...0.1.76)
+
+---
+updated-dependencies:
+- dependency-name: async-trait
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">12 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">9 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
