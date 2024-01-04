@@ -946,8 +946,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Inflow: Ready to Assign,2021,10,13219440.0
 Coffee,2021,10,-50000.0
+Inflow: Ready to Assign,2021,10,13219440.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -1384,7 +1384,7 @@ Clothes & Grooming ,2023,6,-273060.0
 Housing,2023,6,-1850000.0
 Internet,2023,6,-34880.0
 Uncategorized,2023,7,44313300.0
-Inflow: Ready to Assign,2023,7,83540940.0
+Inflow: Ready to Assign,2023,7,83541340.0
 Vacation,2023,7,-2760960.0
 Online Subscriptions,2023,7,-6620.0
 Eating Out,2023,7,-148110.0
@@ -1406,7 +1406,7 @@ Medical,2023,7,-16990.0
 Uncategorized,2023,8,2380.0
 Eating Out,2023,8,-326670.0
 Online Subscriptions,2023,8,-15780.0
-Inflow: Ready to Assign,2023,8,24679800.0
+Inflow: Ready to Assign,2023,8,24679400.0
 Fitness,2023,8,-101750.0
 Productivity,2023,8,-183000.0
 Vacation,2023,8,-5459090.0
@@ -1431,8 +1431,8 @@ Parking,2023,8,-2990.0
 Housing,2023,8,-1850000.0
 Internet,2023,8,-34880.0
 Uncategorized,2023,9,10551500.0
-Vacation,2023,9,-3184460.0
-Inflow: Ready to Assign,2023,9,20288960.0
+Vacation,2023,9,-2840700.0
+Inflow: Ready to Assign,2023,9,20289460.0
 Online Subscriptions,2023,9,-6620.0
 Leisure,2023,9,-33820.0
 Insurance,2023,9,-214940.0
@@ -1466,7 +1466,7 @@ Reimbursements,2023,10,-607370.0
 Eating Out,2023,10,-371290.0
 Vacation,2023,10,-1717350.0
 Coffee,2023,10,-154610.0
-Inflow: Ready to Assign,2023,10,86245890.0
+Inflow: Ready to Assign,2023,10,86246290.0
 Investment,2023,10,-122580.0
 Tolls,2023,10,-12900.0
 Electricity,2023,10,-17140.0
@@ -1489,7 +1489,7 @@ Online Subscriptions,2023,11,-6620.0
 Groceries,2023,11,-338640.0
 Reimbursements,2023,11,-211210.0
 Coffee,2023,11,-181720.0
-Inflow: Ready to Assign,2023,11,21431510.0
+Inflow: Ready to Assign,2023,11,21431910.0
 Eating Out,2023,11,-339190.0
 Investment,2023,11,-23500.0
 Wedding,2023,11,-56220.0
@@ -1514,7 +1514,7 @@ Uncategorized,2023,12,2380.0
 Reimbursements,2023,12,-640150.0
 Coffee,2023,12,-84170.0
 Eating Out,2023,12,-251180.0
-Inflow: Ready to Assign,2023,12,23164160.0
+Inflow: Ready to Assign,2023,12,20664560.0
 Leisure,2023,12,-38210.0
 Investment,2023,12,-22990.0
 Productivity,2023,12,-320000.0
@@ -1528,9 +1528,12 @@ Groceries,2023,12,-52190.0
 Phone,2023,12,-25330.0
 Tolls,2023,12,-3050.0
 Clothes & Grooming ,2023,12,-59260.0
-Gifts,2023,12,-214070.0
+Gifts,2023,12,-224150.0
 Housing,2023,12,-2000000.0
 Internet,2023,12,-46480.0
 Uncategorized,2024,1,0.0
 Dates,2024,1,-42590.0
-Coffee,2024,1,-8060.0
+Coffee,2024,1,-16390.0
+Online Subscriptions,2024,1,-6620.0
+Reimbursements,2024,1,-52400.0
+Inflow: Ready to Assign,2024,1,450000.0
