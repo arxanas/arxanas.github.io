@@ -946,8 +946,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Coffee,2021,10,-50000.0
 Inflow: Ready to Assign,2021,10,13219440.0
+Coffee,2021,10,-50000.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -1534,14 +1534,14 @@ Internet,2023,12,-46480.0
 Uncategorized,2024,1,135767940.0
 Dates,2024,1,-252910.0
 Coffee,2024,1,-233380.0
-Online Subscriptions,2024,1,-13240.0
-Reimbursements,2024,1,-66170.0
+Online Subscriptions,2024,1,-6620.0
+Reimbursements,2024,1,-52400.0
 Groceries,2024,1,-280820.0
 Household Goods,2024,1,-79150.0
 Investment,2024,1,-22990.0
 Inflow: Ready to Assign,2024,1,75361430.0
 Leisure,2024,1,-13990.0
-Eating Out,2024,1,-274080.0
+Eating Out,2024,1,-292820.0
 Gas,2024,1,-18140.0
 Productivity,2024,1,-279130.0
 Gifts,2024,1,-176680.0
@@ -1550,8 +1550,11 @@ Meal Reimbursements,2024,1,-51600.0
 Electricity,2024,1,-16370.0
 All savings,2024,1,-10755780.0
 Insurance,2024,1,-48250.0
-Housing,2024,1,-4093800.0
+Housing,2024,1,-197500.0
 Phone,2024,1,-28780.0
 Wedding,2024,1,-21090.0
 Fitness,2024,1,-22500.0
+Transportation,2024,1,-13770.0
+Household Furnishing,2024,1,-1896300.0
 Internet,2024,1,-46480.0
+Online Subscriptions,2024,2,-6620.0
