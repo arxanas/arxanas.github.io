@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-02-17</span>
+<span class="latest">Last updated: 2024-02-18</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,30 +45,147 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 12, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/c9dcc0077f00b5f5b718bb14dd6bb1b220bcfd34">testing(bisect): extract symbols into `testing` module</a></td>
+<td>Feb 17, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/7d3ac53084d2855c24bba156be31387e8ed55a82">tests: Try to fix failing `git-next` tests</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 12, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/aff490b3477b29119dcba8431bee9ac22d2564ab">testing: forward `RUST_LOG` environment variable
-
-Typically this would be used as `RUST_LOG=git_branchless=debug` or similar.</a></td>
+<td>Feb 17, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/e7ca1fe1142fc63cd3b9b76611918f4f1ae4ff6c">tests: Try to fix failing `git-next` tests</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 11, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/895bfd56b0f8f420089433ea86a2a89d2463695e">feat(effects): add `with_progress` method to iterators
+<td>Feb 17, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/9858ab07025e0e14938277ca87dd578ae155fcb1">Revert "testing: forward `RUST_LOG` environment variable" for Nix's sake
 
-In situations where we `continue` a loop, the naive approach of incrementing the iterator progress at the end of the loop won't work as it'll skip the increment. This extension method aims to improve the ergonomics and correctness of that use-case.</a></td>
+This reverts commit aff490b3477b29119dcba8431bee9ac22d2564ab. That commit seems to cause Nix build failures for some reason that I don't want to diagnose at present.
+
+Example logs (https://github.com/arxanas/git-branchless/actions/runs/7902491612/job/21568284520):
+
+```
+git-branchless> ---- test_init_basic stdout ----
+git-branchless> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+git-branchless> Snapshot: init_basic
+git-branchless> Source: git-branchless/tests/test_init.rs:221
+git-branchless> ────────────────────────────────────────────────────────────────────────────────
+git-branchless> Expression: stderr
+git-branchless> ────────────────────────────────────────────────────────────────────────────────
+git-branchless> +new results
+git-branchless> ────────────┬───────────────────────────────────────────────────────────────────
+git-branchless>           0 │+␛[2m2024-02-14T14:16:52.608444Z␛[0m ␛[33m WARN␛[0m ␛[2mindexedlog::log::fold␛[0m␛[2m:␛[0m cannot load FoldState: "<repo-path>/.git/branchless/dag2/iddag/fold-cover": cannot read FoldState␊
+git-branchless>           1 │+Caused by 1 errors:␊
+git-branchless>           2 │+- No such file or directory (os error 2)␊
+git-branchless> ────────────┴───────────────────────────────────────────────────────────────────
+git-branchless> To update snapshots run `cargo insta review`
+git-branchless> Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+git-branchless> The application panicked (crashed).
+git-branchless> Message:  snapshot assertion for 'init_basic' failed in line 221
+git-branchless> Location: /build/cargo-vendor-dir/insta-1.34.0/src/runtime.rs:563
+git-branchless>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ BACKTRACE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+git-branchless>                                 ⋮ 7 frames hidden ⋮
+git-branchless>    8: insta::runtime::finalize_assertion::hb6bdb67eac0db117
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>    9: insta::runtime::assert_snapshot::hb62eaea0ef631241
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   10: test_init::test_init_basic::h7e3572226c6e968e
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   11: test_init::test_init_basic::{{closure}}::ha95c017bcb969a3b
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   12: core::ops::function::FnOnce::call_once::h3c22253808b3b504
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   13: test::__rust_begin_short_backtrace::h398d1a26526ed5ba
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   14: core::ops::function::FnOnce::call_once{{vtable.shim}}::h18837446474d6947
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   15: test::run_test_in_process::he69b81fa0b10df3d
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   16: std::sys_common::backtrace::__rust_begin_short_backtrace::h64cb29d4266abbdc
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   17: core::ops::function::FnOnce::call_once{{vtable.shim}}::h214c7cf736b08605
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   18: std::sys::unix::thread::Thread::new::thread_start::hed45a1c6881e221b
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   19: start_thread<unknown>
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   20: __clone3<unknown>
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless> Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
+git-branchless> Run with RUST_BACKTRACE=full to include source snippets.
+git-branchless> ---- test_init_prompt_for_main_branch stdout ----
+git-branchless> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Snapshot Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+git-branchless> Snapshot: init_prompt_for_main_branch
+git-branchless> Source: git-branchless/tests/test_init.rs:260
+git-branchless> ────────────────────────────────────────────────────────────────────────────────
+git-branchless> Expression: stderr
+git-branchless> ────────────────────────────────────────────────────────────────────────────────
+git-branchless> +new results
+git-branchless> ────────────┬───────────────────────────────────────────────────────────────────
+git-branchless>           0 │+␛[2m2024-02-14T14:16:52.756960Z␛[0m ␛[33m WARN␛[0m ␛[2mindexedlog::log::fold␛[0m␛[2m:␛[0m cannot load FoldState: "<repo-path>/.git/branchless/dag2/iddag/fold-cover": cannot read FoldState␊
+git-branchless>           1 │+Caused by 1 errors:␊
+git-branchless>           2 │+- No such file or directory (os error 2)␊
+git-branchless> ────────────┴───────────────────────────────────────────────────────────────────
+git-branchless> To update snapshots run `cargo insta review`
+git-branchless> Stopped on the first failure. Run `cargo insta test` to run all snapshots.
+git-branchless> The application panicked (crashed).
+git-branchless> Message:  snapshot assertion for 'init_prompt_for_main_branch' failed in line 260
+git-branchless> Location: /build/cargo-vendor-dir/insta-1.34.0/src/runtime.rs:563
+git-branchless>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ BACKTRACE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+git-branchless>                                 ⋮ 7 frames hidden ⋮
+git-branchless>    8: insta::runtime::finalize_assertion::hb6bdb67eac0db117
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>    9: insta::runtime::assert_snapshot::hb62eaea0ef631241
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   10: test_init::test_init_prompt_for_main_branch::h1a02ecb23fce265e
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   11: test_init::test_init_prompt_for_main_branch::{{closure}}::hb8a916f7fa706b51
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   12: core::ops::function::FnOnce::call_once::hba4d15088d5b711e
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   13: test::__rust_begin_short_backtrace::h398d1a26526ed5ba
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   14: core::ops::function::FnOnce::call_once{{vtable.shim}}::h18837446474d6947
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   15: test::run_test_in_process::he69b81fa0b10df3d
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   16: std::sys_common::backtrace::__rust_begin_short_backtrace::h64cb29d4266abbdc
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   17: core::ops::function::FnOnce::call_once{{vtable.shim}}::h214c7cf736b08605
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   18: std::sys::unix::thread::Thread::new::thread_start::hed45a1c6881e221b
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   19: start_thread<unknown>
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless>   20: __clone3<unknown>
+git-branchless>       at <unknown source file>:<unknown line>
+git-branchless> Run with COLORBT_SHOW_HIDDEN=1 environment variable to disable frame filtering.
+git-branchless> Run with RUST_BACKTRACE=full to include source snippets.
+git-branchless> failures:
+git-branchless>     test_init_basic
+git-branchless>     test_init_prompt_for_main_branch
+git-branchless> test result: FAILED. 14 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.65s
+git-branchless> error: test failed, to rerun pass `--test test_init`
+error: builder for '/nix/store/6h1p0s422b3jldf2m6bw7lrkppc2c0ny-git-branchless.drv' failed with exit code 101;
+       last 10 log lines:
+       > Run with RUST_BACKTRACE=full to include source snippets.
+       >
+       >
+       > failures:
+       >     test_init_basic
+       >     test_init_prompt_for_main_branch
+       >
+       > test result: FAILED. 14 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.65s
+       >
+       > error: test failed, to rerun pass `--test test_init`
+       For full logs, run 'nix log /nix/store/6h1p0s422b3jldf2m6bw7lrkppc2c0ny-git-branchless.drv'.
+```</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">1 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -97,8 +214,8 @@ Feb 2023 – Present
 <tbody>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Fulcrum+Cafe">Fulcrum Cafe</a></td>
-<td>67</td>
-<td>$778.90</td>
+<td>68</td>
+<td>$787.07</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Monorail+Espresso">Monorail Espresso</a></td>
@@ -141,9 +258,9 @@ Feb 2023 – Present
 <td>$100.90</td>
 </tr>
 <tr>
-<td><a href="http://google.com/maps/search/Seattle+Mantra+Restaurant+&+Bar">Mantra Restaurant & Bar</a></td>
+<td><a href="http://google.com/maps/search/Seattle+Seamless">Seamless</a></td>
 <td>9</td>
-<td>$252.92</td>
+<td>$45.57</td>
 </tr>
 
 </tbody>
