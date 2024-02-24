@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-02-23</span>
+<span class="latest">Last updated: 2024-02-24</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,65 +45,44 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 21, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/2c2eaff8549809598025df2c883f82bc739912f8">build: bump eyre from 0.6.11 to 0.6.12
+<td>Feb 23, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/0e3d25ff21e4c2dd8d898cd34da5e2b88a319c32">feat(nix): flatten the flake outputs for clarity
 
-Bumps [eyre](https://github.com/eyre-rs/eyre) from 0.6.11 to 0.6.12.
-- [Commits](https://github.com/eyre-rs/eyre/commits)
+Also, use updated flake outputs instead of the deprecated ones:
+- `packages.${system}.default` instead of `defaultPackage`
+- `overlays.default` instead of `overlay`.
 
----
-updated-dependencies:
-- dependency-name: eyre
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+See: https://nixos.org/manual/nix/unstable/release-notes/rl-2.7.html</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 21, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/92622ee86c5055a7b175c5f5bc8135ebf2019e69">build: bump crossbeam from 0.8.3 to 0.8.4
+<td>Feb 23, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/6b0cbf9b8f29b4b97eb28c54592601e7c0d7ba75">feat(nix): reuse nixpkgs definition with overrides
 
-Bumps [crossbeam](https://github.com/crossbeam-rs/crossbeam) from 0.8.3 to 0.8.4.
-- [Release notes](https://github.com/crossbeam-rs/crossbeam/releases)
-- [Changelog](https://github.com/crossbeam-rs/crossbeam/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/crossbeam-rs/crossbeam/compare/crossbeam-0.8.3...crossbeam-0.8.4)
+Reuse nixpkgs definition for git-branchless, and supply local changes
+through overrides. This ensures that nixpkgs updates are automatically
+propagated to the package definition here.
 
----
-updated-dependencies:
-- dependency-name: crossbeam
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+In flake.nix we recommend people to contribute to nixpkgs first for it
+to be the primary source of package definition; and then pull the
+changes down here by updating flake.lock.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 21, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/fc50de96ef17ab9473379c4b814e59db146faaf8">build: bump thiserror from 1.0.56 to 1.0.57
+<td>Feb 23, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/15b232190872c66dd2261973cba0d3b03a7a5f9c">feat(nix): reuse packaging code for scm-diff-editor
 
-Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.56 to 1.0.57.
-- [Release notes](https://github.com/dtolnay/thiserror/releases)
-- [Commits](https://github.com/dtolnay/thiserror/compare/1.0.56...1.0.57)
-
----
-updated-dependencies:
-- dependency-name: thiserror
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+Since the package definition for scm-diff-editor is almost identical
+to git-branchless, we reuse the code to avoid duplication and improve
+coherence.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">4 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">7 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -137,8 +116,8 @@ Feb 2023 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Monorail+Espresso">Monorail Espresso</a></td>
-<td>23</td>
-<td>$148.43</td>
+<td>24</td>
+<td>$155.22</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Shake+Shack">Shake Shack</a></td>
