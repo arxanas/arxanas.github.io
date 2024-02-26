@@ -1491,7 +1491,7 @@ Reimbursements,2023,11,-211210.0
 Coffee,2023,11,-181720.0
 Inflow: Ready to Assign,2023,11,21431910.0
 Eating Out,2023,11,-339190.0
-Investment,2023,11,-23500.0
+Investment,2023,11,-24530.0
 Wedding,2023,11,-56220.0
 Leisure,2023,11,-27210.0
 Household Goods,2023,11,-197500.0
@@ -1516,7 +1516,7 @@ Coffee,2023,12,-84170.0
 Eating Out,2023,12,-251180.0
 Inflow: Ready to Assign,2023,12,20664560.0
 Leisure,2023,12,-38210.0
-Investment,2023,12,-22990.0
+Investment,2023,12,-23700.0
 Productivity,2023,12,-320000.0
 Vacation,2023,12,-2121490.0
 Household Goods,2023,12,-186610.0
@@ -1524,7 +1524,7 @@ Electricity,2023,12,-19820.0
 Insurance,2023,12,-51380.0
 Medical,2023,12,-111770.0
 Online Subscriptions,2023,12,-6620.0
-Groceries,2023,12,-52190.0
+Groceries,2023,12,-275130.0
 Phone,2023,12,-25330.0
 Tolls,2023,12,-3050.0
 Clothes & Grooming ,2023,12,-59260.0
@@ -1536,9 +1536,9 @@ Dates,2024,1,-252910.0
 Coffee,2024,1,-233380.0
 Online Subscriptions,2024,1,-6620.0
 Reimbursements,2024,1,-52400.0
-Groceries,2024,1,-280820.0
+Groceries,2024,1,-396760.0
 Household Goods,2024,1,-79150.0
-Investment,2024,1,-22990.0
+Investment,2024,1,-24020.0
 Inflow: Ready to Assign,2024,1,76065930.0
 Leisure,2024,1,-13990.0
 Eating Out,2024,1,-292820.0
@@ -1561,7 +1561,7 @@ Uncategorized,2024,2,173439880.0
 Coffee,2024,2,-134220.0
 Online Subscriptions,2024,2,-6620.0
 Inflow: Ready to Assign,2024,2,10000650.0
-Groceries,2024,2,-148160.0
+Groceries,2024,2,-194410.0
 Leisure,2024,2,-47050.0
 Meal Reimbursements,2024,2,-921910.0
 Eating Out,2024,2,-331240.0
@@ -1572,12 +1572,12 @@ Medical,2024,2,-311290.0
 Electricity,2024,2,-23230.0
 Household Goods,2024,2,-221570.0
 Investment,2024,2,-13000.0
-Vacation,2024,2,-693300.0
+Vacation,2024,2,-1084880.0
 Insurance,2024,2,-69300.0
 Dates,2024,2,-223020.0
-Productivity,2024,2,-109000.0
+Productivity,2024,2,-95000.0
 Housing,2024,2,-7610440.0
 Cosmetics,2024,2,-410000.0
 Mortgage Principal,2024,2,-173437500.0
-Gas,2024,2,-56700.0
-Transportation,2024,2,-44310.0
+Gas,2024,2,-60240.0
+Phone,2024,2,-25330.0
