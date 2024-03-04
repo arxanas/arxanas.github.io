@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-03-03</span>
+<span class="latest">Last updated: 2024-03-04</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,46 +44,33 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 28, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/e7c3653c5e42f67a967d30ea57ded5a34cc6f9aa">feat(submit:github): implement Github forge
+<td><a href="https://github.com/arxanas/OpenSteamController">arxanas/OpenSteamController</a></td>
+<td>Mar 04, 2024</td>
+<td><a href="https://github.com/arxanas/OpenSteamController/commits/b5e791a4aae51fa31f7f7b00493f68abc6f7897b">Add neutral trackpad haptic feedback
 
-- It's not very good. It's probably buggy since there's a huge amount of state to keep in sync between commits, branches, and pull requests.
-- It's not very useful. When using Github's "Rebase and merge" button, it always rewrites the commit to update the committer signature. Then, for some reason, descendant commits can't be rebased automatically, and you have to manually rebase them.</a></td>
+Using only touch, it's hard to tell if one's finger is roughly in the center/neutral position on the trackpad. This commit adds haptic feedback that triggers when moving the logical trackpad in or out of a center ring, intended to correspond to moving a physical joystick from neutral.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 27, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/e591fa33381802685d32d8a74b3a5ac806010e2a">feat(submit:github): implement Github forge
+<td><a href="https://github.com/arxanas/OpenSteamController">arxanas/OpenSteamController</a></td>
+<td>Mar 04, 2024</td>
+<td><a href="https://github.com/arxanas/OpenSteamController/commits/750609ef077e2c092fb272e4f289a144bb397bf0">Add virtual notches for trackpads (via haptic feedback)
 
-- It's not very good. It's probably buggy since there's a huge amount of state to keep in sync between commits, branches, and pull requests.
-- It's not very useful. When using Github's "Rebase and merge" button, it always rewrites the commit to update the committer signature. Then, for some reason, descendant commits can't be rebased automatically, and you have to manually rebase them.</a></td>
+For Smash Bros., it's fairly important to know exactly what angle the joystick is pointing. On physical devices, one can use notches (such as the GameCube controller) to determine the angle of the joystick. This commit adds "virtual notches" by triggering haptic feedback when the joystick rotates by a certain amount. (Unlike physical notches, the virtual notches trigger even when the joystick is not pressed to the maximum amount, against the joystick shell.)
+
+Note that the Steam Controller hardware has the trackpad sensors offset by about 15 degrees. This commit doesn't address that, so the notches will appear to be 15 degrees off.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Feb 26, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/74f77c19126a66b3febbbe3a63653c6db0cdcb6b">build: bump serde from 1.0.196 to 1.0.197
-
-Bumps [serde](https://github.com/serde-rs/serde) from 1.0.196 to 1.0.197.
-- [Release notes](https://github.com/serde-rs/serde/releases)
-- [Commits](https://github.com/serde-rs/serde/compare/v1.0.196...v1.0.197)
-
----
-updated-dependencies:
-- dependency-name: serde
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+<td><a href="https://github.com/arxanas/OpenSteamController">arxanas/OpenSteamController</a></td>
+<td>Mar 04, 2024</td>
+<td><a href="https://github.com/arxanas/OpenSteamController/commits/0f9f186c4d1a3e25601afed8e0d4ef97a253c153">Use polynomial fit for touch detection</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">9 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">20 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
