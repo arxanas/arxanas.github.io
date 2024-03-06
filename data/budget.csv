@@ -1582,11 +1582,14 @@ Mortgage Principal,2024,2,-173437500.0
 Gas,2024,2,-60240.0
 Phone,2024,2,-25330.0
 Internet,2024,2,-46480.0
-Uncategorized,2024,3,0.0
+Uncategorized,2024,3,-54210.0
 Groceries,2024,3,-85140.0
 Online Subscriptions,2024,3,-6620.0
 Vacation,2024,3,-8200.0
 Medical,2024,3,-906080.0
 Household Furnishing,2024,3,-300000.0
 Household Goods,2024,3,-143290.0
+Eating Out,2024,3,-81330.0
 Leisure,2024,3,-13990.0
+Coffee,2024,3,-14960.0
+Inflow: Ready to Assign,2024,3,7040.0
