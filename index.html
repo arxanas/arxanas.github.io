@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-04-28</span>
+<span class="latest">Last updated: 2024-04-29</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -45,65 +45,46 @@ This page is an activity feed of my internet presence, updated once a day.
 <tbody>
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 27, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/0e171fbe5302e72f6b02da7cd829217fd1e2ddfa">build: bump async-trait from 0.1.79 to 0.1.80
+<td>Apr 28, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/33d60b98c4baaea0a861c94adcfd679b8d7182e7">feat(submit:github): disable Github forge detection by default
 
-Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.79 to 0.1.80.
-- [Release notes](https://github.com/dtolnay/async-trait/releases)
-- [Commits](https://github.com/dtolnay/async-trait/compare/0.1.79...0.1.80)
-
----
-updated-dependencies:
-- dependency-name: async-trait
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+Prerequisite for a new release so that we don't break everyone who is submitting to Github.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 27, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/53ec6ea78084cc673f57a82cd7d5d2f6ef81862e">build: bump anyhow from 1.0.79 to 1.0.82
+<td>Apr 28, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/d08cb78cab92a8a44d6d2dc05e2b5f6619ff49bd">build: run `cargo update`
 
-Bumps [anyhow](https://github.com/dtolnay/anyhow) from 1.0.79 to 1.0.82.
-- [Release notes](https://github.com/dtolnay/anyhow/releases)
-- [Commits](https://github.com/dtolnay/anyhow/compare/1.0.79...1.0.82)
+Accepted all updates,
 
----
-updated-dependencies:
-- dependency-name: anyhow
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+- except for `chrono`, which remains at `0.4.34` instead of being updated to `0.4.37` because the `chrono-english` dependency is incompatible: https://github.com/stevedonovan/chrono-english/issues/29
+  - It would be possible to patch the dependency in `Cargo.toml`, but then (I believe) we wouldn't be able to publish the git-branchless crate to crates.io: https://stackoverflow.com/questions/69235287/can-i-publish-a-crate-that-uses-a-patch#comment122393890_69235309,
+    - and a large number of users install directly from `cargo`/crates.io.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 27, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/dee95c24a13ef10bfc24c611bfc1901f67dac9e3">build: bump serde from 1.0.197 to 1.0.198
+<td>Apr 28, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/e87ab50603fe40e1285bba574d9d58e7b9c88baa">build: update MSRV to 1.74
 
-Bumps [serde](https://github.com/serde-rs/serde) from 1.0.197 to 1.0.198.
-- [Release notes](https://github.com/serde-rs/serde/releases)
-- [Commits](https://github.com/serde-rs/serde/compare/v1.0.197...v1.0.198)
+It may become difficult to upgrade dependencies in the future.
 
----
-updated-dependencies:
-- dependency-name: serde
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
+- I don't want to fall too far behind. Many automatic dependency updates are now failing, indicating that breaking changes are happening upstream that we haven't integrated.
+- Since git-branchless is a CLI application, it doesn't have its downstream dependents to worry about breaking.
 
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+The specific value is somewhat arbitrary:
+
+- We're just following `clap`'s current MSRV,
+  - which aims to trail the latest Rust version by 6-9 months
+    - (and the management of `clap`'s MSRV is its entire own topic).
+  - My hope is that many applications in the Rust ecosystem also follow the `clap` MSRV and that packagers have worked out the installation strategy for those applications.</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">5 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
