@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-05-11</span>
+<span class="latest">Last updated: 2024-05-12</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,41 +44,40 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/scm-record">arxanas/scm-record</a></td>
-<td>May 05, 2024</td>
-<td><a href="https://github.com/arxanas/scm-record/commits/62fa435eb177ec77c0b90be4ea6e3fcf1ad50f6a">Fix clippy dead_code error for `IsizeExt` with latest 1.78 stable toolchain
-
-On 1.78 clippy notices that the `clamp_into_u16` `IsizeExt` trait is dead code.
-The corresponding function in the `UsizeExt` trait is used however.
-
-This commit tags the `IsizeExt` version with `#[allow(dead_code)]` to silence
-the clippy error.</a></td>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>May 12, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/8aba1e76fc22513c36279c51893f6b2bd25878d9">cleanup: fix latest `clippy` issues</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 28, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/33d60b98c4baaea0a861c94adcfd679b8d7182e7">feat(submit:github): disable Github forge detection by default
-
-Prerequisite for a new release so that we don't break everyone who is submitting to Github.</a></td>
+<td>May 12, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/ce1aa49015eacf68e1c3bfdd9dd0635bba9c5069">cleanup: remove imports that are unnecessary for edition 2021</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Apr 28, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/d08cb78cab92a8a44d6d2dc05e2b5f6619ff49bd">build: run `cargo update`
+<td>May 12, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/35c2a3bec63e5794103f9d4dd55aac82d1188ba3">build: bump thiserror from 1.0.58 to 1.0.59
 
-Accepted all updates,
+Bumps [thiserror](https://github.com/dtolnay/thiserror) from 1.0.58 to 1.0.59.
+- [Release notes](https://github.com/dtolnay/thiserror/releases)
+- [Commits](https://github.com/dtolnay/thiserror/compare/1.0.58...1.0.59)
 
-- except for `chrono`, which remains at `0.4.34` instead of being updated to `0.4.37` because the `chrono-english` dependency is incompatible: https://github.com/stevedonovan/chrono-english/issues/29
-  - It would be possible to patch the dependency in `Cargo.toml`, but then (I believe) we wouldn't be able to publish the git-branchless crate to crates.io: https://stackoverflow.com/questions/69235287/can-i-publish-a-crate-that-uses-a-patch#comment122393890_69235309,
-    - and a large number of users install directly from `cargo`/crates.io.</a></td>
+---
+updated-dependencies:
+- dependency-name: thiserror
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">1 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">3 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
