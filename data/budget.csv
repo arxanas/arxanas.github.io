@@ -1000,8 +1000,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Coffee,2021,10,-50000.0
 Inflow: Ready to Assign,2021,10,13219440.0
+Coffee,2021,10,-50000.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -1724,12 +1724,12 @@ Psychiatry and Therapy,2024,4,-150000.0
 Phone,2024,4,-24960.0
 Gifts,2024,4,-31590.0
 Parking,2024,4,-9990.0
-Uncategorized,2024,5,16988320.0
+Uncategorized,2024,5,16689330.0
 Psychiatry and Therapy,2024,5,-395000.0
-Productivity,2024,5,-75000.0
+Productivity,2024,5,-150000.0
 Online Subscriptions,2024,5,-6620.0
 Leisure,2024,5,-28460.0
-Coffee,2024,5,-39660.0
+Coffee,2024,5,-45450.0
 Meal Service,2024,5,-291630.0
 Internet,2024,5,-35000.0
 Transportation,2024,5,-30760.0
@@ -1739,7 +1739,7 @@ Inflow: Ready to Assign,2024,5,4990.0
 Gifts,2024,5,-505070.0
 Investment,2024,5,-117740.0
 Household Furnishing,2024,5,-38070.0
-Eating Out,2024,5,-107560.0
+Eating Out,2024,5,-119700.0
 Groceries,2024,5,-134400.0
 All savings,2024,5,-17000000.0
 Drugs and Medication,2024,5,-47990.0
@@ -1749,3 +1749,4 @@ Reimbursements,2024,5,684550.0
 Cosmetics,2024,5,-463690.0
 Parking,2024,5,-4650.0
 Insurance,2024,5,-72930.0
+Housing,2024,5,-858590.0
