@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-05-27</span>
+<span class="latest">Last updated: 2024-05-28</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -46,65 +46,29 @@ This page is an activity feed of my internet presence, updated once a day.
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>May 27, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/74b611e695414c0a7cf9e1a34bf608d71cc494fb">build: bump cc from 1.0.94 to 1.0.98
+<td><a href="https://github.com/arxanas/git-branchless/commits/384b5473a44f604f58ba0e9a2be0ac70de8e27b6">feat(submit:phabricator): do not abort entire process on failure
 
-Bumps [cc](https://github.com/rust-lang/cc-rs) from 1.0.94 to 1.0.98.
-- [Release notes](https://github.com/rust-lang/cc-rs/releases)
-- [Commits](https://github.com/rust-lang/cc-rs/compare/1.0.94...1.0.98)
-
----
-updated-dependencies:
-- dependency-name: cc
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/scm-record">arxanas/scm-record</a></td>
-<td>May 27, 2024</td>
-<td><a href="https://github.com/arxanas/scm-record/commits/6f1549c35544705bae2ddc073e556400729924e1">build: bump insta from 1.38.0 to 1.39.0
-
-Bumps [insta](https://github.com/mitsuhiko/insta) from 1.38.0 to 1.39.0.
-- [Release notes](https://github.com/mitsuhiko/insta/releases)
-- [Changelog](https://github.com/mitsuhiko/insta/blob/master/CHANGELOG.md)
-- [Commits](https://github.com/mitsuhiko/insta/compare/1.38.0...1.39.0)
-
----
-updated-dependencies:
-- dependency-name: insta
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+Currently, `git submit` for Phabricator will abort the entire operation if any commit fails to be submitted. This means that if `arc diff` succeeds on one commit and then fails on its child, the entire operation is aborted. However, the first `arc diff` had side effects, so the user gets diffs uploaded to Phabricator that are not reflected locally. Instead, we should confirm any passing commits and abort after we get a failing commit. This commit updates the Phabricator forge to handle the error case better and not produce garbage commits on Phabricator.</a></td>
 </tr>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
 <td>May 27, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/2d369800a5117036dd7166ab2ad296790bef3fe9">build: bump anyhow from 1.0.82 to 1.0.86
+<td><a href="https://github.com/arxanas/git-branchless/commits/13352d8bb65173ac964991bdf780091b21f9ca5a">refactor(submit): `Forge::update` returns `UpdateStatus`es
 
-Bumps [anyhow](https://github.com/dtolnay/anyhow) from 1.0.82 to 1.0.86.
-- [Release notes](https://github.com/dtolnay/anyhow/releases)
-- [Commits](https://github.com/dtolnay/anyhow/compare/1.0.82...1.0.86)
+For uniformity with `CreateStatus`.</a></td>
+</tr>
 
----
-updated-dependencies:
-- dependency-name: anyhow
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>May 27, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/c3115562d85a535238e4c80c29316d1437692cfb">feat(submit): print submit status for each commit individually</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">7 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">6 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
