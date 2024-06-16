@@ -1755,9 +1755,9 @@ Dates,2024,5,-356340.0
 Housing,2024,5,-858590.0
 Phone,2024,5,-24960.0
 Electricity,2024,5,-18450.0
-Uncategorized,2024,6,0.0
+Uncategorized,2024,6,2980.0
 Online Subscriptions,2024,6,-6620.0
-Inflow: Ready to Assign,2024,6,81160.0
+Inflow: Ready to Assign,2024,6,83770.0
 Transportation,2024,6,-64690.0
 Internet,2024,6,-35000.0
 Groceries,2024,6,-69430.0
@@ -1770,8 +1770,8 @@ Leisure,2024,6,-27980.0
 Meal Reimbursements,2024,6,0.0
 Gifts,2024,6,-12120.0
 Tolls,2024,6,-1200.0
-Mortgage Interest,2024,6,0.0
 Mortgage Principal,2024,6,0.0
+Mortgage Interest,2024,6,0.0
 Meal Service,2024,6,-281700.0
 Dates,2024,6,-79550.0
 Investment,2024,6,-13000.0
@@ -1779,3 +1779,4 @@ Productivity,2024,6,-75000.0
 Insurance,2024,6,-73030.0
 Primary Care,2024,6,-21000.0
 Housing,2024,6,-858590.0
+Psychiatry and Therapy,2024,6,-245000.0
