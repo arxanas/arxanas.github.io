@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-07-21</span>
+<span class="latest">Last updated: 2024-07-22</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,17 +44,37 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 09, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/c54d6c895b29935e2d82e833f7b4558f68bdbeaa">build: bump async-trait from 0.1.80 to 0.1.81
+<td><a href="https://github.com/arxanas/scm-record">arxanas/scm-record</a></td>
+<td>Jul 21, 2024</td>
+<td><a href="https://github.com/arxanas/scm-record/commits/5cdf3394188151a5819ccd506492643ba128128b">feat: Add bare-minimum help dialog
 
-Bumps [async-trait](https://github.com/dtolnay/async-trait) from 0.1.80 to 0.1.81.
-- [Release notes](https://github.com/dtolnay/async-trait/releases)
-- [Commits](https://github.com/dtolnay/async-trait/compare/0.1.80...0.1.81)
+Pressing question mark pops up a dialog that tells you you can use the
+mouse to click menu items to do things and view mouse shortcuts.
+
+Obviously this is not perfect, but it would have saved me a bunch of
+frustration, and it does a fair amount of the grunt work towards a
+better help box.
+
+One thing that made me stop here is that the main event loop should
+probably be split up to do different things depending on if any given
+dialog is open. Adding the HelpDialog using the current paradigm would
+have involved approximately tripling the size of the match for no
+benefit.</a></td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
+<td>Jul 21, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/8ffbdab8659c8b09cf6c2725599a1cba0dd0e2fb">build: bump clap from 4.5.8 to 4.5.9
+
+Bumps [clap](https://github.com/clap-rs/clap) from 4.5.8 to 4.5.9.
+- [Release notes](https://github.com/clap-rs/clap/releases)
+- [Changelog](https://github.com/clap-rs/clap/blob/master/CHANGELOG.md)
+- [Commits](https://github.com/clap-rs/clap/compare/clap_complete-v4.5.8...v4.5.9)
 
 ---
 updated-dependencies:
-- dependency-name: async-trait
+- dependency-name: clap
   dependency-type: direct:production
   update-type: version-update:semver-patch
 ...
@@ -64,38 +84,19 @@ Signed-off-by: dependabot[bot] <support@github.com></a></td>
 
 <tr>
 <td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 09, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/52979970e6a41768d17bfbb61d504e7e6beb381a">build: bump cc from 1.0.104 to 1.0.106
+<td>Jul 21, 2024</td>
+<td><a href="https://github.com/arxanas/git-branchless/commits/38a22b5444460e20e95240774da99d8c1b609c58">build: bump cc from 1.0.106 to 1.1.5
 
-Bumps [cc](https://github.com/rust-lang/cc-rs) from 1.0.104 to 1.0.106.
+Bumps [cc](https://github.com/rust-lang/cc-rs) from 1.0.106 to 1.1.5.
 - [Release notes](https://github.com/rust-lang/cc-rs/releases)
 - [Changelog](https://github.com/rust-lang/cc-rs/blob/main/CHANGELOG.md)
-- [Commits](https://github.com/rust-lang/cc-rs/compare/cc-v1.0.104...cc-v1.0.106)
+- [Commits](https://github.com/rust-lang/cc-rs/compare/cc-v1.0.106...cc-v1.1.5)
 
 ---
 updated-dependencies:
 - dependency-name: cc
   dependency-type: direct:production
-  update-type: version-update:semver-patch
-...
-
-Signed-off-by: dependabot[bot] <support@github.com></a></td>
-</tr>
-
-<tr>
-<td><a href="https://github.com/arxanas/git-branchless">arxanas/git-branchless</a></td>
-<td>Jul 09, 2024</td>
-<td><a href="https://github.com/arxanas/git-branchless/commits/77ef4c3a3fe83734cdc87bc8b0e2f9796c2541ce">build: bump serde from 1.0.203 to 1.0.204
-
-Bumps [serde](https://github.com/serde-rs/serde) from 1.0.203 to 1.0.204.
-- [Release notes](https://github.com/serde-rs/serde/releases)
-- [Commits](https://github.com/serde-rs/serde/compare/v1.0.203...v1.0.204)
-
----
-updated-dependencies:
-- dependency-name: serde
-  dependency-type: direct:production
-  update-type: version-update:semver-patch
+  update-type: version-update:semver-minor
 ...
 
 Signed-off-by: dependabot[bot] <support@github.com></a></td>
@@ -104,7 +105,7 @@ Signed-off-by: dependabot[bot] <support@github.com></a></td>
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">13 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">7 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
@@ -143,8 +144,8 @@ Feb 2023 – Present
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Monorail+Espresso">Monorail Espresso</a></td>
-<td>44</td>
-<td>$287.19</td>
+<td>45</td>
+<td>$293.98</td>
 </tr>
 <tr>
 <td><a href="http://google.com/maps/search/Seattle+Himalayan+Java+Coffee">Himalayan Java Coffee</a></td>
