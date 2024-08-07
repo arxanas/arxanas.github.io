@@ -1782,14 +1782,15 @@ Phone,2024,6,-24960.0
 Electricity,2024,6,-20050.0
 Gas,2024,6,-18130.0
 Mortgage Principal,2024,6,-10000000.0
-Mortgage Interest,2024,6,0.0
 Parking,2024,6,-8000.0
-Uncategorized,2024,7,10002380.0
+Uncategorized,2024,7,10440150.0
 Dates,2024,7,-113390.0
 Coffee,2024,7,-209260.0
 Online Subscriptions,2024,7,-6620.0
 Eating Out,2024,7,-128630.0
 Inflow: Ready to Assign,2024,7,75422950.0
+Mortgage Interest,2024,7,-3244970.0
+Mortgage Principal,2024,7,-10437770.0
 Internet,2024,7,-35000.0
 Investment,2024,7,-98620.0
 Groceries,2024,7,-343340.0
@@ -1798,8 +1799,6 @@ Meal Service,2024,7,-468400.0
 Leisure,2024,7,-143520.0
 Transportation,2024,7,-44060.0
 Tolls,2024,7,-10200.0
-Mortgage Principal,2024,7,-10000000.0
-Mortgage Interest,2024,7,0.0
 Cosmetic Care,2024,7,-421280.0
 Gifts,2024,7,-138850.0
 Drugs and Medication,2024,7,-32050.0
@@ -1816,13 +1815,18 @@ Gas,2024,7,-39280.0
 Electricity,2024,7,-23540.0
 Uncategorized,2024,8,0.0
 Meal Service,2024,8,-123730.0
-Coffee,2024,8,-23440.0
+Coffee,2024,8,-31610.0
 Online Subscriptions,2024,8,-6620.0
 Car,2024,8,-220250.0
 Internet,2024,8,-35000.0
 Leisure,2024,8,-1990.0
 Groceries,2024,8,-51600.0
-Eating Out,2024,8,-28980.0
+Eating Out,2024,8,-40130.0
+Household Goods,2024,8,-5510.0
+Gifts,2024,8,-5510.0
 Investment,2024,8,-99240.0
-Mortgage Principal,2024,8,0.0
+Tolls,2024,8,-7800.0
 Mortgage Interest,2024,8,0.0
+Mortgage Principal,2024,8,0.0
+Inflow: Ready to Assign,2024,8,580.0
+Psychiatry and Therapy,2024,8,-150000.0
