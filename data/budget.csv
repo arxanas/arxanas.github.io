@@ -1000,8 +1000,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Coffee,2021,10,-50000.0
 Inflow: Ready to Assign,2021,10,13219440.0
+Coffee,2021,10,-50000.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -1783,14 +1783,14 @@ Electricity,2024,6,-20050.0
 Gas,2024,6,-18130.0
 Mortgage Principal,2024,6,-10000000.0
 Parking,2024,6,-8000.0
-Uncategorized,2024,7,10440150.0
+Uncategorized,2024,7,440150.0
 Dates,2024,7,-113390.0
 Coffee,2024,7,-209260.0
 Online Subscriptions,2024,7,-6620.0
 Eating Out,2024,7,-128630.0
 Inflow: Ready to Assign,2024,7,75422950.0
 Mortgage Interest,2024,7,-3244970.0
-Mortgage Principal,2024,7,-10437770.0
+Mortgage Principal,2024,7,-437770.0
 Internet,2024,7,-35000.0
 Investment,2024,7,-98620.0
 Groceries,2024,7,-343340.0
@@ -1813,24 +1813,24 @@ Meal Reimbursements,2024,7,-63020.0
 Reimbursements,2024,7,-2090.0
 Gas,2024,7,-39280.0
 Electricity,2024,7,-23540.0
-Uncategorized,2024,8,10002380.0
+Uncategorized,2024,8,2380.0
 Meal Service,2024,8,-587710.0
 Coffee,2024,8,-204320.0
 Online Subscriptions,2024,8,-15780.0
 Car,2024,8,-220250.0
 Internet,2024,8,-35000.0
-Leisure,2024,8,-1990.0
+Leisure,2024,8,10010.0
 Groceries,2024,8,-130770.0
 Eating Out,2024,8,-235950.0
-Household Goods,2024,8,-52190.0
 Gifts,2024,8,-537960.0
+Household Goods,2024,8,-52190.0
 Investment,2024,8,-110240.0
 Tolls,2024,8,-11400.0
-Mortgage Principal,2024,8,-10000000.0
+Mortgage Principal,2024,8,0.0
 Mortgage Interest,2024,8,0.0
-Inflow: Ready to Assign,2024,8,2830.0
+Inflow: Ready to Assign,2024,8,16439480.0
 Psychiatry and Therapy,2024,8,-640000.0
-Productivity,2024,8,-190740.0
+Productivity,2024,8,-154740.0
 Cosmetic Care,2024,8,-430000.0
 Insurance,2024,8,-78220.0
 Dentistry and Orthodonty,2024,8,-33400.0
@@ -1841,16 +1841,16 @@ Dates,2024,8,-41650.0
 Phone,2024,8,-24960.0
 Household Furnishing,2024,8,-15750.0
 Electricity,2024,8,-20040.0
-Meal Reimbursements,2024,8,-179530.0
-Uncategorized,2024,9,10000000.0
+Meal Reimbursements,2024,8,63020.0
+Uncategorized,2024,9,9979150.0
 Online Subscriptions,2024,9,-6620.0
 Internet,2024,9,-35000.0
-Eating Out,2024,9,-42610.0
+Eating Out,2024,9,-98790.0
 Groceries,2024,9,-15190.0
 Productivity,2024,9,-75000.0
 Dates,2024,9,-40720.0
 Cosmetics,2024,9,-43230.0
-Coffee,2024,9,-41700.0
+Coffee,2024,9,-48920.0
 All savings,2024,9,-10000000.0
 Leisure,2024,9,-28990.0
 Inflow: Ready to Assign,2024,9,660.0
