@@ -1822,8 +1822,8 @@ Internet,2024,8,-35000.0
 Leisure,2024,8,10010.0
 Groceries,2024,8,-130770.0
 Eating Out,2024,8,-235950.0
-Gifts,2024,8,-537960.0
 Household Goods,2024,8,-52190.0
+Gifts,2024,8,-537960.0
 Investment,2024,8,-110240.0
 Tolls,2024,8,-11400.0
 Mortgage Interest,2024,8,0.0
@@ -1863,3 +1863,4 @@ Parking,2024,9,-20850.0
 Investment,2024,9,-3000.0
 Gifts,2024,9,-178490.0
 Insurance,2024,9,-68030.0
+Housing,2024,9,-858590.0
