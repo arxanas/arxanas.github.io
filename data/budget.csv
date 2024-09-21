@@ -1,6 +1,6 @@
 Online Subscriptions,2016,10,-5000.0
-Inflow: Ready to Assign,2016,10,0.0
 Uncategorized,2016,10,0.0
+Inflow: Ready to Assign,2016,10,0.0
 Housing,2016,11,-1348480.0
 Online Subscriptions,2016,11,-45000.0
 Reimbursements,2016,11,177830.0
@@ -1593,7 +1593,7 @@ Coffee,2023,12,-84170.0
 Eating Out,2023,12,-251180.0
 Inflow: Ready to Assign,2023,12,19960540.0
 Leisure,2023,12,-38210.0
-Investment,2023,12,-23700.0
+Investment,2023,12,-24020.0
 Productivity,2023,12,-320000.0
 Vacation,2023,12,-2121490.0
 Household Goods,2023,12,-186610.0
@@ -1645,7 +1645,7 @@ Leisure,2024,2,-52420.0
 Meal Reimbursements,2024,2,-921910.0
 Eating Out,2024,2,-331240.0
 Tolls,2024,2,-17500.0
-Investment,2024,2,-22990.0
+Investment,2024,2,-24020.0
 Household Furnishing,2024,2,-2333620.0
 Gifts,2024,2,-789480.0
 Drugs and Medication,2024,2,-183690.0
@@ -1663,7 +1663,7 @@ Gas,2024,2,-60240.0
 Phone,2024,2,-25330.0
 Internet,2024,2,-46480.0
 Uncategorized,2024,3,21093380.0
-Groceries,2024,3,-263630.0
+Groceries,2024,3,-455160.0
 Online Subscriptions,2024,3,-224220.0
 Vacation,2024,3,-214180.0
 Household Furnishing,2024,3,-5787980.0
@@ -1674,7 +1674,7 @@ Leisure,2024,3,-13990.0
 Coffee,2024,3,-118870.0
 Inflow: Ready to Assign,2024,3,21336340.0
 Dates,2024,3,-438970.0
-Investment,2024,3,-22990.0
+Investment,2024,3,-24020.0
 Tolls,2024,3,-21900.0
 Meal Service,2024,3,-176620.0
 Specialist Care,2024,3,-42000.0
@@ -1683,6 +1683,7 @@ Electricity,2024,3,-33030.0
 Psychiatry and Therapy,2024,3,-804800.0
 Insurance,2024,3,-81730.0
 Productivity,2024,3,-195000.0
+Gas,2024,3,-22880.0
 Housing,2024,3,-89150.0
 Transportation,2024,3,-94150.0
 All savings,2024,3,-21091000.0
@@ -1695,7 +1696,7 @@ Uncategorized,2024,4,118448260.0
 Internet,2024,4,-81480.0
 Online Subscriptions,2024,4,-6620.0
 Housing,2024,4,441410.0
-Investment,2024,4,-49000.0
+Investment,2024,4,-50030.0
 Vacation,2024,4,-1114690.0
 Household Furnishing,2024,4,-663810.0
 Reimbursements,2024,4,-62230.0
@@ -1703,7 +1704,7 @@ Coffee,2024,4,-116250.0
 Inflow: Ready to Assign,2024,4,76004410.0
 Meal Service,2024,4,-405140.0
 Dates,2024,4,-198040.0
-Groceries,2024,4,-86050.0
+Groceries,2024,4,-296360.0
 Primary Care,2024,4,-42000.0
 Drugs and Medication,2024,4,-412440.0
 Leisure,2024,4,-19650.0
@@ -1717,6 +1718,7 @@ Electricity,2024,4,-53150.0
 Productivity,2024,4,-42060.0
 Meal Reimbursements,2024,4,-272880.0
 Insurance,2024,4,-88230.0
+Gas,2024,4,-26620.0
 Household Goods,2024,4,-76420.0
 All savings,2024,4,-18025070.0
 Taxes,2024,4,-55381000.0
@@ -1737,10 +1739,10 @@ Primary Care,2024,5,-63000.0
 Household Goods,2024,5,-83400.0
 Inflow: Ready to Assign,2024,5,16156990.0
 Gifts,2024,5,-505070.0
-Investment,2024,5,-84740.0
+Investment,2024,5,-85770.0
 Household Furnishing,2024,5,-663190.0
 Eating Out,2024,5,-276140.0
-Groceries,2024,5,-174400.0
+Groceries,2024,5,-409190.0
 All savings,2024,5,-27278150.0
 Mortgage Interest,2024,5,-3271990.0
 Mortgage Principal,2024,5,-10410750.0
@@ -1754,13 +1756,14 @@ Insurance,2024,5,-72930.0
 Dates,2024,5,-356340.0
 Housing,2024,5,-858590.0
 Phone,2024,5,-24960.0
+Gas,2024,5,-27480.0
 Electricity,2024,5,-18450.0
 Uncategorized,2024,6,2703830.0
 Online Subscriptions,2024,6,-6620.0
 Inflow: Ready to Assign,2024,6,16235760.0
 Transportation,2024,6,-64690.0
 Internet,2024,6,-35000.0
-Groceries,2024,6,-117660.0
+Groceries,2024,6,-280500.0
 Drugs and Medication,2024,6,-37800.0
 Coffee,2024,6,-222670.0
 Household Goods,2024,6,-22590.0
@@ -1768,7 +1771,7 @@ Eating Out,2024,6,-181570.0
 Household Furnishing,2024,6,-126640.0
 Leisure,2024,6,-27980.0
 Meal Reimbursements,2024,6,0.0
-Investment,2024,6,-53610.0
+Investment,2024,6,-54640.0
 Gifts,2024,6,-12120.0
 Tolls,2024,6,-1200.0
 Meal Service,2024,6,-536920.0
@@ -1793,7 +1796,7 @@ Inflow: Ready to Assign,2024,7,75422950.0
 Mortgage Principal,2024,7,-4087350.0
 Internet,2024,7,-35000.0
 Mortgage Interest,2024,7,0.0
-Investment,2024,7,-98620.0
+Investment,2024,7,-99650.0
 Groceries,2024,7,-343340.0
 Optometry and Vision,2024,7,-237640.0
 Meal Service,2024,7,-468400.0
@@ -1821,13 +1824,13 @@ Online Subscriptions,2024,8,-15780.0
 Car,2024,8,-220250.0
 Internet,2024,8,-35000.0
 Leisure,2024,8,10010.0
-Groceries,2024,8,-130770.0
+Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
-Household Goods,2024,8,-52190.0
 Gifts,2024,8,-537960.0
+Household Goods,2024,8,-52190.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-497320.0
-Investment,2024,8,-110240.0
+Investment,2024,8,-111270.0
 Tolls,2024,8,-11400.0
 Inflow: Ready to Assign,2024,8,16439480.0
 Psychiatry and Therapy,2024,8,-640000.0
@@ -1841,23 +1844,24 @@ Drugs and Medication,2024,8,-64050.0
 Dates,2024,8,-41650.0
 Phone,2024,8,-24960.0
 Household Furnishing,2024,8,-15750.0
+Gas,2024,8,-12720.0
 Electricity,2024,8,-20040.0
 Meal Reimbursements,2024,8,63020.0
-Uncategorized,2024,9,14090330.0
+Uncategorized,2024,9,14565650.0
 Online Subscriptions,2024,9,-6620.0
 Internet,2024,9,-35000.0
 Eating Out,2024,9,-97810.0
-Groceries,2024,9,-175510.0
-Productivity,2024,9,-650000.0
+Groceries,2024,9,-211000.0
+Productivity,2024,9,-661040.0
 Dates,2024,9,-420470.0
 Cosmetics,2024,9,-43230.0
-Coffee,2024,9,-132530.0
+Coffee,2024,9,-141890.0
 All savings,2024,9,-10000000.0
 Leisure,2024,9,-28990.0
 Inflow: Ready to Assign,2024,9,8079500.0
+Mortgage Interest,2024,9,-3207410.0
+Mortgage Principal,2024,9,-4562670.0
 Meal Service,2024,9,-362050.0
-Mortgage Interest,2024,9,0.0
-Mortgage Principal,2024,9,-4087350.0
 Household Goods,2024,9,-186650.0
 Psychiatry and Therapy,2024,9,-245000.0
 Parking,2024,9,-20850.0
@@ -1868,3 +1872,4 @@ Vacation,2024,9,-1305800.0
 Housing,2024,9,-858590.0
 Optometry and Vision,2024,9,-20000.0
 Phone,2024,9,-24960.0
+Transportation,2024,9,-62840.0
