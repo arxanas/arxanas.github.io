@@ -1826,8 +1826,8 @@ Internet,2024,8,-35000.0
 Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
 Leisure,2024,8,-1990.0
-Gifts,2024,8,-537960.0
 Household Goods,2024,8,-52190.0
+Gifts,2024,8,-537960.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-497320.0
 Investment,2024,8,-111270.0
@@ -1868,12 +1868,17 @@ Parking,2024,9,-51930.0
 Investment,2024,9,-3000.0
 Gifts,2024,9,-810790.0
 Insurance,2024,9,-68030.0
-Vacation,2024,9,-2073300.0
+Vacation,2024,9,-2716800.0
 Housing,2024,9,-858590.0
 Optometry and Vision,2024,9,-20000.0
 Phone,2024,9,-24960.0
 Transportation,2024,9,-62840.0
 Drugs and Medication,2024,9,-10250.0
 Electricity,2024,9,-22220.0
+Uncategorized,2024,10,0.0
 Productivity,2024,10,-663000.0
+Transportation,2024,10,-75650.0
+Eating Out,2024,10,-23170.0
+Coffee,2024,10,-17170.0
 Online Subscriptions,2024,10,-6620.0
+Internet,2024,10,-35000.0
