@@ -277,9 +277,9 @@ def get_redirects() -> Mapping[str, str]:
         "281": "https://eecs281.waleedkhan.name/",
     }
     for article in eecs281_articles:
-        eecs281_redirects[
-            f"281/{article}"
-        ] = f"https://eecs281.waleedkhan.name/{article}/"
+        eecs281_redirects[f"281/{article}"] = (
+            f"https://eecs281.waleedkhan.name/{article}/"
+        )
 
     redirects = {
         **blog_redirects,
