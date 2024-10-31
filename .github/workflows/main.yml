@@ -27,30 +27,31 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - uses: pdm-project/setup-pdm@v3
-        with:
-          python-version: 3.12
-          cache: true
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Set up Python
+        run: uv python install
 
       - name: Install dependencies
-        run: pdm install
+        run: uv sync
 
       - name: Run tests
-        run: pdm run pytest
+        run: uv run pytest
 
       - name: Check types
-        run: pdm run mypy .
+        run: uv run mypy .
 
       - name: Run linter
-        run: pdm run ruff check .
+        run: uv run ruff check .
 
       - name: Check formatting
-        run: pdm run ruff format --check .
+        run: uv run ruff format --check .
 
       - name: Build website
         env:
           YNAB_API_KEY: ${{ secrets.YNAB_API_KEY }}
-        run: pdm run build
+        run: uv run build.py
 
       # Push to the gh-pages branch
       - name: Deploy website

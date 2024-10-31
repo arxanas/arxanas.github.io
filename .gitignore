@@ -1,9 +1,10 @@
-/.venv
 /_site
 /env
 
 __pycache__
-.pdm-python
-*.egg-info
+*.egg-info/
+dist/
 
+.mypy_cache/
+.pytest_cache/
 .ruff_cache/
