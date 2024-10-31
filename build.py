@@ -115,10 +115,10 @@ def get_linkedin_info() -> Mapping[str, str]:
     # it's from LinkedIn.
     result = requests.get("https://resume.waleedkhan.name")
     soup = bs4.BeautifulSoup(result.content, features="html.parser")
-    job = soup.find_all(class_="job")[0]
-    job_employer = job.find(class_="job-employer").text
-    job_description = job.find(class_="job-description").text
-    job_date = job.find(class_="job-date").text
+    current_job = soup.find_all(class_="current-job")[0]
+    job_employer = current_job.find(class_="job-employer").text
+    job_description = current_job.find(class_="job-description").text
+    job_date = current_job.find(class_="job-date").text
     return {
         "linkedin": f"""\
 <p>
