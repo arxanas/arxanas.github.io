@@ -1889,8 +1889,8 @@ Vacation,2024,10,-1104140.0
 Inflow: Ready to Assign,2024,10,19385520.0
 Tolls,2024,10,-8850.0
 Housing,2024,10,-3615620.0
-Mortgage Interest,2024,10,0.0
 Mortgage Principal,2024,10,0.0
+Mortgage Interest,2024,10,0.0
 Groceries,2024,10,-102320.0
 Investment,2024,10,-2000.0
 Insurance,2024,10,-73610.0
@@ -1921,3 +1921,4 @@ Insurance,2024,11,-59520.0
 Meal Reimbursements,2024,11,-26460.0
 Charitable,2024,11,-100000.0
 Housing,2024,11,-858590.0
+Phone,2024,11,-24960.0
