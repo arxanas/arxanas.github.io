@@ -1000,8 +1000,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Inflow: Ready to Assign,2021,10,13219440.0
 Coffee,2021,10,-50000.0
+Inflow: Ready to Assign,2021,10,13219440.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -1429,7 +1429,7 @@ Housing,2023,5,-1850000.0
 Internet,2023,5,-34880.0
 Uncategorized,2023,6,11916330.0
 Wedding,2023,6,-508970.0
-Eating Out,2023,6,-493720.0
+Eating Out,2023,6,-485110.0
 Household Goods,2023,6,-212680.0
 Online Subscriptions,2023,6,-6620.0
 Inflow: Ready to Assign,2023,6,21288150.0
@@ -1452,6 +1452,7 @@ All savings,2023,6,-11913950.0
 Clothes & Grooming ,2023,6,-273060.0
 Housing,2023,6,-1850000.0
 Internet,2023,6,-34880.0
+Coffee,2023,6,-8610.0
 Uncategorized,2023,7,44313300.0
 Inflow: Ready to Assign,2023,7,83541340.0
 Vacation,2023,7,-2760960.0
@@ -1695,13 +1696,13 @@ Reimbursements,2024,3,-472640.0
 Uncategorized,2024,4,118448260.0
 Internet,2024,4,-81480.0
 Online Subscriptions,2024,4,-6620.0
+Inflow: Ready to Assign,2024,4,76004410.0
 Housing,2024,4,441410.0
 Investment,2024,4,-50030.0
 Vacation,2024,4,-1114690.0
 Household Furnishing,2024,4,-663810.0
 Reimbursements,2024,4,-62230.0
 Coffee,2024,4,-116250.0
-Inflow: Ready to Assign,2024,4,76004410.0
 Meal Service,2024,4,-405140.0
 Dates,2024,4,-198040.0
 Groceries,2024,4,-296360.0
@@ -1826,8 +1827,8 @@ Internet,2024,8,-35000.0
 Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
 Leisure,2024,8,-1990.0
-Household Goods,2024,8,-52190.0
 Gifts,2024,8,-537960.0
+Household Goods,2024,8,-52190.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-497320.0
 Investment,2024,8,-111270.0
@@ -1847,7 +1848,7 @@ Household Furnishing,2024,8,-15750.0
 Gas,2024,8,-12720.0
 Electricity,2024,8,-20040.0
 Meal Reimbursements,2024,8,63020.0
-Uncategorized,2024,9,24565650.0
+Uncategorized,2024,9,20961150.0
 Online Subscriptions,2024,9,-6620.0
 Internet,2024,9,-35000.0
 Eating Out,2024,9,-165910.0
@@ -1859,8 +1860,8 @@ Coffee,2024,9,-208030.0
 All savings,2024,9,-10000000.0
 Leisure,2024,9,-28990.0
 Inflow: Ready to Assign,2024,9,16353060.0
-Mortgage Interest,2024,9,-3207410.0
-Mortgage Principal,2024,9,-14562670.0
+Mortgage Interest,2024,9,-6411800.0
+Mortgage Principal,2024,9,-10958170.0
 Meal Service,2024,9,-509520.0
 Household Goods,2024,9,-186650.0
 Psychiatry and Therapy,2024,9,-490000.0
@@ -1875,7 +1876,7 @@ Phone,2024,9,-24960.0
 Transportation,2024,9,-62840.0
 Drugs and Medication,2024,9,-10250.0
 Electricity,2024,9,-22220.0
-Uncategorized,2024,10,2380.0
+Uncategorized,2024,10,515540.0
 Productivity,2024,10,-730040.0
 Transportation,2024,10,-213430.0
 Eating Out,2024,10,-103490.0
@@ -1889,18 +1890,18 @@ Vacation,2024,10,-1104140.0
 Inflow: Ready to Assign,2024,10,19385520.0
 Tolls,2024,10,-8850.0
 Housing,2024,10,-3615620.0
-Mortgage Interest,2024,10,0.0
-Mortgage Principal,2024,10,0.0
 Groceries,2024,10,-102320.0
 Investment,2024,10,-2000.0
 Insurance,2024,10,-73610.0
 Meal Service,2024,10,-382490.0
 Phone,2024,10,-24960.0
 Electricity,2024,10,-21220.0
+Mortgage Interest,2024,10,-3169580.0
+Mortgage Principal,2024,10,-513160.0
 Drugs and Medication,2024,10,-28170.0
-Uncategorized,2024,11,-35050.0
-Groceries,2024,11,-76290.0
-Coffee,2024,11,-73730.0
+Uncategorized,2024,11,4087350.0
+Groceries,2024,11,-101010.0
+Coffee,2024,11,-115380.0
 Online Subscriptions,2024,11,-6620.0
 Drugs and Medication,2024,11,-2420.0
 Vacation,2024,11,-726370.0
@@ -1909,16 +1910,15 @@ Internet,2024,11,-35000.0
 Dates,2024,11,-45650.0
 Leisure,2024,11,-24890.0
 Inflow: Ready to Assign,2024,11,8061050.0
-Productivity,2024,11,-86040.0
+Mortgage Principal,2024,11,-4087350.0
+Productivity,2024,11,-75000.0
 Tolls,2024,11,-10300.0
-Mortgage Interest,2024,11,0.0
-Mortgage Principal,2024,11,0.0
-Eating Out,2024,11,-130730.0
-Meal Service,2024,11,-242750.0
+Eating Out,2024,11,-192750.0
+Meal Service,2024,11,-367300.0
 Cosmetic Care,2024,11,-480000.0
 Parking,2024,11,-13760.0
 Insurance,2024,11,-59520.0
-Meal Reimbursements,2024,11,-26460.0
 Charitable,2024,11,-100000.0
 Housing,2024,11,-858590.0
 Phone,2024,11,-24960.0
+Electricity,2024,11,-20560.0
