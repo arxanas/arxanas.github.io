@@ -21,7 +21,7 @@
           >
         </li>
         <li class="link-info"><p>
-<span class="latest">Last updated: 2024-12-08</span>
+<span class="latest">Last updated: 2024-12-09</span>
 This page is an activity feed of my internet presence, updated once a day.
 </p>
 </li>
@@ -44,27 +44,46 @@ This page is an activity feed of my internet presence, updated once a day.
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/arxanas/advent-of-code">arxanas/advent-of-code</a></td>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
 <td>Dec 08, 2024</td>
-<td><a href="https://github.com/arxanas/advent-of-code/commits/2d97491a762742566d2d3a68a1917fafce0d74f8">cleanup: add required `from __future__ import annotations`</a></td>
+<td><a href="https://github.com/martinvonz/jj/commits/8ba29ca2276b6f5e2970e5aec47db9d3646bab70">build: switch back to `gix/max-performance-safe` feature by default
+
+Using `gix/max-performance` requires `cmake` as a build-time dependency, which could be a significant barrier for contributors (including existing ones, like me, who already work on jj but didn't have `cmake` installed thus far).
+
+This commit switches back to using `gix/max-performance-safe`, which doesn't have the `cmake` dependency, and adds `gix/max-performance` behind the `gix-max-performance` feature for `jj-lib`.
+
+It also adds `gix-max-performance` to the `packaging` feature group, since I'm assuming that packagers will want maximum performance, and are more likely to have `cmake` at hand.
+
+Tested with
+
+```
+$ cargo build --workspace
+$ cargo build --workspace --features packaging
+```
+
+(and the `--features packaging` build failed until I installed `cmake`)</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/advent-of-code">arxanas/advent-of-code</a></td>
+<td><a href="https://github.com/martinvonz/jj">martinvonz/jj</a></td>
 <td>Dec 08, 2024</td>
-<td><a href="https://github.com/arxanas/advent-of-code/commits/74c5b73949db62f1033944d19d0121f1e80b447b">cleanup: add required `from __future__ import annotations`</a></td>
+<td><a href="https://github.com/martinvonz/jj/commits/defa823e0f4fe38531765e3b71b6bc38f24c8d3d">docs: revert "docs: update installation docs to say that `cmake` is needed"
+
+This reverts commit b7ba3fc0be734cfa39bb7d6cfc50ed67eee15dce.
+
+As per discussion in https://github.com/martinvonz/jj/pull/5047, I would like to make it so that the default build configuration doesn't need `cmake`.</a></td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/arxanas/advent-of-code">arxanas/advent-of-code</a></td>
+<td><a href="https://github.com/arxanas/jj">arxanas/jj</a></td>
 <td>Dec 08, 2024</td>
-<td><a href="https://github.com/arxanas/advent-of-code/commits/41a0dbb3249e60193f482e71ef0d5c4fbb0aaf4c">docs: update `README.md`</a></td>
+<td><a href="https://github.com/arxanas/jj/commits/a81b8a84586b9435cd6ae0bfee95529b4e52a439">docs: fix `cargo doc` warnings</a></td>
 </tr>
 
 </tbody>
 </table>
 </div>
-<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">16 more recent commits</a>.</span>
+<span class="latest">...and <a href="https://github.com/arxanas#js-contribution-activity">22 more recent commits</a>.</span>
 </p>
 </li>
         <li class="link">
