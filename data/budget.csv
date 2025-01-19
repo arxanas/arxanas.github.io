@@ -1962,10 +1962,10 @@ Meal Service,2025,1,-357840.0
 Transportation,2025,1,-47300.0
 Internet,2025,1,-35000.0
 Eating Out,2025,1,-187030.0
-Groceries,2025,1,-321830.0
+Groceries,2025,1,-332350.0
 Psychiatry and Therapy,2025,1,-585000.0
 Drugs and Medication,2025,1,-105580.0
-Coffee,2025,1,-68640.0
+Coffee,2025,1,-77090.0
 Inflow: Ready to Assign,2025,1,903140.0
 All savings,2025,1,-27000000.0
 Dates,2025,1,-171990.0
@@ -1973,3 +1973,5 @@ Household Furnishing,2025,1,-27250.0
 Productivity,2025,1,-248900.0
 Insurance,2025,1,-59790.0
 Housing,2025,1,-894250.0
+Gifts,2025,1,-53600.0
+Phone,2025,1,-24960.0
