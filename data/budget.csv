@@ -1961,11 +1961,11 @@ Leisure,2025,1,-22820.0
 Meal Service,2025,1,-486810.0
 Transportation,2025,1,-47300.0
 Internet,2025,1,-35000.0
-Eating Out,2025,1,-257540.0
+Eating Out,2025,1,-414550.0
 Groceries,2025,1,-353370.0
-Psychiatry and Therapy,2025,1,-765000.0
+Psychiatry and Therapy,2025,1,-915000.0
 Drugs and Medication,2025,1,-105580.0
-Coffee,2025,1,-141510.0
+Coffee,2025,1,-149960.0
 Inflow: Ready to Assign,2025,1,8119250.0
 All savings,2025,1,-27000000.0
 Dates,2025,1,-195480.0
@@ -1978,3 +1978,4 @@ Tolls,2025,1,-4800.0
 Mortgage Principal,2025,1,0.0
 Mortgage Interest,2025,1,0.0
 Housing,2025,1,-925950.0
+Electricity,2025,1,-23640.0
