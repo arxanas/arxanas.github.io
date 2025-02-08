@@ -15,8 +15,8 @@ Eating Out,2016,11,-54360.0
 Internet,2016,11,-60000.0
 Uncategorized,2016,11,0.0
 Charitable,2016,11,-500000.0
-Housing,2016,12,-1348750.0
 Reimbursements,2016,12,-56650.0
+Housing,2016,12,-1348750.0
 Online Subscriptions,2016,12,-5000.0
 Inflow: Ready to Assign,2016,12,12104740.0
 Uncategorized,2016,12,30969770.0
@@ -1975,8 +1975,8 @@ Insurance,2025,1,-59790.0
 Gifts,2025,1,-385320.0
 Phone,2025,1,-24960.0
 Tolls,2025,1,-4800.0
-Mortgage Interest,2025,1,0.0
 Mortgage Principal,2025,1,0.0
+Mortgage Interest,2025,1,0.0
 Housing,2025,1,-925950.0
 Electricity,2025,1,-23640.0
 Uncategorized,2025,2,-2620.0
@@ -1986,14 +1986,16 @@ Eating Out,2025,2,-98750.0
 Household Furnishing,2025,2,-13510.0
 Online Subscriptions,2025,2,-13240.0
 Household Goods,2025,2,-68890.0
-Coffee,2025,2,-34170.0
+Coffee,2025,2,-43450.0
 Groceries,2025,2,-22840.0
 Meal Reimbursements,2025,2,223110.0
 Gifts,2025,2,350330.0
 Internet,2025,2,-35000.0
 Drugs and Medication,2025,2,-2420.0
-Productivity,2025,2,-5520.0
+Productivity,2025,2,-1920.0
 Leisure,2025,2,-13990.0
 Vacation,2025,2,-9180.0
 Inflow: Ready to Assign,2025,2,12350.0
 Meal Service,2025,2,-115990.0
+Cosmetic Care,2025,2,-476000.0
+Parking,2025,2,-13710.0
