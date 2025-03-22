@@ -2006,8 +2006,8 @@ Split,2025,2,503780.0
 Dates,2025,2,-117480.0
 Insurance,2025,2,-68510.0
 Phone,2025,2,-24960.0
-Mortgage Interest,2025,2,0.0
 Mortgage Principal,2025,2,0.0
+Mortgage Interest,2025,2,0.0
 Housing,2025,2,-892270.0
 Uncategorized,2025,3,2270.0
 Car,2025,3,-677760.0
@@ -2015,14 +2015,14 @@ Psychiatry and Therapy,2025,3,-660000.0
 Gas,2025,3,-24370.0
 Online Subscriptions,2025,3,-41840.0
 Leisure,2025,3,-31650.0
-Household Goods,2025,3,-314370.0
+Household Goods,2025,3,-333760.0
 Meal Reimbursements,2025,3,307200.0
 Internet,2025,3,-35000.0
 Eating Out,2025,3,-382500.0
-Coffee,2025,3,-83810.0
+Coffee,2025,3,-75400.0
 Groceries,2025,3,-77150.0
 Inflow: Ready to Assign,2025,3,11920.0
-Tolls,2025,3,-11000.0
+Tolls,2025,3,-19850.0
 Productivity,2025,3,-80520.0
 Meal Service,2025,3,-233080.0
 Gifts,2025,3,-2136010.0
@@ -2031,5 +2031,5 @@ Insurance,2025,3,-77410.0
 Household Furnishing,2025,3,-37200.0
 Housing,2025,3,-345000.0
 Phone,2025,3,-24960.0
-Mortgage Principal,2025,3,0.0
 Mortgage Interest,2025,3,0.0
+Mortgage Principal,2025,3,0.0
