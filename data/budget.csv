@@ -15,8 +15,8 @@ Eating Out,2016,11,-54360.0
 Internet,2016,11,-60000.0
 Uncategorized,2016,11,0.0
 Charitable,2016,11,-500000.0
-Reimbursements,2016,12,-56650.0
 Housing,2016,12,-1348750.0
+Reimbursements,2016,12,-56650.0
 Online Subscriptions,2016,12,-5000.0
 Inflow: Ready to Assign,2016,12,12104740.0
 Uncategorized,2016,12,30969770.0
@@ -1826,8 +1826,8 @@ Internet,2024,8,-35000.0
 Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
 Leisure,2024,8,-1990.0
-Household Goods,2024,8,-52190.0
 Gifts,2024,8,-537960.0
+Household Goods,2024,8,-52190.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-472320.0
 Investment,2024,8,-111270.0
@@ -2062,14 +2062,14 @@ Psychiatry and Therapy,2025,4,-585000.0
 Meal Reimbursements,2025,4,214300.0
 Phone,2025,4,-24960.0
 Tolls,2025,4,-2950.0
-Mortgage Principal,2025,4,0.0
 Mortgage Interest,2025,4,0.0
+Mortgage Principal,2025,4,0.0
 Split,2025,4,-23590.0
 Physical Therapy,2025,4,-519570.0
 Housing,2025,4,-892270.0
 Electricity,2025,4,-20220.0
 Uncategorized,2025,5,-15900.0
-Meal Service,2025,5,-114890.0
+Meal Service,2025,5,-126880.0
 Eating Out,2025,5,-492000.0
 Online Subscriptions,2025,5,-13240.0
 Coffee,2025,5,-80230.0
@@ -2087,5 +2087,6 @@ Parking,2025,5,-13710.0
 Psychiatry and Therapy,2025,5,-420000.0
 Insurance,2025,5,-76740.0
 Phone,2025,5,-25460.0
-Mortgage Interest,2025,5,0.0
 Mortgage Principal,2025,5,0.0
+Mortgage Interest,2025,5,0.0
+Housing,2025,5,-892270.0
