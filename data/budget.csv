@@ -2023,7 +2023,7 @@ Leisure,2025,3,-42550.0
 Household Goods,2025,3,-960820.0
 Internet,2025,3,-35000.0
 Eating Out,2025,3,-495600.0
-Coffee,2025,3,-166880.0
+Coffee,2025,3,-180920.0
 Inflow: Ready to Assign,2025,3,39850640.0
 Tolls,2025,3,-19850.0
 Productivity,2025,3,-61520.0
@@ -2046,13 +2046,13 @@ Drugs and Medication,2025,4,-77620.0
 Reimbursements,2025,4,-55000.0
 Eating Out,2025,4,-324260.0
 Online Subscriptions,2025,4,-13240.0
-Coffee,2025,4,-144960.0
-Household Goods,2025,4,-261030.0
+Coffee,2025,4,-177550.0
+Household Goods,2025,4,-407780.0
 Internet,2025,4,-35000.0
 Inflow: Ready to Assign,2025,4,11885130.0
 Meal Service,2025,4,-482780.0
 Vacation,2025,4,-888830.0
-Groceries,2025,4,-163390.0
+Groceries,2025,4,-353310.0
 Transportation,2025,4,0.0
 Leisure,2025,4,-22820.0
 Productivity,2025,4,-85060.0
@@ -2062,6 +2062,7 @@ Psychiatry and Therapy,2025,4,-585000.0
 All savings,2025,4,-2956230.0
 Meal Reimbursements,2025,4,194250.0
 Phone,2025,4,-24960.0
+Gas,2025,4,-26170.0
 Tolls,2025,4,-2950.0
 Mortgage Principal,2025,4,0.0
 Mortgage Interest,2025,4,0.0
@@ -2070,36 +2071,41 @@ Taxes,2025,4,8437000.0
 Physical Therapy,2025,4,-519570.0
 Housing,2025,4,-892270.0
 Electricity,2025,4,-20220.0
-Uncategorized,2025,5,200.0
+Investment,2025,4,-1030.0
+Uncategorized,2025,5,2170.0
 Meal Service,2025,5,-256670.0
 Eating Out,2025,5,-520590.0
 Online Subscriptions,2025,5,-13240.0
-Coffee,2025,5,-80230.0
+Coffee,2025,5,-86800.0
 Internet,2025,5,-35000.0
-Groceries,2025,5,-84060.0
-Household Goods,2025,5,-246670.0
+Groceries,2025,5,-187830.0
+Household Goods,2025,5,-280860.0
 Inflow: Ready to Assign,2025,5,8185180.0
 Dates,2025,5,-62450.0
 Leisure,2025,5,-22820.0
 Tolls,2025,5,-2950.0
 Productivity,2025,5,6480.0
-Vacation,2025,5,-144760.0
+Vacation,2025,5,-1698720.0
 Cosmetic Care,2025,5,-476000.0
 Parking,2025,5,-13710.0
 Psychiatry and Therapy,2025,5,-420000.0
 Insurance,2025,5,-76740.0
 Phone,2025,5,-25460.0
-Mortgage Principal,2025,5,0.0
 Mortgage Interest,2025,5,0.0
+Mortgage Principal,2025,5,0.0
 Reimbursements,2025,5,614160.0
 Housing,2025,5,-892270.0
+Electricity,2025,5,-21800.0
+Investment,2025,5,-1030.0
 Meal Reimbursements,2025,5,303780.0
 Split,2025,5,7988010.0
-Uncategorized,2025,6,-48410.0
-Vacation,2025,6,-56200.0
+Uncategorized,2025,6,0.0
+Vacation,2025,6,-104610.0
 Online Subscriptions,2025,6,-13240.0
 Dates,2025,6,-42340.0
 Internet,2025,6,-35000.0
-Eating Out,2025,6,-47330.0
-Coffee,2025,6,-6010.0
+Eating Out,2025,6,-77070.0
+Groceries,2025,6,-14780.0
+Coffee,2025,6,-14010.0
 Inflow: Ready to Assign,2025,6,19720.0
+Leisure,2025,6,-13990.0
