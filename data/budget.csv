@@ -1826,8 +1826,8 @@ Internet,2024,8,-35000.0
 Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
 Leisure,2024,8,-1990.0
-Household Goods,2024,8,-52190.0
 Gifts,2024,8,-537960.0
+Household Goods,2024,8,-52190.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-472320.0
 Investment,2024,8,-111270.0
@@ -2035,8 +2035,8 @@ All savings,2025,3,-31485680.0
 Household Furnishing,2025,3,-37200.0
 Housing,2025,3,-1237270.0
 Phone,2025,3,-24960.0
-Mortgage Principal,2025,3,0.0
 Mortgage Interest,2025,3,0.0
+Mortgage Principal,2025,3,0.0
 Reimbursements,2025,3,-533650.0
 Investment,2025,3,-1030.0
 Electricity,2025,3,-25180.0
@@ -2091,8 +2091,8 @@ Parking,2025,5,-13710.0
 Psychiatry and Therapy,2025,5,-420000.0
 Insurance,2025,5,-76740.0
 Phone,2025,5,-25460.0
-Mortgage Principal,2025,5,0.0
 Mortgage Interest,2025,5,0.0
+Mortgage Principal,2025,5,0.0
 Reimbursements,2025,5,614160.0
 Housing,2025,5,-892270.0
 Electricity,2025,5,-21800.0
@@ -2109,18 +2109,19 @@ Groceries,2025,6,-123270.0
 Coffee,2025,6,-146530.0
 Inflow: Ready to Assign,2025,6,30240.0
 Leisure,2025,6,-22820.0
-Meal Service,2025,6,-324470.0
+Meal Service,2025,6,-465270.0
 Productivity,2025,6,6480.0
 Psychiatry and Therapy,2025,6,-735000.0
 Household Goods,2025,6,-187220.0
-Transportation,2025,6,-55490.0
+Transportation,2025,6,-82990.0
 Insurance,2025,6,-60840.0
 Reimbursements,2025,6,146750.0
 Drugs and Medication,2025,6,-320.0
 Physical Therapy,2025,6,-470580.0
 Phone,2025,6,-25460.0
 Car,2025,6,-132870.0
-Mortgage Interest,2025,6,0.0
 Mortgage Principal,2025,6,0.0
+Mortgage Interest,2025,6,0.0
+Electricity,2025,6,-18910.0
 Housing,2025,6,-892270.0
 Dentistry and Orthodonty,2025,6,-370400.0
