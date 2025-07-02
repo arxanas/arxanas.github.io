@@ -2064,8 +2064,8 @@ Meal Reimbursements,2025,4,194250.0
 Phone,2025,4,-24960.0
 Gas,2025,4,-26170.0
 Tolls,2025,4,-2950.0
-Mortgage Principal,2025,4,0.0
 Mortgage Interest,2025,4,0.0
+Mortgage Principal,2025,4,0.0
 Split,2025,4,7892180.0
 Taxes,2025,4,8437000.0
 Physical Therapy,2025,4,-519570.0
@@ -2091,8 +2091,8 @@ Parking,2025,5,-13710.0
 Psychiatry and Therapy,2025,5,-420000.0
 Insurance,2025,5,-76740.0
 Phone,2025,5,-25460.0
-Mortgage Principal,2025,5,0.0
 Mortgage Interest,2025,5,0.0
+Mortgage Principal,2025,5,0.0
 Reimbursements,2025,5,614160.0
 Housing,2025,5,-892270.0
 Electricity,2025,5,-21800.0
@@ -2104,9 +2104,9 @@ Vacation,2025,6,-2810930.0
 Online Subscriptions,2025,6,-13240.0
 Dates,2025,6,-114930.0
 Internet,2025,6,-35000.0
-Eating Out,2025,6,-345500.0
+Eating Out,2025,6,-366410.0
 Groceries,2025,6,-146270.0
-Coffee,2025,6,-155530.0
+Coffee,2025,6,-164190.0
 Inflow: Ready to Assign,2025,6,30240.0
 Leisure,2025,6,-22820.0
 Meal Service,2025,6,-465270.0
@@ -2125,3 +2125,7 @@ Mortgage Principal,2025,6,0.0
 Electricity,2025,6,-18910.0
 Housing,2025,6,-892270.0
 Dentistry and Orthodonty,2025,6,-370400.0
+Eating Out,2025,7,-17730.0
+Online Subscriptions,2025,7,-13240.0
+Coffee,2025,7,-7950.0
+Uncategorized,2025,7,0.0
