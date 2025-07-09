@@ -1826,8 +1826,8 @@ Internet,2024,8,-35000.0
 Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
 Leisure,2024,8,-1990.0
-Gifts,2024,8,-537960.0
 Household Goods,2024,8,-52190.0
+Gifts,2024,8,-537960.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-472320.0
 Investment,2024,8,-111270.0
@@ -2035,8 +2035,8 @@ All savings,2025,3,-31485680.0
 Household Furnishing,2025,3,-37200.0
 Housing,2025,3,-1237270.0
 Phone,2025,3,-24960.0
-Mortgage Interest,2025,3,0.0
 Mortgage Principal,2025,3,0.0
+Mortgage Interest,2025,3,0.0
 Reimbursements,2025,3,-533650.0
 Investment,2025,3,-1030.0
 Electricity,2025,3,-25180.0
@@ -2126,12 +2126,13 @@ Electricity,2025,6,-18910.0
 Housing,2025,6,-892270.0
 Dentistry and Orthodonty,2025,6,-370400.0
 Uncategorized,2025,7,0.0
-Eating Out,2025,7,-75100.0
+Eating Out,2025,7,-99920.0
 Online Subscriptions,2025,7,-13240.0
-Coffee,2025,7,-22470.0
+Coffee,2025,7,-29040.0
 Internet,2025,7,-35000.0
 Meal Service,2025,7,-102720.0
 Groceries,2025,7,-76220.0
 Leisure,2025,7,-47870.0
 Productivity,2025,7,-5520.0
 Tolls,2025,7,-2700.0
+Transportation,2025,7,-27500.0
