@@ -2064,8 +2064,8 @@ Meal Reimbursements,2025,4,194250.0
 Phone,2025,4,-24960.0
 Gas,2025,4,-26170.0
 Tolls,2025,4,-2950.0
-Mortgage Principal,2025,4,0.0
 Mortgage Interest,2025,4,0.0
+Mortgage Principal,2025,4,0.0
 Split,2025,4,7892180.0
 Taxes,2025,4,8437000.0
 Physical Therapy,2025,4,-519570.0
@@ -2120,8 +2120,8 @@ Drugs and Medication,2025,6,-320.0
 Physical Therapy,2025,6,-470580.0
 Phone,2025,6,-25460.0
 Car,2025,6,-132870.0
-Mortgage Principal,2025,6,0.0
 Mortgage Interest,2025,6,0.0
+Mortgage Principal,2025,6,0.0
 Electricity,2025,6,-18910.0
 Housing,2025,6,-892270.0
 Dentistry and Orthodonty,2025,6,-370400.0
@@ -2152,6 +2152,7 @@ Electricity,2025,7,-25730.0
 Reimbursements,2025,7,-546780.0
 Charitable,2025,7,-200000.0
 Drugs and Medication,2025,7,-66490.0
+Uncategorized,2025,8,46230.0
 Online Subscriptions,2025,8,-13240.0
 Leisure,2025,8,-11920.0
 Internet,2025,8,-35000.0
