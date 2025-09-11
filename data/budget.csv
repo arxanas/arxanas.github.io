@@ -1,6 +1,6 @@
 Online Subscriptions,2016,10,-5000.0
-Inflow: Ready to Assign,2016,10,0.0
 Uncategorized,2016,10,0.0
+Inflow: Ready to Assign,2016,10,0.0
 Housing,2016,11,-1348480.0
 Online Subscriptions,2016,11,-45000.0
 Reimbursements,2016,11,177830.0
@@ -15,8 +15,8 @@ Eating Out,2016,11,-54360.0
 Internet,2016,11,-60000.0
 Uncategorized,2016,11,0.0
 Charitable,2016,11,-500000.0
-Reimbursements,2016,12,-56650.0
 Housing,2016,12,-1348750.0
+Reimbursements,2016,12,-56650.0
 Online Subscriptions,2016,12,-5000.0
 Inflow: Ready to Assign,2016,12,12104740.0
 Uncategorized,2016,12,30969770.0
@@ -2091,8 +2091,8 @@ Parking,2025,5,-13710.0
 Psychiatry and Therapy,2025,5,-420000.0
 Insurance,2025,5,-76740.0
 Phone,2025,5,-25460.0
-Mortgage Principal,2025,5,0.0
 Mortgage Interest,2025,5,0.0
+Mortgage Principal,2025,5,0.0
 Reimbursements,2025,5,614160.0
 Housing,2025,5,-892270.0
 Electricity,2025,5,-21800.0
@@ -2145,8 +2145,8 @@ Parking,2025,7,-15000.0
 Phone,2025,7,-25460.0
 Gifts,2025,7,-307500.0
 Vacation,2025,7,-1008800.0
-Mortgage Interest,2025,7,0.0
 Mortgage Principal,2025,7,0.0
+Mortgage Interest,2025,7,0.0
 Housing,2025,7,-892270.0
 Electricity,2025,7,-25730.0
 Reimbursements,2025,7,-546780.0
@@ -2171,22 +2171,24 @@ Inflow: Ready to Assign,2025,8,2920.0
 Insurance,2025,8,-83150.0
 Dentistry and Orthodonty,2025,8,-281350.0
 Phone,2025,8,-26200.0
-Mortgage Interest,2025,8,0.0
 Mortgage Principal,2025,8,0.0
+Mortgage Interest,2025,8,0.0
 Housing,2025,8,-892270.0
 Reimbursements,2025,8,-640190.0
 Electricity,2025,8,-21760.0
 Vacation,2025,8,-12380.0
-Uncategorized,2025,9,-86760.0
-Psychiatry and Therapy,2025,9,-165000.0
+Uncategorized,2025,9,0.0
+Psychiatry and Therapy,2025,9,-315000.0
 Online Subscriptions,2025,9,-13240.0
 Reimbursements,2025,9,-262400.0
 Internet,2025,9,-35000.0
-Eating Out,2025,9,-81530.0
-Groceries,2025,9,-32460.0
-Coffee,2025,9,-25330.0
+Eating Out,2025,9,-154130.0
+Groceries,2025,9,-82840.0
+Coffee,2025,9,-55630.0
 Meal Service,2025,9,-102720.0
-Leisure,2025,9,-13990.0
-Household Goods,2025,9,-2480.0
+Leisure,2025,9,-22820.0
+Household Goods,2025,9,-10030.0
 Productivity,2025,9,-5520.0
 Tolls,2025,9,-2500.0
+Charitable,2025,9,-100000.0
+Parking,2025,9,-23000.0
