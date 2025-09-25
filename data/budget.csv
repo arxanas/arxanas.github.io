@@ -1000,8 +1000,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Inflow: Ready to Assign,2021,10,13219440.0
 Coffee,2021,10,-50000.0
+Inflow: Ready to Assign,2021,10,13219440.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -1826,8 +1826,8 @@ Internet,2024,8,-35000.0
 Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
 Leisure,2024,8,-1990.0
-Household Goods,2024,8,-52190.0
 Gifts,2024,8,-537960.0
+Household Goods,2024,8,-52190.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-472320.0
 Investment,2024,8,-111270.0
@@ -2035,8 +2035,8 @@ All savings,2025,3,-31485680.0
 Household Furnishing,2025,3,-37200.0
 Housing,2025,3,-1237270.0
 Phone,2025,3,-24960.0
-Mortgage Interest,2025,3,0.0
 Mortgage Principal,2025,3,0.0
+Mortgage Interest,2025,3,0.0
 Reimbursements,2025,3,-533650.0
 Investment,2025,3,-1030.0
 Electricity,2025,3,-25180.0
@@ -2171,8 +2171,8 @@ Inflow: Ready to Assign,2025,8,2920.0
 Insurance,2025,8,-83150.0
 Dentistry and Orthodonty,2025,8,-281350.0
 Phone,2025,8,-26200.0
-Mortgage Interest,2025,8,0.0
 Mortgage Principal,2025,8,0.0
+Mortgage Interest,2025,8,0.0
 Housing,2025,8,-892270.0
 Reimbursements,2025,8,-640190.0
 Electricity,2025,8,-21760.0
@@ -2182,13 +2182,13 @@ Psychiatry and Therapy,2025,9,-735000.0
 Online Subscriptions,2025,9,-13240.0
 Reimbursements,2025,9,-262400.0
 Internet,2025,9,-35000.0
-Eating Out,2025,9,-275800.0
+Eating Out,2025,9,-368680.0
 Groceries,2025,9,-167980.0
-Coffee,2025,9,-98610.0
+Coffee,2025,9,-144200.0
 Meal Service,2025,9,-334370.0
 Leisure,2025,9,-77970.0
 Household Goods,2025,9,-30490.0
-Productivity,2025,9,30480.0
+Productivity,2025,9,6480.0
 Tolls,2025,9,-7400.0
 Charitable,2025,9,-100000.0
 Parking,2025,9,-32710.0
@@ -2196,5 +2196,5 @@ Insurance,2025,9,-77570.0
 Inflow: Ready to Assign,2025,9,3660.0
 Gifts,2025,9,-212730.0
 Dates,2025,9,-279560.0
-Mortgage Interest,2025,9,0.0
 Mortgage Principal,2025,9,0.0
+Mortgage Interest,2025,9,0.0
