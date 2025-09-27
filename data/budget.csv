@@ -2120,8 +2120,8 @@ Drugs and Medication,2025,6,-320.0
 Physical Therapy,2025,6,-470580.0
 Phone,2025,6,-25460.0
 Car,2025,6,-132870.0
-Mortgage Principal,2025,6,0.0
 Mortgage Interest,2025,6,0.0
+Mortgage Principal,2025,6,0.0
 Electricity,2025,6,-18910.0
 Housing,2025,6,-892270.0
 Dentistry and Orthodonty,2025,6,-370400.0
@@ -2171,8 +2171,8 @@ Inflow: Ready to Assign,2025,8,2920.0
 Insurance,2025,8,-83150.0
 Dentistry and Orthodonty,2025,8,-281350.0
 Phone,2025,8,-26200.0
-Mortgage Interest,2025,8,0.0
 Mortgage Principal,2025,8,0.0
+Mortgage Interest,2025,8,0.0
 Housing,2025,8,-892270.0
 Reimbursements,2025,8,-640190.0
 Electricity,2025,8,-21760.0
@@ -2183,12 +2183,12 @@ Online Subscriptions,2025,9,-13240.0
 Reimbursements,2025,9,-262400.0
 Internet,2025,9,-35000.0
 Eating Out,2025,9,-368680.0
-Groceries,2025,9,-167980.0
+Groceries,2025,9,-193030.0
 Coffee,2025,9,-144200.0
-Meal Service,2025,9,-358360.0
+Meal Service,2025,9,-462190.0
 Leisure,2025,9,-77970.0
 Household Goods,2025,9,-30490.0
-Productivity,2025,9,6480.0
+Productivity,2025,9,2070.0
 Tolls,2025,9,-7400.0
 Charitable,2025,9,-100000.0
 Parking,2025,9,-32710.0
@@ -2196,6 +2196,6 @@ Insurance,2025,9,-77570.0
 Inflow: Ready to Assign,2025,9,3660.0
 Gifts,2025,9,-212730.0
 Dates,2025,9,-279560.0
-Mortgage Interest,2025,9,0.0
 Mortgage Principal,2025,9,0.0
+Mortgage Interest,2025,9,0.0
 Housing,2025,9,-892270.0
