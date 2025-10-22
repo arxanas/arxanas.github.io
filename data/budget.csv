@@ -1826,8 +1826,8 @@ Internet,2024,8,-35000.0
 Groceries,2024,8,-327780.0
 Eating Out,2024,8,-235950.0
 Leisure,2024,8,-1990.0
-Household Goods,2024,8,-52190.0
 Gifts,2024,8,-537960.0
+Household Goods,2024,8,-52190.0
 Mortgage Interest,2024,8,-3210410.0
 Mortgage Principal,2024,8,-472320.0
 Investment,2024,8,-111270.0
@@ -2207,10 +2207,10 @@ Reimbursements,2025,10,523040.0
 Drugs and Medication,2025,10,-56610.0
 Eating Out,2025,10,-271680.0
 Online Subscriptions,2025,10,-13240.0
-Coffee,2025,10,-119000.0
+Coffee,2025,10,-127660.0
 Psychiatry and Therapy,2025,10,-855000.0
 Mortgage Principal,2025,10,-105110.0
-Meal Service,2025,10,-320970.0
+Meal Service,2025,10,-344960.0
 Household Goods,2025,10,-109110.0
 Internet,2025,10,-35000.0
 Groceries,2025,10,-249720.0
@@ -2222,4 +2222,5 @@ Dates,2025,10,-30000.0
 Insurance,2025,10,-94560.0
 Parking,2025,10,-5300.0
 Phone,2025,10,-27130.0
+Vacation,2025,10,-3060.0
 Mortgage Interest,2025,10,0.0
