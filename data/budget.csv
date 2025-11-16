@@ -1000,8 +1000,8 @@ Internet,2021,9,-35000.0
 Uncategorized,2021,10,-27623370.0
 All savings,2021,10,-11502940.0
 Eating Out,2021,10,-477840.0
-Coffee,2021,10,-50000.0
 Inflow: Ready to Assign,2021,10,13219440.0
+Coffee,2021,10,-50000.0
 Online Subscriptions,2021,10,-14340.0
 Housing,2021,10,-1620000.0
 Transportation,2021,10,-80180.0
@@ -2197,8 +2197,8 @@ Inflow: Ready to Assign,2025,9,3660.0
 Gifts,2025,9,-212730.0
 Dates,2025,9,-496900.0
 Phone,2025,9,-27740.0
-Mortgage Principal,2025,9,0.0
 Mortgage Interest,2025,9,0.0
+Mortgage Principal,2025,9,0.0
 Electricity,2025,9,-24180.0
 Transportation,2025,9,-135720.0
 Housing,2025,9,-892270.0
@@ -2229,22 +2229,23 @@ Electricity,2025,10,-22320.0
 Transportation,2025,10,-41690.0
 Housing,2025,10,-892270.0
 Dentistry and Orthodonty,2025,10,-23000.0
-Uncategorized,2025,11,-151180.0
+Uncategorized,2025,11,-155690.0
 Online Subscriptions,2025,11,-13240.0
 Transportation,2025,11,-102510.0
 Internet,2025,11,-35000.0
 Groceries,2025,11,-17030.0
-Coffee,2025,11,-72860.0
-Psychiatry and Therapy,2025,11,-315000.0
+Coffee,2025,11,-91140.0
+Psychiatry and Therapy,2025,11,-2559000.0
 Reimbursements,2025,11,-327100.0
 Eating Out,2025,11,-39140.0
 Leisure,2025,11,-22820.0
 Household Goods,2025,11,-45840.0
 Drugs and Medication,2025,11,-11820.0
 Productivity,2025,11,-11040.0
-Mortgage Principal,2025,11,0.0
 Mortgage Interest,2025,11,0.0
-Meal Service,2025,11,-112200.0
+Mortgage Principal,2025,11,0.0
+Meal Service,2025,11,-239670.0
 Dates,2025,11,-42840.0
 Vacation,2025,11,-399320.0
 Insurance,2025,11,-62510.0
+Cosmetic Care,2025,11,-476000.0
